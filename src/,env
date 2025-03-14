@@ -1,0 +1,5 @@
+DB_NAME=sportsdb
+DB_USER=ededub
+DB_PASSWORD=9iTciYTs
+DB_HOST=localhost
+DB_PORT=5432
