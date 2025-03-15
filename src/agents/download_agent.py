@@ -3,6 +3,15 @@ from abc import ABC, abstractmethod
 
 class IDownloadAgent(ABC):
     
-    def fetch_url(self, url: str):
+    @abstractmethod
+    def fetch_url(url: str):
+        pass
+
+    @abstractmethod
+    def _form_scoreboard_url(url: str):
+        pass 
+
+    @abstractmethod
+    def _form_boxscore_url(url: str):
         pass
 

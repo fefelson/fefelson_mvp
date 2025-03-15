@@ -4,5 +4,6 @@ __pycache__/
 *.pyd
 .Python
 venv/
+logs/
 *.log
 .env 

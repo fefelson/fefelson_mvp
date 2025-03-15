@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
-from typing import Any, List
+from typing import Any, List, Optional
 
-from ..agents.interfaces import IFileAgent
+import os
 
 
 #################################################################
@@ -11,43 +11,27 @@ from ..agents.interfaces import IFileAgent
 class Fileable(ABC):
     """Handles loading and saving data to/from files."""
     
-    def __init__(self, file_agent: IFileAgent):
-        self.file_agent = file_agent    # Manages file I/O operations
-        self.filepath: Optional[str] = None  # Path to the file
-        self.to_write: bool = False     # Flag to track if save is needed
+    def __init__(self, fileAgent: "IFileAgent"):
+        
+        self.fileAgent = fileAgent    # Manages file I/O operations
+        self.filePath: Optional[str]=None  # Path to the file
 
-
-
+    
     @abstractmethod
-    def create(self, default):
-        pass
+    def set_file_path(self, filePath: str=None):
+        raise NotImplementedError
 
 
-    def getFilePath(self):
-        return self.filePath
+    def file_exists(self):
+        return os.path.exists(self.filePath)
 
+    
+    def read_file(self) -> Any:
+        return self.fileAgent.read(self.filePath)
 
-    def getInfo(self):
-        return self.info
+    
+    def write_file(self, fileableObj: Any) -> None:
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(self.filePath), exist_ok=True)
+        self.fileAgent.write(fileableObj)
 
-
-    @abstractmethod
-    def setFilePath(self):
-        self.filePath = self._filePath
-
-
-    def read(self):
-        with open(self.filePath) as fileIn:
-            temp = json.load(fileIn)
-            for key in self.info.keys():
-                    self.info[key] = temp[key]
-
-
-    def write(self):
-        try:
-            os.makedirs("/".join(self.filePath.split("/")[:-1]))
-        except FileExistsError:
-            pass
-
-        with open(self.filePath, 'w') as fileOut:
-            json.dump(self.info, fileOut)
