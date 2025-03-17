@@ -1,9 +1,13 @@
-from src.models.leagues import NBA
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.models.leagues import NCAAB
 
 
 
 
 if __name__ == "__main__":
 
-    league = NBA()
+    league = NCAAB()
     league.process()

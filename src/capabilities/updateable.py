@@ -10,9 +10,9 @@ class Updateable(ABC):
 
     @abstractmethod
     def needs_update(self):
-        pass
+        raise NotImplementedError
 
 
     @abstractmethod
     def update(self):
-        pass
+        raise NotImplementedError

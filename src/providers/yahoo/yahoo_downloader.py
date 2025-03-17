@@ -5,11 +5,13 @@ from urllib.request import urlopen
 import json
 
 from ...agents import IDownloadAgent
+from ...utils.logging_manager import get_logger
 
 
 ######################################################################
 ######################################################################
 
+logger = get_logger()
 
 class YahooDownloadAgent(IDownloadAgent):
 
@@ -30,14 +32,14 @@ class YahooDownloadAgent(IDownloadAgent):
                     item = item["context"]["dispatcher"]["stores"]
         
         except (URLError, HTTPError, ValueError) as e:
-            print(e)
+            logger.error(e)
             YahooDownloadAgent._fetch_url(url, sleepTime, attempts)
         return item
     
 
     @staticmethod
     def _form_scoreboard_url(leagueId: str, gameDate: str) -> str:
-        slugId = {"NBA": "nba", }[leagueId]
+        slugId = {"NBA": "nba", "NCAAB": "college-basketball"}[leagueId]
         schedUrl = YahooDownloadAgent.BASE_URL+"/{0[slugId]}/scoreboard/?confId=all&schedState={0[schedState]}&dateRange={0[dateRange]}".format({"slugId":slugId, "schedState":"", "dateRange":gameDate})        
         return schedUrl
     

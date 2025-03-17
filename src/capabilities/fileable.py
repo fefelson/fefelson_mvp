@@ -11,10 +11,14 @@ import os
 class Fileable(ABC):
     """Handles loading and saving data to/from files."""
     
-    def __init__(self, fileAgent: "IFileAgent"):
+    def __init__(self, fileAgent: Optional["IFileAgent"]=None):
         
         self.fileAgent = fileAgent    # Manages file I/O operations
         self.filePath: Optional[str]=None  # Path to the file
+        
+        
+    def _set_file_Agent(self, fileAgent: "IFileAgent"):
+        self.fileAgent = fileAgent
 
     
     @abstractmethod
@@ -33,5 +37,5 @@ class Fileable(ABC):
     def write_file(self, fileableObj: Any) -> None:
         # Ensure the directory exists
         os.makedirs(os.path.dirname(self.filePath), exist_ok=True)
-        self.fileAgent.write(fileableObj)
+        self.fileAgent.write(self.filePath, fileableObj)
 

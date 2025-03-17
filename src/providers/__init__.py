@@ -1,7 +1,7 @@
 from typing import Optional
 
 from .yahoo.yahoo_downloader import YahooDownloadAgent
-from .yahoo.normalizers import YahooNBANormalizer, YahooNCAABNormalizer
+from .yahoo.normalizers.yahoo_basketball_normalizer import YahooBasketballNormalizer
 
 
 default_provider = "yahoo"
@@ -11,8 +11,8 @@ def get_normal_agent(leagueId: str, provider: Optional[str]=None) -> "INormalAge
     if not provider:
         provider = default_provider
 
-    return {"yahoo": {"NBA": YahooNBANormalizer,
-                      "NCAAB": YahooNCAABNormalizer},
+    return {"yahoo": {"NBA": YahooBasketballNormalizer,
+                      "NCAAB": YahooBasketballNormalizer},
             }[provider][leagueId]
 
 

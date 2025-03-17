@@ -1,8 +1,9 @@
 from typing import Dict, Any
 from threading import Lock
 
+
+from ..agents.file_agent import IFileAgent, get_file_agent
 from ..capabilities import Fileable
-from ..agents import IFileAgent, JSONAgent
 
 
 ##################################################################
@@ -12,29 +13,33 @@ from ..agents import IFileAgent, JSONAgent
 
 class LeagueConfig(Fileable):
     _config_lock = Lock()  # Prevent race conditions in multi-threaded environments
+    _fileType = "json"
+    _fileAgent = get_file_agent(_fileType)
 
-    def __init__(self, 
-                 leagueId: str,
-                 fileAgent: IFileAgent = JSONAgent
-                 ):
-        Fileable.__init__(self, fileAgent)
+
+    def __init__(self, leagueId: str):
         
+        self.leagueId = leagueId
         self.set_file_path()
-        self.config: Dict[str, Any] = self._load_config(leagueId)
+        self._set_file_Agent(self._fileAgent)
+        self.config: Dict[str, Any] = self._load_config()
 
 
-    def _load_config(self, leagueId: str) -> Dict[str, Any]:
+    def _load_config(self) -> Dict[str, Any]:
         """Loads the full config file and extracts the league-specific settings."""
         fullConfig = self.read_file()
-        return fullConfig.get(leagueId, {})  # Get only this league’s config
+        return fullConfig.get(self.leagueId, {})  # Get only this league’s config
         
 
     def _write_config(self) -> None:
         """Writes only the updated league's config without affecting others."""
         with self._config_lock:
-            fullConfig = self.read(self.filePath)
-            fullConfig[self.league_id] = self.config  # Update only this league’s config
-            self.write_file(fullConfig)  # Save changes
+            # Read the full existing config
+            fullConfig = self.read_file() or {}  # Default to empty dict if file is empty
+            # Update only this league’s portion
+            fullConfig[self.leagueId] = self.config
+            # Write the entire updated config back to the file
+            self.write_file(fullConfig)
 
 
 
@@ -52,4 +57,5 @@ class LeagueConfig(Fileable):
     
     def set_file_path(self):
         self.filePath = "data/league_config.json"
+
 

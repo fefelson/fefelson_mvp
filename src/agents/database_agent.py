@@ -1,62 +1,79 @@
 from abc import ABC, abstractmethod
-from sqlalchemy.orm import Session
-from typing import Any, List, Optional
+from itertools import chain
+
+from ..database.models.database import engine, get_db_session
+from ..database.models.games import Game
+from ..database.models.players import Player
+from ..database.models.stadiums import Stadium
+from ..database.models.teams import Team
 
 
 ###################################################################
 ###################################################################
-
 
 
 class IDatabaseAgent(ABC):
     """Abstract interface for database operations."""
-
+    
     @abstractmethod
-    def save(self, data: Any) -> None:
-        """Saves the provided data to the database."""
-        pass
-
-    @abstractmethod
-    def load(self, identifier: Any) -> Optional[Any]:
-        """Loads data from the database based on an identifier (e.g., ID or key)."""
-        pass
-
-    @abstractmethod
-    def query(self, criteria: dict) -> List[Any]:
-        """Queries the database with given criteria and returns matching results."""
-        pass
+    def insert_boxscores(self, dataList: "BoxscoreData"):
+        raise NotImplementedError
 
 
 ###################################################################
 ###################################################################
-
 
 
 class SQLAlchemyDatabaseAgent(IDatabaseAgent):
     """SQLAlchemy implementation of the IDatabaseAgent interface."""
 
-    def __init__(self, session: "Session", model_class: Any):
-        """Initialize with an SQLAlchemy session and the model class to operate on."""
-        self.session = session
-        self.model_class = model_class  # e.g., a class inheriting from Base
+    def _flatten(items):
+        """Recursively flatten misc, yielding individual SQLAlchemy objects."""
+        if items is None:  # Handle None case
+            return
+        for item in items:
+            if isinstance(item, list):
+                yield from SQLAlchemyDatabaseAgent._flatten(item)  # Recurse into nested lists
+            else:
+                yield item  # Yield individual objects
 
-    def save(self, data: Any) -> None:
-        """Saves the provided data to the database."""
-        if isinstance(data, dict):
-            db_object = self.model_class(**data)
-        else:
-            db_object = data  # Assume it's already an instance of the model
-        self.session.add(db_object)
-        self.session.commit()
 
-    def load(self, identifier: Any) -> Optional[Any]:
-        """Loads data from the database based on an identifier (e.g., ID)."""
-        result = self.session.query(self.model_class).filter_by(id=identifier).first()
-        return result
+    @staticmethod
+    def insert_boxscores(boxscore: "BoxscoreData") -> None:
+        """Insert boxscore data into the database."""
 
-    def query(self, criteria: dict) -> List[Any]:
-        """Queries the database with given criteria and returns matching results."""
-        query = self.session.query(self.model_class)
-        for key, value in criteria.items():
-            query = query.filter(getattr(self.model_class, key) == value)
-        return query.all()
+        with get_db_session(engine) as session:
+            # Insert Stadiums with check
+            if not session.query(Stadium).filter_by(stadium_id=boxscore.stadium.stadium_id).first():
+                session.add(boxscore.stadium)
+
+            # Insert Teams with check
+            for team in boxscore.teams:
+                if not session.query(Team).filter_by(team_id=team.team_id).first():
+                    session.add(team)
+
+            # Insert Players with check
+            for player in boxscore.players:
+                if not session.query(Player).filter_by(player_id=player.player_id).first():
+                    session.add(player)
+
+            # Insert Games with check
+            # If there is a redundant game_id in Games don't bother inserting anything else
+            if not session.query(Game).filter_by(game_id=boxscore.game.game_id).first():
+                session.add(boxscore.game)
+  
+                # List-based fields including misc
+                list_fields = [
+                    boxscore.teamStats,
+                    boxscore.playerStats,
+                    boxscore.periods,
+                    boxscore.gameLines,
+                    boxscore.lineups if boxscore.lineups is not None else [],
+                    boxscore.misc if boxscore.misc is not None else []
+                ]
+
+                # Chain the flattened fields
+                all_list_objects = chain(*(SQLAlchemyDatabaseAgent._flatten(field) for field in list_fields))
+
+                # Add all list objects at once
+                session.add_all(all_list_objects)

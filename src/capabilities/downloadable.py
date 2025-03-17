@@ -1,5 +1,9 @@
+
+from ..utils.logging_manager import get_logger
+
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional
+
 
 #################################################################
 #################################################################
@@ -10,7 +14,8 @@ class Downloadable(ABC):
     
     def __init__(self, downloadAgent: Optional["IDownloadAgent"]=None):
         self.downloadAgent = downloadAgent  # Fetches raw data
-        self.url = Optional[str] = None 
+        self.url: Optional[str] = None 
+        self.logger = get_logger()
 
 
     def _set_download_agent(self, downloadAgent: "IDownloadAgent"):
@@ -25,7 +30,7 @@ class Downloadable(ABC):
 
     def download(self) -> Dict[str, Any]:
         """Fetches data from the URL and converts it into dict."""
-        print(f"Downloadable.download called for {self.url}")
+        self.logger.info(f"Downloadable.download called for {self.url}")
         return self.downloadAgent._fetch_url(self.url)
                        
     

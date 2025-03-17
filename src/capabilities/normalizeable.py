@@ -15,7 +15,7 @@ class Normalizable(ABC):
 
 
     def _set_normal_agent(self, normalAgent: "INormalAgent"):
-        self.normalAgent = normalAgent()  
+        self.normalAgent = normalAgent 
 
 
 

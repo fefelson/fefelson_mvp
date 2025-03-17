@@ -1,21 +1,21 @@
 import math
 
-from .model_classes import (BasketballBoxscoreData, BasketballShotData,
-                              BasketballPlayerStatData, BasketballTeamStatData)
+from ...database.models.basketball.basketball_player_stats import BasketballPlayerStat
+from ...database.models.basketball.basketball_team_stats import BasketballTeamStat
+from ...database.models.basketball.basketball_shots import BasketballShot
 
 
 
 class BasketballNormalizer:
 
-    _Boxscore = BasketballBoxscoreData
-    _PlayerShots = BasketballShotData
-    _PlayerStats = BasketballPlayerStatData
-    _TeamStats = BasketballTeamStatData
+    _PlayerShots = BasketballShot
+    _PlayerStats = BasketballPlayerStat
+    _TeamStats = BasketballTeamStat
 
 
     
 
-    def _get_shot_zone(self, side, side_pct, base_pct):
+    def _get_shot_zone(self, shot):
         """
         Convert side, sideline offset (side_pct), and baseline offset (base_pct) into a shot zone.
         Offsets are floats between 0 and 1, mapped to court dimensions.
@@ -28,6 +28,10 @@ class BasketballNormalizer:
         Returns:
             str: Detailed shot zone
         """
+        side = shot["side_of_basket"]
+        base_pct = float(shot['baseline_offset_percentage'])
+        side_pct = float(shot['sideline_offset_percentage'])
+        
         # Validate inputs
         if side not in ['R', 'L'] or not (0 <= side_pct <= 1) or not (0 <= base_pct <= 1):
             return "Invalid input values"
@@ -81,14 +85,14 @@ class BasketballNormalizer:
 
 
 
-    def _calculate_clutch(self, clock, period) -> bool:
+    def _calculate_clutch(self, shot) -> bool:
         """Determine if the shot is in a clutch situation."""
         try:
-            mins, secs = map(int, clock.split(':'))
+            mins, secs = map(int, shot["clock"].split(':'))
         except ValueError:
-            mins=0; secs=float(clock.split(":")[-1])
-        total_mins = mins + (secs / 60)
-        return int(period) == 2 and total_mins < 5.0
+            mins=0
+        
+        return mins < 5 and abs(int(shot["home_score"]) - int(shot["away_score"])) <= 5
 
     
     

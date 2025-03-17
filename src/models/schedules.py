@@ -1,60 +1,33 @@
-from abc import abstractmethod
 from datetime import datetime, timedelta
 from typing import List
 
-from ..capabilities import Fileable, Processable
-from ..agents.file_agent import JSONAgent
-
+from ..capabilities import Processable
 
 ####################################################################
 ####################################################################
 
 
 
-class Schedule(Fileable, Processable):
+class Schedule(Processable):
 
-    def __init__(self, leagueId: str):
-        Fileable.__init__(self, JSONAgent())
-
-        self.leagueId = leagueId
-        self.set_file_path()
-        self.config = self.read_file()
-
-
-    @abstractmethod
-    def _output_gamedate_list(self, gameDate: datetime) -> List[str]:
-        raise NotImplementedError
-
-    
-    def set_file_path(self):
-        self.filePath = f"data/{self.leagueId}_schedule.json"
-
-
-    def is_active(self) -> bool:
+    @staticmethod
+    def is_active(schedule: dict) -> bool:
          # Convert string dates to datetime.date objects
-        startDate = datetime.strptime(self.config["start_date"], "%Y-%m-%d")
-        endDate = datetime.strptime(self.config["end_date"], "%Y-%m-%d")
+        startDate = datetime.strptime(schedule.get("start_date"), "%Y-%m-%d")
+        endDate = datetime.strptime(schedule.get("end_date"), "%Y-%m-%d")
 
         # Correct logic: today must be on or after start_date and before end_date
         return startDate <= datetime.today() < endDate
     
 
-    def process(self, dateString: str=None, nGD: int=0):
+    def process(schedule: dict, nGD: int=0) -> List[str]:
         """
             Used to process boxscore lists and matchup lists by use of nGD or number of GameDates
                 -  nGD > 0 adds today plus n-1 games of matchup GameDates
                 -  an empty dateString means last_update = None 
         """
-        
-        gameDateList = []
-        if dateString:
-            gameDate = datetime.strptime(dateString, "%Y-%m-%d").date()
-            gameDateList = self._output_gamedate_list(gameDate, nGD)
-        else:
-            startDate = datetime.strptime(self.config["start_date"], "%Y-%m-%d").date()
-            gameDateList = self._output_gamedate_list(startDate, nGD)
-        return gameDateList
-
+        raise NotImplementedError
+    
 
 
 ####################################################################
@@ -63,16 +36,24 @@ class Schedule(Fileable, Processable):
 
 
 class DailySchedule(Schedule):
+        
+    
+    @staticmethod
+    def process(schedule: dict, nGD: int=0) -> List[str]:
 
-    def __init__(self, leagueId: str):
-        super().__init__(leagueId)
-        
-        
-    def _output_gamedate_list(self, gameDate: datetime, nGD: int=0) -> List[str]:
         gameDateList = []
-        while gameDate < datetime.today().date()+timedelta(nGD):
-            gameDateList.append(str(gameDate))
-            gameDate += timedelta(1)
+        if schedule.get("last_update"):
+            startDate = datetime.strptime(schedule.get("last_update"), "%Y-%m-%d").date()+timedelta(1)
+        else:
+            startDate = datetime.strptime(schedule.get("start_date"), "%Y-%m-%d").date()
+
+        tempDate = datetime.strptime(schedule.get("end_date"), "%Y-%m-%d").date()
+        endDate = tempDate if tempDate < datetime.today().date() else datetime.today().date() + timedelta(nGD)
+
+        gameDateList = []
+        while startDate < endDate:
+            gameDateList.append(str(startDate))
+            startDate += timedelta(1)
         return gameDateList
 
 
@@ -84,10 +65,9 @@ class DailySchedule(Schedule):
 
 class WeeklySchedule(Schedule):
     
-    def __init__(self, leagueId: str):
-        super().__init__(leagueId)
-        
-        
-    def _output_gamedate_list(self, gameDate: datetime, nGD: int=0) -> List[str]:
+    @staticmethod
+    def process(schedule: dict, nGD: int=0) -> List[str]:
         raise NotImplementedError
-
+    
+        
+        
