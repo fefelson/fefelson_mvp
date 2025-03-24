@@ -6,6 +6,9 @@ from ..database.models.games import Game
 from ..database.models.players import Player
 from ..database.models.stadiums import Stadium
 from ..database.models.teams import Team
+from ..models.model_classes import BoxscoreData
+
+from ..utils.logging_manager import get_logger
 
 
 ###################################################################
@@ -39,10 +42,11 @@ class SQLAlchemyDatabaseAgent(IDatabaseAgent):
 
 
     @staticmethod
-    def insert_boxscores(boxscore: "BoxscoreData") -> None:
+    def insert_boxscore(boxscore: "BoxscoreData") -> None:
         """Insert boxscore data into the database."""
+        logger = get_logger()
 
-        with get_db_session(engine) as session:
+        with get_db_session() as session:
             # Insert Stadiums with check
             if not session.query(Stadium).filter_by(stadium_id=boxscore.stadium.stadium_id).first():
                 session.add(boxscore.stadium)
@@ -61,7 +65,7 @@ class SQLAlchemyDatabaseAgent(IDatabaseAgent):
             # If there is a redundant game_id in Games don't bother inserting anything else
             if not session.query(Game).filter_by(game_id=boxscore.game.game_id).first():
                 session.add(boxscore.game)
-  
+                session.add(boxscore.overUnders)
                 # List-based fields including misc
                 list_fields = [
                     boxscore.teamStats,
@@ -77,3 +81,5 @@ class SQLAlchemyDatabaseAgent(IDatabaseAgent):
 
                 # Add all list objects at once
                 session.add_all(all_list_objects)
+            else:
+                logger.warning(f"Game {boxscore.game.game_id} already in db")

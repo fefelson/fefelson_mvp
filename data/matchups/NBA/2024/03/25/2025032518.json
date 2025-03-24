@@ -1,0 +1,228 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032518",
+    "leagueId": "NBA",
+    "homeId": "nba.t.18",
+    "awayId": "nba.t.6",
+    "url": "/nba/dallas-mavericks-new-york-knicks-2025032518/",
+    "gameTime": "2025-03-25 19:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.18": [
+            "nba.p.4163",
+            "nba.p.5432",
+            "nba.p.5474",
+            "nba.p.5480",
+            "nba.p.5836",
+            "nba.p.5843",
+            "nba.p.6021",
+            "nba.p.6037",
+            "nba.p.6044",
+            "nba.p.6047",
+            "nba.p.6412",
+            "nba.p.6578",
+            "nba.p.6714",
+            "nba.p.10297",
+            "nba.p.10303",
+            "nba.p.10314",
+            "nba.p.10317",
+            "nba.p.10321"
+        ],
+        "nba.t.6": [
+            "nba.p.4840",
+            "nba.p.4892",
+            "nba.p.5007",
+            "nba.p.5316",
+            "nba.p.5349",
+            "nba.p.5356",
+            "nba.p.6174",
+            "nba.p.6226",
+            "nba.p.6275",
+            "nba.p.6499",
+            "nba.p.6561",
+            "nba.p.6586",
+            "nba.p.6679",
+            "nba.p.6725",
+            "nba.p.6727",
+            "nba.p.10097",
+            "nba.p.10116"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/mavericks_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Dallas",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/mavericks_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/mavericks_wbg.png",
+            "conference_position": "11",
+            "division": "Southwest",
+            "division_id": "6",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/dallas/schedule",
+            "abbr": "DAL",
+            "record": "34-37",
+            "seatgeek_id": "2113",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Mavericks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/dallas/",
+            "first_name": "Dallas",
+            "full_name": "Dallas Mavericks",
+            "conference": "Western",
+            "team_id": "nba.t.6",
+            "conference_id": "2",
+            "colorPrimary": "00538c",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/mavericks.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.6"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181226/500x500/knicks_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "New York",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181226/70x70/knicks_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181226/500x500/knicks_wbg.png",
+            "conference_position": "3",
+            "division": "Atlantic",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/new-york/schedule",
+            "abbr": "NY",
+            "record": "44-26",
+            "seatgeek_id": "2090",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Knicks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/new-york/",
+            "first_name": "New York",
+            "full_name": "New York Knicks",
+            "conference": "Eastern",
+            "team_id": "nba.t.18",
+            "conference_id": "1",
+            "colorPrimary": "006bb6",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181226/70x70/knicks.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.18"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.6679_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.6679",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Back"
+        },
+        {
+            "id": "nba.inj.5007_2025-02-08",
+            "date": "2025-02-08",
+            "player_id": "nba.p.5007",
+            "type": null,
+            "reported_date": "2025-02-08",
+            "comment": "Adductor"
+        },
+        {
+            "id": "nba.inj.5316_2025-03-14",
+            "date": "2025-03-14",
+            "player_id": "nba.p.5316",
+            "type": null,
+            "reported_date": "2025-03-14",
+            "comment": "Hand"
+        },
+        {
+            "id": "nba.inj.10097_2025-01-14",
+            "date": "2025-01-14",
+            "player_id": "nba.p.10097",
+            "type": null,
+            "reported_date": "2025-01-14",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.10116_2025-03-06",
+            "date": "2025-03-06",
+            "player_id": "nba.p.10116",
+            "type": null,
+            "reported_date": "2025-03-06",
+            "comment": "Wrist"
+        },
+        {
+            "id": "nba.inj.6275_2025-03-15",
+            "date": "2025-03-15",
+            "player_id": "nba.p.6275",
+            "type": null,
+            "reported_date": "2025-03-15",
+            "comment": "Hip"
+        },
+        {
+            "id": "nba.inj.6044_2025-03-06",
+            "date": "2025-03-06",
+            "player_id": "nba.p.6044",
+            "type": null,
+            "reported_date": "2025-03-06",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.10317_2025-02-27",
+            "date": "2025-02-27",
+            "player_id": "nba.p.10317",
+            "type": null,
+            "reported_date": "2025-02-27",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6578_2025-03-21",
+            "date": "2025-03-21",
+            "player_id": "nba.p.6578",
+            "type": null,
+            "reported_date": "2025-03-21",
+            "comment": "Groin"
+        },
+        {
+            "id": "nba.inj.6226_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.6226",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.4840_2025-03-03",
+            "date": "2025-03-03",
+            "player_id": "nba.p.4840",
+            "type": null,
+            "reported_date": "2025-03-03",
+            "comment": "Knee"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

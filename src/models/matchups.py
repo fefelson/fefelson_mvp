@@ -1,5 +1,9 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
+from dataclasses import asdict
+import os
+import pytz
 
+from .model_classes import MatchupData
 from ..agents.file_agent import get_file_agent
 from ..capabilities import Fileable, Normalizable, Processable, Downloadable
 from ..providers import get_download_agent, get_normal_agent
@@ -9,10 +13,11 @@ from ..utils.logging_manager import get_logger
 ######################################################################
 
 
+est = pytz.timezone('America/New_York')
 
 class Matchup(Downloadable, Fileable, Normalizable, Processable):
 
-    _fileType = "pickle"
+    _fileType = "json"
     _fileAgent = get_file_agent(_fileType)
 
 
@@ -25,7 +30,7 @@ class Matchup(Downloadable, Fileable, Normalizable, Processable):
 
 
     def needs_update(self, matchup):
-        return (matchup.gameTime - datetime.now(timezone.utc) < timedelta(hours=3)) and not matchup.lineups
+        return (datetime.fromisoformat(matchup.gameTime)- datetime.now().astimezone(est) < timedelta(hours=3)) and not matchup.lineups
 
 
     def normalize(self, webData: dict) -> "MatchupData":
@@ -34,26 +39,42 @@ class Matchup(Downloadable, Fileable, Normalizable, Processable):
 
     def process(self, game: "GameData") -> "MatchupData":
         self.logger.info("process Matchup")
+        
         self.set_file_path(game)
         if self.file_exists():
-            matchup = self.read_file()
+            matchup = MatchupData(**self.read_file())
             if self.needs_update(matchup):
                 self.update(matchup)
             else:
                 [matchup.odds.append(odds) for odds in game.odds]
         else:
             matchup = self.update(game)
+        self.write_file(matchup)
         return matchup
     
-
+ 
     def set_file_path(self, game: "GameData"):
-        basePath = "data/matchups/{0[leagueId]}"
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+        # Go up two levels to ~/fefelson_mvp, then into data
+        basePath = "{0[leagueId]}/{0[season]}"
+        dailyPath = "/{0[month]}/{0[day]}/"
+        weeklyPath ="/{0[week]}/"
+
         params = {"leagueId": game.leagueId, 
+                  "season": game.season, 
                   "fileName": game.gameId.split(".")[-1],
                   "ext": self.fileAgent.get_ext()}
-        filePath = basePath+"/{0[fileName]}.{0[ext]}"
+         
+        if game.week:
+            params["week"] = game.week
+            filePath = basePath+weeklyPath
+        else:
+            params["month"], params["day"] = str(datetime.fromisoformat(game.gameTime).date()).split("-")[1:]
+            filePath = basePath+dailyPath
+        filePath += "/{0[fileName]}.{0[ext]}"
 
-        self.filePath = filePath.format(params)
+        self.filePath = os.path.join(module_dir, '..', '..', 'data', "matchups", filePath.format(params))
+
 
 
     def set_url(self, game: "GameData"):
@@ -71,6 +92,12 @@ class Matchup(Downloadable, Fileable, Normalizable, Processable):
             self._set_normal_agent(normalAgent(self.leagueId))
             tempMatchup = self.normalize(webData)
 
+            if tempMatchup.players:
+                matchup.players = tempMatchup.players
+
+            if tempMatchup.teams:
+                matchup.teams = tempMatchup.teams 
+
             if tempMatchup.injuries:
                 matchup.injuries = tempMatchup.injuries
 
@@ -78,12 +105,15 @@ class Matchup(Downloadable, Fileable, Normalizable, Processable):
                 matchup.lineups = tempMatchup.lineups 
 
             [matchup.odds.append(odds) for odds in tempMatchup.odds]
-        self.write_file(matchup)
         return matchup
-
-
     
 
+    def write_file(self, fileableObj) -> None:
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(self.filePath), exist_ok=True)
+        self.fileAgent.write(self.filePath, asdict(fileableObj))
+
+    
 
     
 

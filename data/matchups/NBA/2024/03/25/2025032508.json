@@ -1,0 +1,205 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032508",
+    "leagueId": "NBA",
+    "homeId": "nba.t.8",
+    "awayId": "nba.t.24",
+    "url": "/nba/san-antonio-spurs-detroit-pistons-2025032508/",
+    "gameTime": "2025-03-25 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.8": [
+            "nba.p.4901",
+            "nba.p.5187",
+            "nba.p.5194",
+            "nba.p.5650",
+            "nba.p.6408",
+            "nba.p.6450",
+            "nba.p.6512",
+            "nba.p.6687",
+            "nba.p.6695",
+            "nba.p.6703",
+            "nba.p.6761",
+            "nba.p.6766",
+            "nba.p.10096",
+            "nba.p.10114",
+            "nba.p.10263",
+            "nba.p.10316",
+            "nba.p.10331",
+            "nba.p.10418"
+        ],
+        "nba.t.24": [
+            "nba.p.3930",
+            "nba.p.4888",
+            "nba.p.5013",
+            "nba.p.5767",
+            "nba.p.6133",
+            "nba.p.6217",
+            "nba.p.6403",
+            "nba.p.6595",
+            "nba.p.6596",
+            "nba.p.6624",
+            "nba.p.6699",
+            "nba.p.6710",
+            "nba.p.6715",
+            "nba.p.6754",
+            "nba.p.10094",
+            "nba.p.10290",
+            "nba.p.10336",
+            "nba.p.10367"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "San Antonio",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/spurs_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs_wbg.png",
+            "conference_position": "13",
+            "division": "Southwest",
+            "division_id": "6",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/san-antonio/schedule",
+            "abbr": "SA",
+            "record": "31-39",
+            "seatgeek_id": "2117",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Spurs",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/san-antonio/",
+            "first_name": "San Antonio",
+            "full_name": "San Antonio Spurs",
+            "conference": "Western",
+            "team_id": "nba.t.24",
+            "conference_id": "2",
+            "colorPrimary": "c4ced4",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/spurs.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.24"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/pistons_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Detroit",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/pistons_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/pistons_wbg.png",
+            "conference_position": "6",
+            "division": "Central",
+            "division_id": "2",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/detroit/schedule",
+            "abbr": "DET",
+            "record": "40-32",
+            "seatgeek_id": "2095",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Pistons",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/detroit/",
+            "first_name": "Detroit",
+            "full_name": "Detroit Pistons",
+            "conference": "Eastern",
+            "team_id": "nba.t.8",
+            "conference_id": "1",
+            "colorPrimary": "c8102e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/pistons.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.8"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.5767_2025-03-13",
+            "date": "2025-03-13",
+            "player_id": "nba.p.5767",
+            "type": null,
+            "reported_date": "2025-03-13",
+            "comment": "Hand"
+        },
+        {
+            "id": "nba.inj.10094_2025-02-19",
+            "date": "2025-02-19",
+            "player_id": "nba.p.10094",
+            "type": null,
+            "reported_date": "2025-02-19",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.10367_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.10367",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.5194_2025-03-21",
+            "date": "2025-03-21",
+            "player_id": "nba.p.5194",
+            "type": null,
+            "reported_date": "2025-03-21",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.10336_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.10336",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.6595_2025-02-24",
+            "date": "2025-02-24",
+            "player_id": "nba.p.6595",
+            "type": null,
+            "reported_date": "2025-02-24",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6695_2025-01-01",
+            "date": "2025-01-01",
+            "player_id": "nba.p.6695",
+            "type": null,
+            "reported_date": "2025-01-01",
+            "comment": "Leg"
+        },
+        {
+            "id": "nba.inj.6512_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.6512",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Calf"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

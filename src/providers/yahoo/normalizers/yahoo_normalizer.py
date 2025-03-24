@@ -1,5 +1,6 @@
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import List, Any, Dict
+import pytz
 
 from ....agents.normalize_agent import INormalAgent
 from ....database.models.games import Game
@@ -11,6 +12,9 @@ from ....database.models.stadiums import Stadium
 from ....database.models.teams import Team 
 from ....models.model_classes import ScoreboardData, BoxscoreData, MatchupData
 from ....utils.logging_manager import get_logger
+
+
+est = pytz.timezone('America/New_York')
 
 
 class YahooNormalizer(INormalAgent):
@@ -41,7 +45,7 @@ class YahooNormalizer(INormalAgent):
             loser_id = loserId,
             stadium_id = game.get("stadium_id", None),
             is_neutral_site = bool(game.get("tournament", 0)),
-            game_date = datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z"), 
+            game_date = str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
             season = game["season"],
             week = game.get("week", None),
             game_type = game["season_phase_id"].split(".")[-1],
@@ -56,7 +60,7 @@ class YahooNormalizer(INormalAgent):
         oppIds = {"away": teamIds["home"], "home": teamIds["away"]}
         
         gameLines = []
-        odds = list(data["odds"].values())[0]
+        odds = list(data["odds"].values())[-1]
 
         awayPts = int(data["total_away_points"])
         homePts = int(data["total_home_points"])
@@ -162,7 +166,7 @@ class YahooNormalizer(INormalAgent):
                 for playerId in data["lineups"]["{}_lineup_order".format(a_h)]["all"]:
                     playerList.append((playerId, teamIds[a_h], oppIds[a_h]))
             except (KeyError, TypeError) as e:
-                pass
+                self.logger.warning("No player List for "+data["gameid"])
         return playerList
 
 
@@ -197,11 +201,14 @@ class YahooNormalizer(INormalAgent):
 
     
     def _set_scoreboard_matchup(self, game: Dict[str, Any]) -> "MatchupData":
-
+       
         try:
-           odds = game["odds"]
+           odds = []
+           for o in game["odds"].values():
+               o["timestamp"] = str(datetime.now().astimezone(est))
+               odds.append(o)
         except KeyError:
-            odds = None
+            odds = []
 
         try:
             url= game["navigation_links"]["boxscore"]["url"]
@@ -215,17 +222,12 @@ class YahooNormalizer(INormalAgent):
             homeId = game["home_team_id"],
             awayId = game["away_team_id"],
             url = url,
-            gameTime = datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z"), 
+            gameTime = str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
             season = game["season"],
             week = game.get("week", None),
             statusType=game["status_type"],
             gameType=game["game_type"].split(".")[-1] if game["game_type"] else None,
-            odds=[odds,],
-            lineups=game.get("lineups", None),
-            injuries=None,
-            players=game.get("playersByTeam", None),
-            stadiumId = game.get("stadium_id", None),
-            isNuetral = bool(game.get("tournament", 0)),
+            odds=odds,
         )
 
 
@@ -238,6 +240,8 @@ class YahooNormalizer(INormalAgent):
 
     
     def normalize_boxscore(self, webData: dict) -> "BoxscoreData":
+        self.logger.debug("Normalize boxscore")
+
         gameId = webData["PageStore"]["pageData"]["entityId"]
         gameData = webData["GamesStore"]["games"][gameId]
         gameInfo = self._set_game_info(gameData)
@@ -260,7 +264,7 @@ class YahooNormalizer(INormalAgent):
             teams=[team for team in self._set_teams(webData["TeamsStore"]["teams"])
                    if team.team_id in (gameInfo.home_team_id, gameInfo.away_team_id)],
             players=self._set_players(webData["PlayersStore"]),
-            stadiums=self._set_stadium(gameData),
+            stadium=self._set_stadium(gameData),
             misc=self._set_misc(webData)
         )
         return boxscore
@@ -270,6 +274,15 @@ class YahooNormalizer(INormalAgent):
 
         gameId = webData["PageStore"]["pageData"]["entityId"]
         gameData = webData["GamesStore"]["games"][gameId]
+
+        try:
+           odds = []
+           for o in gameData["odds"].values():
+               o["timestamp"] = str(datetime.now().astimezone(est))
+               odds.append(o)
+        except KeyError:
+            odds = []
+
        
         return MatchupData(
             provider="yahoo",
@@ -278,14 +291,15 @@ class YahooNormalizer(INormalAgent):
             homeId = gameData["home_team_id"],
             awayId = gameData["away_team_id"],
             url = gameData["navigation_links"]["boxscore"]["url"],
-            gameTime = datetime.strptime(gameData["start_time"], "%a, %d %b %Y %H:%M:%S %z"), 
+            gameTime = str(datetime.strptime(gameData["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
             season = gameData["season"],
             week = gameData.get("week", None),
             statusType=gameData["status_type"],
             gameType=gameData["game_type"].split(".")[-1] if gameData["game_type"] else None,
-            odds=[value for value in gameData["odds"].values()]  if gameData.get("odds", None) else [],
+            odds=odds,
             lineups=gameData.get("lineups", None),
-            players=gameData.get("playersByTeam", None),
+            players=gameData["playersByTeam"] if gameData.get("playersByTeam") else None,
+            teams = [webData["TeamsStore"]["teams"][teamId] for teamId in [gameData["{}_team_id".format(a_h)] for a_h in ("away", "home")]],
             injuries=[player["injury"] for player in webData["PlayersStore"]["players"].values() if player.get("injury", None)],
             stadiumId = gameData.get("stadium_id", None),
             isNuetral = bool(gameData.get("tournament", 0)),
@@ -299,7 +313,7 @@ class YahooNormalizer(INormalAgent):
     def normalize_scoreboard(self, webData: dict) -> "ScoreboardData":
 
         leagueId = webData["PageStore"]["pageData"]["entityData"]["leagueName"]
-        games = [self._set_scoreboard_matchup(value) for key, value in webData["GamesStore"]["games"].items() if key.split(".")[0] == leagueId.lower()]        
+        games = [self._set_scoreboard_matchup(game) for gameId, game in webData["GamesStore"]["games"].items() if gameId.split(".")[0] == leagueId.lower()]  
                     
         return ScoreboardData(provider="yahoo", 
                               league_id=leagueId,
@@ -310,10 +324,3 @@ class YahooNormalizer(INormalAgent):
     def normalize_team(self, raw_data: dict) -> "Team":
         raise NotImplementedError
         
-
-            
-
-        
-        
-        
-       

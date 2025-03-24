@@ -1,6 +1,6 @@
 from typing import Dict, Any
 from threading import Lock
-
+import os
 
 from ..agents.file_agent import IFileAgent, get_file_agent
 from ..capabilities import Fileable
@@ -56,6 +56,10 @@ class LeagueConfig(Fileable):
 
     
     def set_file_path(self):
-        self.filePath = "data/league_config.json"
+         # Get the directory of this module (leagues.py)
+         module_dir = os.path.dirname(os.path.abspath(__file__))
+         # Go up two levels to ~/fefelson_mvp, then into data
+         self.filePath = os.path.join(module_dir, '..', '..', 'data', 'league_config.json')
+      
 
 

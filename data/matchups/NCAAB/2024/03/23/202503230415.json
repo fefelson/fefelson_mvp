@@ -1,0 +1,353 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503230415",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.415",
+    "awayId": "ncaab.t.22",
+    "url": "/ncaab/arkansas-state-red-wolves-north-texas-mean-green-202503230415/",
+    "gameTime": "2025-03-23 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "3.5",
+            "away_line": "-105",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-175",
+            "timestamp": "2025-03-23 07:26:20.889984-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "150",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-185",
+            "timestamp": "2025-03-23 08:00:08.277403-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "150",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-185",
+            "timestamp": "2025-03-23 09:00:08.389153-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "138.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 12:57:32.814040-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "138.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 13:00:10.055792-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "138.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 14:00:12.413904-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 15:00:15.843762-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 16:00:23.423791-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "4.5",
+            "away_line": "-110",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-180",
+            "timestamp": "2025-03-23 18:00:27.565711-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.415": [
+            "ncaab.p.153469",
+            "ncaab.p.158914",
+            "ncaab.p.159172",
+            "ncaab.p.159448",
+            "ncaab.p.162724",
+            "ncaab.p.163516",
+            "ncaab.p.168493",
+            "ncaab.p.169681",
+            "ncaab.p.169970",
+            "ncaab.p.330434",
+            "ncaab.p.331072",
+            "ncaab.p.331228",
+            "ncaab.p.336561",
+            "ncaab.p.336564",
+            "ncaab.p.336567"
+        ],
+        "ncaab.t.22": [
+            "ncaab.p.147971",
+            "ncaab.p.153388",
+            "ncaab.p.159410",
+            "ncaab.p.168422",
+            "ncaab.p.168426",
+            "ncaab.p.169628",
+            "ncaab.p.169633",
+            "ncaab.p.301447",
+            "ncaab.p.302260",
+            "ncaab.p.330322",
+            "ncaab.p.330328",
+            "ncaab.p.330550",
+            "ncaab.p.336895",
+            "ncaab.p.336896",
+            "ncaab.p.336898",
+            "ncaab.p.336902"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181226/500x500/arkansas_state_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Arkansas St.",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181226/70x70/arkansas_state_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181226/500x500/arkansas_state_wbgs.png",
+            "conference_position": "4",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/arkansas-state/schedule",
+            "abbr": "ARST",
+            "record": "25-10",
+            "seatgeek_id": "6604",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SBELT",
+            "last_name": "Red Wolves",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/arkansas-state",
+            "first_name": "Arkansas State",
+            "full_name": "Arkansas State Red Wolves",
+            "conference": "Sun Belt",
+            "team_id": "ncaab.t.22",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5588",
+                    "rank": "63",
+                    "date": "2025-03-23",
+                    "previous_rank": "62",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "5",
+            "colorPrimary": "cc092f",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240102/70x70/arkasnsasst.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.22"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181211/500x500/north_texas_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "North Texas",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181211/70x70/north_texas_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181211/500x500/north_texas_wbg.png",
+            "conference_position": "2",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/north-texas/schedule",
+            "abbr": "UNT",
+            "record": "25-8",
+            "seatgeek_id": "6618",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "AAC",
+            "last_name": "Mean Green",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/north-texas",
+            "first_name": "North Texas",
+            "full_name": "North Texas Mean Green",
+            "conference": "American",
+            "team_id": "ncaab.t.415",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5806",
+                    "rank": "43",
+                    "date": "2025-03-23",
+                    "previous_rank": "42",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "201",
+            "colorPrimary": "00853e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240313/70x70/northtexas.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.415"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

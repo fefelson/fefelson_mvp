@@ -1,0 +1,336 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503230292",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.292",
+    "awayId": "ncaab.t.267",
+    "url": "/ncaab/illinois-fighting-illini-kentucky-wildcats-202503230292/",
+    "gameTime": "2025-03-23 17:15:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "170.5",
+            "away_spread": "-1.5",
+            "away_line": "-115",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "1.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 07:26:20.888383-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "170.5",
+            "away_spread": "-1.5",
+            "away_line": "-115",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "1.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 08:00:08.276723-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "170.5",
+            "away_spread": "-1.5",
+            "away_line": "-115",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "1.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 09:00:08.387088-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "-1.5",
+            "away_line": "-118",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "1.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 12:57:32.812661-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "-1.5",
+            "away_line": "-118",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "1.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 13:00:10.054623-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "-2.5",
+            "away_line": "-110",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "2.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 14:00:12.412509-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "-2.5",
+            "away_line": "-105",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "2.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 15:00:16.903002-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "-2.5",
+            "away_line": "-105",
+            "away_ml": "-140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "2.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "115",
+            "timestamp": "2025-03-23 16:00:18.476253-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.292": [
+            "ncaab.p.158857",
+            "ncaab.p.158915",
+            "ncaab.p.159059",
+            "ncaab.p.159639",
+            "ncaab.p.159826",
+            "ncaab.p.160047",
+            "ncaab.p.162467",
+            "ncaab.p.168948",
+            "ncaab.p.169342",
+            "ncaab.p.169344",
+            "ncaab.p.329913",
+            "ncaab.p.336989",
+            "ncaab.p.336990",
+            "ncaab.p.336991",
+            "ncaab.p.341033"
+        ],
+        "ncaab.t.267": [
+            "ncaab.p.162978",
+            "ncaab.p.168596",
+            "ncaab.p.169116",
+            "ncaab.p.169542",
+            "ncaab.p.300209",
+            "ncaab.p.329860",
+            "ncaab.p.330154",
+            "ncaab.p.330384",
+            "ncaab.p.330637",
+            "ncaab.p.335687",
+            "ncaab.p.335690",
+            "ncaab.p.335701",
+            "ncaab.p.335703",
+            "ncaab.p.335705"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/illinois_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Illinois",
+            "group_position": "7",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/illinois_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/illinois_wbg.png",
+            "conference_position": "7",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/illinois/schedule",
+            "abbr": "ILL",
+            "record": "22-12",
+            "seatgeek_id": "4053",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Fighting Illini",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/illinois",
+            "first_name": "Illinois",
+            "full_name": "Illinois Fighting Illini",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.267",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5867",
+                    "rank": "35",
+                    "date": "2025-03-23",
+                    "previous_rank": "37",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "13294b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/illinois.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.267"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/kentucky_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Kentucky",
+            "group_position": "6",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/kentucky_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/kentucky_wbg.png",
+            "conference_position": "6",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/kentucky/schedule",
+            "abbr": "UK",
+            "record": "23-11",
+            "seatgeek_id": "4095",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SEC",
+            "last_name": "Wildcats",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/kentucky",
+            "first_name": "Kentucky",
+            "full_name": "Kentucky Wildcats",
+            "conference": "Southeastern",
+            "team_id": "ncaab.t.292",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "511",
+                    "rank": "18",
+                    "date": "2025-03-17",
+                    "previous_rank": "15",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "164",
+                    "rank": "21",
+                    "date": "2025-03-17",
+                    "previous_rank": "19",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6212",
+                    "rank": "13",
+                    "date": "2025-03-23",
+                    "previous_rank": "12",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "10",
+            "colorPrimary": "0033a0",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/kentucky.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.292"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

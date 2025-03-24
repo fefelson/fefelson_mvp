@@ -1,0 +1,276 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503210006",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.6",
+    "awayId": "ncaab.t.489",
+    "url": "/ncaab/robert-morris-colonials-alabama-crimson-tide-202503210006/",
+    "gameTime": "2025-03-21 12:40:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "21.5",
+            "away_line": "-110",
+            "away_ml": "1450",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-21.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-5000",
+            "timestamp": "2025-03-21 10:14:05.140292-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "21.5",
+            "away_line": "-110",
+            "away_ml": "1450",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-21.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-5000",
+            "timestamp": "2025-03-21 10:14:15.700184-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "21.5",
+            "away_line": "-110",
+            "away_ml": "1450",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-21.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-5000",
+            "timestamp": "2025-03-21 11:00:10.391086-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "168.5",
+            "away_spread": "22.5",
+            "away_line": "-115",
+            "away_ml": "1650",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-22.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-10000",
+            "timestamp": "2025-03-21 12:00:14.090621-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.6": [
+            "ncaab.p.159072",
+            "ncaab.p.159092",
+            "ncaab.p.159353",
+            "ncaab.p.159495",
+            "ncaab.p.160145",
+            "ncaab.p.163397",
+            "ncaab.p.168641",
+            "ncaab.p.330232",
+            "ncaab.p.330248",
+            "ncaab.p.330255",
+            "ncaab.p.335879",
+            "ncaab.p.335881",
+            "ncaab.p.335882",
+            "ncaab.p.335890"
+        ],
+        "ncaab.t.489": [
+            "ncaab.p.159251",
+            "ncaab.p.159668",
+            "ncaab.p.162419",
+            "ncaab.p.163453",
+            "ncaab.p.169001",
+            "ncaab.p.169002",
+            "ncaab.p.169618",
+            "ncaab.p.330192",
+            "ncaab.p.331035",
+            "ncaab.p.331058",
+            "ncaab.p.331059",
+            "ncaab.p.336336",
+            "ncaab.p.336345",
+            "ncaab.p.336346",
+            "ncaab.p.336370"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/500x500/robert_morris_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Robert Morris",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/70x70/robert_morris_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/500x500/robert_morris_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/robert-morris/schedule",
+            "abbr": "RMU",
+            "record": "26-8",
+            "seatgeek_id": "6475",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "HORIZ",
+            "last_name": "Colonials",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/robert-morris",
+            "first_name": "Robert Morris",
+            "full_name": "Robert Morris Colonials",
+            "conference": "Horizon",
+            "team_id": "ncaab.t.489",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.537",
+                    "rank": "94",
+                    "date": "2025-03-21",
+                    "previous_rank": "95",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "34",
+            "colorPrimary": "000000",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20231120/70x70/rmuncaaw.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.489"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/500x500/alabama_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Alabama",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/70x70/alabama_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/500x500/alabama_wbg.png",
+            "conference_position": "3",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/alabama/schedule",
+            "abbr": "ALA",
+            "record": "25-8",
+            "seatgeek_id": "4085",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SEC",
+            "last_name": "Crimson Tide",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/alabama",
+            "first_name": "Alabama",
+            "full_name": "Alabama Crimson Tide",
+            "conference": "Southeastern",
+            "team_id": "ncaab.t.6",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "1120",
+                    "rank": "7",
+                    "date": "2025-03-17",
+                    "previous_rank": "5",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "556",
+                    "rank": "8",
+                    "date": "2025-03-17",
+                    "previous_rank": "8",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6615",
+                    "rank": "2",
+                    "date": "2025-03-21",
+                    "previous_rank": "2",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "10",
+            "colorPrimary": "9e1b32",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/70x70/alabama.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.6"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

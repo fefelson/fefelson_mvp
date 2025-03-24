@@ -15,7 +15,7 @@ class Player(Base):
     throws = Column(String, nullable=True)
     position = Column(String, nullable=True)
     birthdate = Column(Date, nullable=True)
-    current_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=True)
+    current_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
     uniform_number = Column(String, nullable=True)
     draft_year = Column(Integer, nullable=True)
     draft_pick = Column(Integer, nullable=True)
@@ -23,5 +23,4 @@ class Player(Base):
     graduation_yr = Column(String, nullable=True)
 
     sport = relationship("Sport", back_populates="players")
-    current_team = relationship("Team", foreign_keys=[current_team_id], back_populates="players")
     draft_team = relationship("Team", foreign_keys=[draft_team_id], back_populates="draft_players")

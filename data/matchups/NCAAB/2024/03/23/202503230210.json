@@ -1,0 +1,262 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503230210",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.210",
+    "awayId": "ncaab.t.129",
+    "url": "/ncaab/uconn-huskies-florida-gators-202503230210/",
+    "gameTime": "2025-03-23 12:10:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "150.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-475",
+            "timestamp": "2025-03-23 07:26:20.888820-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "150.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-03-23 08:00:08.276922-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "150.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "400",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-550",
+            "timestamp": "2025-03-23 09:00:08.387739-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.210": [
+            "ncaab.p.159295",
+            "ncaab.p.162370",
+            "ncaab.p.163239",
+            "ncaab.p.168459",
+            "ncaab.p.168548",
+            "ncaab.p.169719",
+            "ncaab.p.330053",
+            "ncaab.p.330227",
+            "ncaab.p.330233",
+            "ncaab.p.330236",
+            "ncaab.p.330246",
+            "ncaab.p.330250",
+            "ncaab.p.335922",
+            "ncaab.p.335933",
+            "ncaab.p.337288",
+            "ncaab.p.337291",
+            "ncaab.p.337292"
+        ],
+        "ncaab.t.129": [
+            "ncaab.p.160048",
+            "ncaab.p.163060",
+            "ncaab.p.168319",
+            "ncaab.p.169384",
+            "ncaab.p.169437",
+            "ncaab.p.329959",
+            "ncaab.p.329961",
+            "ncaab.p.329973",
+            "ncaab.p.329980",
+            "ncaab.p.335838",
+            "ncaab.p.335844",
+            "ncaab.p.335847",
+            "ncaab.p.337443"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/500x500/connecticut_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Connecticut",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/70x70/connecticut_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/500x500/connecticut_wbg.png",
+            "conference_position": "3",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/uconn/schedule",
+            "abbr": "CONN",
+            "record": "24-10",
+            "seatgeek_id": "4050",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIGE",
+            "last_name": "Huskies",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/uconn",
+            "first_name": "UConn",
+            "full_name": "UConn Huskies",
+            "conference": "Big East",
+            "team_id": "ncaab.t.129",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5615",
+                    "rank": "59",
+                    "date": "2025-03-22",
+                    "previous_rank": "64",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "102",
+            "colorPrimary": "00036e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/70x70/connecticut.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.129"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181206/500x500/florida_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Florida",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181206/70x70/florida_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181206/500x500/florida_wbg.png",
+            "conference_position": "2",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/florida/schedule",
+            "abbr": "FLA",
+            "record": "31-4",
+            "seatgeek_id": "4088",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SEC",
+            "last_name": "Gators",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/florida",
+            "first_name": "Florida",
+            "full_name": "Florida Gators",
+            "conference": "Southeastern",
+            "team_id": "ncaab.t.210",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "1370",
+                    "rank": "3",
+                    "date": "2025-03-17",
+                    "previous_rank": "4",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "715",
+                    "rank": "3",
+                    "date": "2025-03-17",
+                    "previous_rank": "4",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6499",
+                    "rank": "4",
+                    "date": "2025-03-22",
+                    "previous_rank": "4",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "10",
+            "colorPrimary": "0021a5",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181206/70x70/florida.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.210"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

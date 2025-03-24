@@ -1,0 +1,413 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503210267",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.267",
+    "awayId": "ncaab.t.682",
+    "url": "/ncaab/xavier-musketeers-illinois-fighting-illini-202503210267/",
+    "gameTime": "2025-03-21 21:45:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-175",
+            "timestamp": "2025-03-21 10:14:05.140145-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-175",
+            "timestamp": "2025-03-21 10:14:13.602317-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "145",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-175",
+            "timestamp": "2025-03-21 11:00:07.026303-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 12:00:09.339358-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 13:00:17.735274-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "160.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 14:00:07.122035-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 15:00:29.716610-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 16:00:10.363841-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 17:00:14.637817-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 18:00:16.937777-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-115",
+            "away_ml": "155",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-190",
+            "timestamp": "2025-03-21 19:00:22.911000-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-110",
+            "away_ml": "165",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-200",
+            "timestamp": "2025-03-21 20:00:42.684590-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "161.5",
+            "away_spread": "4.5",
+            "away_line": "-110",
+            "away_ml": "165",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-200",
+            "timestamp": "2025-03-21 21:00:10.060673-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.267": [
+            "ncaab.p.162978",
+            "ncaab.p.168596",
+            "ncaab.p.169116",
+            "ncaab.p.169542",
+            "ncaab.p.300209",
+            "ncaab.p.329860",
+            "ncaab.p.330154",
+            "ncaab.p.330384",
+            "ncaab.p.330637",
+            "ncaab.p.335687",
+            "ncaab.p.335690",
+            "ncaab.p.335701",
+            "ncaab.p.335703",
+            "ncaab.p.335705"
+        ],
+        "ncaab.t.682": [
+            "ncaab.p.148447",
+            "ncaab.p.153253",
+            "ncaab.p.153715",
+            "ncaab.p.158637",
+            "ncaab.p.158761",
+            "ncaab.p.159060",
+            "ncaab.p.159614",
+            "ncaab.p.159993",
+            "ncaab.p.163285",
+            "ncaab.p.169022",
+            "ncaab.p.169095",
+            "ncaab.p.169773",
+            "ncaab.p.169859",
+            "ncaab.p.169998",
+            "ncaab.p.330501",
+            "ncaab.p.330504",
+            "ncaab.p.335837"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/500x500/xavier_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Xavier",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/70x70/xavier_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/500x500/xavier_wbg.png",
+            "conference_position": "4",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/xavier/schedule",
+            "abbr": "XAV",
+            "record": "22-11",
+            "seatgeek_id": "4036",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIGE",
+            "last_name": "Musketeers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/xavier",
+            "first_name": "Xavier",
+            "full_name": "Xavier Musketeers",
+            "conference": "Big East",
+            "team_id": "ncaab.t.682",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5613",
+                    "rank": "60",
+                    "date": "2025-03-21",
+                    "previous_rank": "61",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "102",
+            "colorPrimary": "0c2340",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181205/70x70/xavier.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.682"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/illinois_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Illinois",
+            "group_position": "7",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/illinois_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/illinois_wbg.png",
+            "conference_position": "7",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/illinois/schedule",
+            "abbr": "ILL",
+            "record": "21-12",
+            "seatgeek_id": "4053",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Fighting Illini",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/illinois",
+            "first_name": "Illinois",
+            "full_name": "Illinois Fighting Illini",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.267",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5813",
+                    "rank": "41",
+                    "date": "2025-03-21",
+                    "previous_rank": "42",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "13294b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/illinois.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.267"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

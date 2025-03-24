@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from dataclasses import asdict, dataclass
 from typing import Any, Optional
 
 import json 
@@ -46,7 +47,7 @@ class JSONAgent(IFileAgent):
     @staticmethod
     def write(filePath: str, fileObj: dict):
         with open(filePath, "w") as file:
-            json.dump(fileObj, file, indent=4)
+           json.dump(fileObj, file,  indent=4)
 
 
 ###################################################################

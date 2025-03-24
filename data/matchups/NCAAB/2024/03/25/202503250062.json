@@ -1,0 +1,218 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503250062",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.62",
+    "awayId": "ncaab.t.581",
+    "url": "/ncaab/chattanooga-mocs-bradley-braves-202503250062/",
+    "gameTime": "2025-03-25 13:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "ncaab.t.62": [
+            "ncaab.p.159871",
+            "ncaab.p.159874",
+            "ncaab.p.162394",
+            "ncaab.p.162407",
+            "ncaab.p.162408",
+            "ncaab.p.163106",
+            "ncaab.p.168644",
+            "ncaab.p.168645",
+            "ncaab.p.300340",
+            "ncaab.p.330293",
+            "ncaab.p.330317",
+            "ncaab.p.336297",
+            "ncaab.p.336298",
+            "ncaab.p.336301",
+            "ncaab.p.336311",
+            "ncaab.p.337545"
+        ],
+        "ncaab.t.581": [
+            "ncaab.p.159113",
+            "ncaab.p.160510",
+            "ncaab.p.162954",
+            "ncaab.p.163091",
+            "ncaab.p.200363",
+            "ncaab.p.330599",
+            "ncaab.p.330618",
+            "ncaab.p.330644",
+            "ncaab.p.333242",
+            "ncaab.p.336378",
+            "ncaab.p.336386",
+            "ncaab.p.336400",
+            "ncaab.p.336401",
+            "ncaab.p.336412",
+            "ncaab.p.337160",
+            "ncaab.p.337164"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/chattanooga_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Chattanooga",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/chattanooga_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/chattanooga_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/chattanooga/schedule",
+            "abbr": "CHAT",
+            "record": "26-9",
+            "seatgeek_id": "6417",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SOUTH",
+            "last_name": "Mocs",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/chattanooga",
+            "first_name": "Chattanooga",
+            "full_name": "Chattanooga Mocs",
+            "conference": "Southern",
+            "team_id": "ncaab.t.581",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5629",
+                    "rank": "59",
+                    "date": "2025-03-24",
+                    "previous_rank": "59",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "29",
+            "colorPrimary": "00386b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/chattanooga.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.581"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/bradley_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Bradley",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/70x70/bradley_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/bradley_wbg.png",
+            "conference_position": "2",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/bradley/schedule",
+            "abbr": "BRAD",
+            "record": "28-8",
+            "seatgeek_id": "6419",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "MVC",
+            "last_name": "Braves",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/bradley",
+            "first_name": "Bradley",
+            "full_name": "Bradley Braves",
+            "conference": "Missouri Valley",
+            "team_id": "ncaab.t.62",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5731",
+                    "rank": "51",
+                    "date": "2025-03-24",
+                    "previous_rank": "53",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "21",
+            "colorPrimary": "a50000",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/70x70/bradley.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.62"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

@@ -1,0 +1,369 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503230358",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.358",
+    "awayId": "ncaab.t.404",
+    "url": "/ncaab/new-mexico-lobos-michigan-state-spartans-202503230358/",
+    "gameTime": "2025-03-23 20:40:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-110",
+            "away_ml": "260",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-325",
+            "timestamp": "2025-03-23 07:26:20.889542-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "7.5",
+            "away_line": "-110",
+            "away_ml": "260",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-325",
+            "timestamp": "2025-03-23 08:00:08.277260-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "7.5",
+            "away_line": "-110",
+            "away_ml": "260",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-110",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-325",
+            "timestamp": "2025-03-23 09:00:08.388771-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-118",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 12:57:32.813755-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-118",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 13:00:10.055558-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 14:00:12.413624-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 15:00:15.843436-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 16:00:17.199646-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-23 18:00:23.369908-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "148.5",
+            "away_spread": "6.5",
+            "away_line": "-110",
+            "away_ml": "230",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-285",
+            "timestamp": "2025-03-23 20:00:24.252212-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.358": [
+            "ncaab.p.159021",
+            "ncaab.p.162788",
+            "ncaab.p.163289",
+            "ncaab.p.169584",
+            "ncaab.p.169585",
+            "ncaab.p.169586",
+            "ncaab.p.169587",
+            "ncaab.p.331209",
+            "ncaab.p.331210",
+            "ncaab.p.331212",
+            "ncaab.p.331215",
+            "ncaab.p.337054",
+            "ncaab.p.337055",
+            "ncaab.p.337056",
+            "ncaab.p.337061",
+            "ncaab.p.337063"
+        ],
+        "ncaab.t.404": [
+            "ncaab.p.158533",
+            "ncaab.p.162004",
+            "ncaab.p.162665",
+            "ncaab.p.163174",
+            "ncaab.p.163874",
+            "ncaab.p.168856",
+            "ncaab.p.168857",
+            "ncaab.p.168858",
+            "ncaab.p.169541",
+            "ncaab.p.330036",
+            "ncaab.p.331187",
+            "ncaab.p.331270",
+            "ncaab.p.336264",
+            "ncaab.p.336277",
+            "ncaab.p.336286",
+            "ncaab.p.336287"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/new_mexico_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "New Mexico",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/70x70/new_mexico_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/new_mexico_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/new-mexico/schedule",
+            "abbr": "UNM",
+            "record": "27-7",
+            "seatgeek_id": "6494",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "MWC",
+            "last_name": "Lobos",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/new-mexico",
+            "first_name": "New Mexico",
+            "full_name": "New Mexico Lobos",
+            "conference": "Mountain West",
+            "team_id": "ncaab.t.404",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6035",
+                    "rank": "18",
+                    "date": "2025-03-23",
+                    "previous_rank": "18",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "112",
+            "colorPrimary": "ba0c2f",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/70x70/new_mexico.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.404"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/500x500/michigan_state_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Michigan St.",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/70x70/michigan_state_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/500x500/michigan_state_wbgs.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/michigan-state/schedule",
+            "abbr": "MSU",
+            "record": "28-6",
+            "seatgeek_id": "4057",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Spartans",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/michigan-state",
+            "first_name": "Michigan State",
+            "full_name": "Michigan State Spartans",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.358",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "1080",
+                    "rank": "8",
+                    "date": "2025-03-17",
+                    "previous_rank": "7",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "568",
+                    "rank": "7",
+                    "date": "2025-03-17",
+                    "previous_rank": "6",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6319",
+                    "rank": "8",
+                    "date": "2025-03-23",
+                    "previous_rank": "8",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "18453b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaawb/20190409/70x70/michigan_state_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.358"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

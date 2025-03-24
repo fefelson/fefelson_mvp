@@ -1,0 +1,213 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032530",
+    "leagueId": "NBA",
+    "homeId": "nba.t.30",
+    "awayId": "nba.t.19",
+    "url": "/nba/orlando-magic-charlotte-hornets-2025032530/",
+    "gameTime": "2025-03-25 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.30": [
+            "nba.p.4631",
+            "nba.p.5245",
+            "nba.p.5327",
+            "nba.p.6023",
+            "nba.p.6031",
+            "nba.p.6210",
+            "nba.p.6276",
+            "nba.p.6395",
+            "nba.p.6410",
+            "nba.p.6560",
+            "nba.p.6705",
+            "nba.p.6716",
+            "nba.p.6733",
+            "nba.p.10104",
+            "nba.p.10120",
+            "nba.p.10213",
+            "nba.p.10295",
+            "nba.p.10323"
+        ],
+        "nba.t.19": [
+            "nba.p.4911",
+            "nba.p.5159",
+            "nba.p.5330",
+            "nba.p.5768",
+            "nba.p.6018",
+            "nba.p.6036",
+            "nba.p.6206",
+            "nba.p.6407",
+            "nba.p.6500",
+            "nba.p.6516",
+            "nba.p.6550",
+            "nba.p.6628",
+            "nba.p.6637",
+            "nba.p.6691",
+            "nba.p.6722",
+            "nba.p.10095",
+            "nba.p.10106",
+            "nba.p.10275"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181217/500x500/magic_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Orlando",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181217/70x70/magic_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181217/500x500/magic_wbg.png",
+            "conference_position": "8",
+            "division": "Southeast",
+            "division_id": "5",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/orlando/schedule",
+            "abbr": "ORL",
+            "record": "33-38",
+            "seatgeek_id": "2101",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Magic",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/orlando/",
+            "first_name": "Orlando",
+            "full_name": "Orlando Magic",
+            "conference": "Eastern",
+            "team_id": "nba.t.19",
+            "conference_id": "1",
+            "colorPrimary": "0077c0",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181217/70x70/magic.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.19"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181211/500x500/hornets_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Charlotte",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181211/70x70/hornets_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181211/500x500/hornets_wbg.png",
+            "conference_position": "14",
+            "division": "Southeast",
+            "division_id": "5",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/charlotte/schedule",
+            "abbr": "CHA",
+            "record": "18-53",
+            "seatgeek_id": "2099",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Hornets",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/charlotte/",
+            "first_name": "Charlotte",
+            "full_name": "Charlotte Hornets",
+            "conference": "Eastern",
+            "team_id": "nba.t.30",
+            "conference_id": "1",
+            "colorPrimary": "1D1160",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181211/70x70/hornets.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.30"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.6516_2025-01-26",
+            "date": "2025-01-26",
+            "player_id": "nba.p.6516",
+            "type": null,
+            "reported_date": "2025-01-26",
+            "comment": "Quad"
+        },
+        {
+            "id": "nba.inj.6407_2025-03-16",
+            "date": "2025-03-16",
+            "player_id": "nba.p.6407",
+            "type": null,
+            "reported_date": "2025-03-16",
+            "comment": "Toe"
+        },
+        {
+            "id": "nba.inj.10104_2025-01-16",
+            "date": "2025-01-16",
+            "player_id": "nba.p.10104",
+            "type": null,
+            "reported_date": "2025-01-16",
+            "comment": "Wrist"
+        },
+        {
+            "id": "nba.inj.6031_2025-02-01",
+            "date": "2025-02-01",
+            "player_id": "nba.p.6031",
+            "type": null,
+            "reported_date": "2025-02-01",
+            "comment": "Hamstring"
+        },
+        {
+            "id": "nba.inj.6560_2024-11-22",
+            "date": "2024-11-22",
+            "player_id": "nba.p.6560",
+            "type": null,
+            "reported_date": "2024-11-22",
+            "comment": "Back"
+        },
+        {
+            "id": "nba.inj.6210_2024-11-24",
+            "date": "2024-11-24",
+            "player_id": "nba.p.6210",
+            "type": null,
+            "reported_date": "2024-11-24",
+            "comment": "ACL"
+        },
+        {
+            "id": "nba.inj.6036_2024-12-21",
+            "date": "2024-12-21",
+            "player_id": "nba.p.6036",
+            "type": null,
+            "reported_date": "2024-12-21",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6410_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.6410",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.6500_2025-03-19",
+            "date": "2025-03-19",
+            "player_id": "nba.p.6500",
+            "type": null,
+            "reported_date": "2025-03-19",
+            "comment": "Ankle"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

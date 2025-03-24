@@ -54,6 +54,7 @@ class DailySchedule(Schedule):
         while startDate < endDate:
             gameDateList.append(str(startDate))
             startDate += timedelta(1)
+        print(gameDateList)
         return gameDateList
 
 

@@ -28,14 +28,14 @@ logger.setLevel(logging.DEBUG)
 
 # Console Handler (GUI)
 console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)
+console_handler.setLevel(logging.DEBUG)
 console_formatter = ColoredFormatter("%(levelname)s - %(message)s")  # Colorized output
 console_handler.setFormatter(console_formatter)
 
 # File Handler (Background)
 file_path = os.path.join(log_dir, "app.log")
 file_handler = logging.FileHandler(file_path)
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.INFO)
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 file_handler.setFormatter(file_formatter)
 

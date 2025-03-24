@@ -1,0 +1,354 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503230499",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.499",
+    "awayId": "ncaab.t.316",
+    "url": "/ncaab/loyola-chicago-ramblers-san-francisco-dons-202503230499/",
+    "gameTime": "2025-03-23 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-110",
+            "away_ml": "190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-235",
+            "timestamp": "2025-03-23 07:26:20.889180-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-110",
+            "away_ml": "190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-235",
+            "timestamp": "2025-03-23 08:00:08.277090-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-110",
+            "away_ml": "190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-235",
+            "timestamp": "2025-03-23 09:00:08.388240-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "145.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 12:57:32.813393-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "145.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 13:00:10.055244-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "145.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 14:00:12.413251-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 15:00:15.843068-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-118",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-102",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 16:00:19.416970-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "5.5",
+            "away_line": "-118",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-102",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-225",
+            "timestamp": "2025-03-23 18:00:19.671785-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.499": [
+            "ncaab.p.158600",
+            "ncaab.p.158867",
+            "ncaab.p.158954",
+            "ncaab.p.159082",
+            "ncaab.p.162835",
+            "ncaab.p.162947",
+            "ncaab.p.164086",
+            "ncaab.p.330382",
+            "ncaab.p.330538",
+            "ncaab.p.331333",
+            "ncaab.p.336344",
+            "ncaab.p.336353",
+            "ncaab.p.336374",
+            "ncaab.p.336381",
+            "ncaab.p.337159"
+        ],
+        "ncaab.t.316": [
+            "ncaab.p.159142",
+            "ncaab.p.163016",
+            "ncaab.p.163087",
+            "ncaab.p.168532",
+            "ncaab.p.168782",
+            "ncaab.p.168783",
+            "ncaab.p.168785",
+            "ncaab.p.169758",
+            "ncaab.p.330061",
+            "ncaab.p.330080",
+            "ncaab.p.330094",
+            "ncaab.p.335400",
+            "ncaab.p.336065",
+            "ncaab.p.336076",
+            "ncaab.p.336077",
+            "ncaab.p.336083",
+            "ncaab.p.336084"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/500x500/loyola_chicago_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Loyola Chicago",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/70x70/loyola_chicago_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/500x500/loyola_chicago_wbg.png",
+            "conference_position": "4",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/loyola-chicago/schedule",
+            "abbr": "Loyo",
+            "record": "23-11",
+            "seatgeek_id": "6436",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "A10",
+            "last_name": "Ramblers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/loyola-chicago",
+            "first_name": "Loyola Chicago",
+            "full_name": "Loyola Chicago Ramblers",
+            "conference": "Atlantic 10",
+            "team_id": "ncaab.t.316",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5351",
+                    "rank": "98",
+                    "date": "2025-03-23",
+                    "previous_rank": "97",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "101",
+            "colorPrimary": "582931",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240224/70x70/loyola.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.316"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/san_francisco_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "San Francisco",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/san_francisco_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/500x500/san_francisco_wbgs.png",
+            "conference_position": "3",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/san-francisco/schedule",
+            "abbr": "SAN F",
+            "record": "25-9",
+            "seatgeek_id": "6508",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "WCC",
+            "last_name": "Dons",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/san-francisco",
+            "first_name": "San Francisco",
+            "full_name": "San Francisco Dons",
+            "conference": "West Coast",
+            "team_id": "ncaab.t.499",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.582",
+                    "rank": "42",
+                    "date": "2025-03-23",
+                    "previous_rank": "40",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "110",
+            "colorPrimary": "fdbb30",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181213/70x70/san_francisco_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.499"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

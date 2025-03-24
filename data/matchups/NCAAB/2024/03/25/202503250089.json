@@ -1,0 +1,218 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503250089",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.89",
+    "awayId": "ncaab.t.34",
+    "url": "/ncaab/uab-blazers-uc-irvine-anteaters-202503250089/",
+    "gameTime": "2025-03-25 13:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "ncaab.t.89": [
+            "ncaab.p.154097",
+            "ncaab.p.154102",
+            "ncaab.p.158543",
+            "ncaab.p.159484",
+            "ncaab.p.163610",
+            "ncaab.p.163611",
+            "ncaab.p.163612",
+            "ncaab.p.169658",
+            "ncaab.p.169749",
+            "ncaab.p.330600",
+            "ncaab.p.330827",
+            "ncaab.p.330836",
+            "ncaab.p.337243",
+            "ncaab.p.337247",
+            "ncaab.p.337248",
+            "ncaab.p.337260"
+        ],
+        "ncaab.t.34": [
+            "ncaab.p.159338",
+            "ncaab.p.162998",
+            "ncaab.p.168263",
+            "ncaab.p.168360",
+            "ncaab.p.168674",
+            "ncaab.p.169335",
+            "ncaab.p.169797",
+            "ncaab.p.302210",
+            "ncaab.p.316424",
+            "ncaab.p.316425",
+            "ncaab.p.329833",
+            "ncaab.p.329837",
+            "ncaab.p.331241",
+            "ncaab.p.336558",
+            "ncaab.p.336563",
+            "ncaab.p.336570"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/uab_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "UAB",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/70x70/uab_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181220/500x500/uab_wbgs.png",
+            "conference_position": "3",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/uab/schedule",
+            "abbr": "UAB",
+            "record": "24-12",
+            "seatgeek_id": "4073",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "AAC",
+            "last_name": "Blazers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/uab",
+            "first_name": "UAB",
+            "full_name": "UAB Blazers",
+            "conference": "American",
+            "team_id": "ncaab.t.34",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5412",
+                    "rank": "89",
+                    "date": "2025-03-24",
+                    "previous_rank": "103",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "201",
+            "colorPrimary": "006341",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240102/70x70/UAB_wbg.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.34"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190108/500x500/uc_irvine_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "UC Irvine",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190108/70x70/uc_irvine_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190108/500x500/uc_irvine_wbg.png",
+            "conference_position": "2",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/uc-irvine/schedule",
+            "abbr": "UCI",
+            "record": "30-6",
+            "seatgeek_id": "6364",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIGW",
+            "last_name": "Anteaters",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/uc-irvine",
+            "first_name": "UC Irvine",
+            "full_name": "UC Irvine Anteaters",
+            "conference": "Big West",
+            "team_id": "ncaab.t.89",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5979",
+                    "rank": "24",
+                    "date": "2025-03-24",
+                    "previous_rank": "27",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "8",
+            "colorPrimary": "0c2340",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240102/70x70/ucirvine.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.89"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

@@ -1,0 +1,416 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503210449",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.449",
+    "awayId": "ncaab.t.306",
+    "url": "/ncaab/liberty-flames-oregon-ducks-202503210449/",
+    "gameTime": "2025-03-21 22:10:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "139.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 10:14:05.140585-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "139.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 10:14:20.307529-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "139.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 11:00:07.026741-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 12:00:09.339813-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 13:00:17.735734-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "7.5",
+            "away_line": "-115",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 14:00:07.122471-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-105",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-115",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 15:00:29.717143-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-105",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 16:00:10.364328-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "7.5",
+            "away_line": "-118",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-7.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 17:00:14.638255-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-102",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-118",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 18:00:16.938159-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-102",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-118",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 19:00:20.468110-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-102",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-118",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 20:00:43.572350-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "137.5",
+            "away_spread": "6.5",
+            "away_line": "-102",
+            "away_ml": "240",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-6.5",
+            "home_line": "-118",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "-300",
+            "timestamp": "2025-03-21 21:00:11.278858-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.449": [
+            "ncaab.p.154407",
+            "ncaab.p.158621",
+            "ncaab.p.158666",
+            "ncaab.p.159180",
+            "ncaab.p.159265",
+            "ncaab.p.163008",
+            "ncaab.p.167830",
+            "ncaab.p.300776",
+            "ncaab.p.301810",
+            "ncaab.p.330570",
+            "ncaab.p.330571",
+            "ncaab.p.330575",
+            "ncaab.p.334423",
+            "ncaab.p.337438",
+            "ncaab.p.337439",
+            "ncaab.p.337442",
+            "ncaab.p.337444",
+            "ncaab.p.339572"
+        ],
+        "ncaab.t.306": [
+            "ncaab.p.154171",
+            "ncaab.p.156928",
+            "ncaab.p.158748",
+            "ncaab.p.161638",
+            "ncaab.p.162389",
+            "ncaab.p.163003",
+            "ncaab.p.168702",
+            "ncaab.p.168704",
+            "ncaab.p.168705",
+            "ncaab.p.303335",
+            "ncaab.p.330885",
+            "ncaab.p.330886",
+            "ncaab.p.336096",
+            "ncaab.p.336101",
+            "ncaab.p.336112",
+            "ncaab.p.336120"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/500x500/liberty_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Liberty",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/70x70/liberty_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/500x500/liberty_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/liberty/schedule",
+            "abbr": "LIB",
+            "record": "28-6",
+            "seatgeek_id": "6567",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "CUSA",
+            "last_name": "Flames",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/liberty",
+            "first_name": "Liberty",
+            "full_name": "Liberty Flames",
+            "conference": "Conference USA",
+            "team_id": "ncaab.t.306",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5661",
+                    "rank": "55",
+                    "date": "2025-03-21",
+                    "previous_rank": "55",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "1",
+            "colorPrimary": "00315c",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/11292023/70px/liberty.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.306"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/oregon_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Oregon",
+            "group_position": "8",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181211/70x70/oregon_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/oregon_wbg.png",
+            "conference_position": "8",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/oregon/schedule",
+            "abbr": "ORE",
+            "record": "24-9",
+            "seatgeek_id": "4078",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Ducks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/oregon",
+            "first_name": "Oregon",
+            "full_name": "Oregon Ducks",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.449",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "115",
+                    "rank": "25",
+                    "date": "2025-03-17",
+                    "previous_rank": "23",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6172",
+                    "rank": "14",
+                    "date": "2025-03-21",
+                    "previous_rank": "13",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "003300",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181211/70x70/oregon.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.449"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

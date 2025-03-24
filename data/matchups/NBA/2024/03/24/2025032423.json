@@ -1,0 +1,553 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032423",
+    "leagueId": "NBA",
+    "homeId": "nba.t.23",
+    "awayId": "nba.t.2",
+    "url": "/nba/boston-celtics-sacramento-kings-2025032423/",
+    "gameTime": "2025-03-24 22:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "-4.5",
+            "away_line": "-105",
+            "away_ml": "-170",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "140",
+            "timestamp": "2025-03-24 06:00:29.343590-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "-4.5",
+            "away_line": "-105",
+            "away_ml": "-170",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "140",
+            "timestamp": "2025-03-24 07:00:12.135047-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "-3.5",
+            "away_line": "-118",
+            "away_ml": "-170",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-102",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "140",
+            "timestamp": "2025-03-24 08:00:08.092100-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-3.5",
+            "away_line": "-118",
+            "away_ml": "-175",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "145",
+            "timestamp": "2025-03-24 09:00:10.668523-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-3.5",
+            "away_line": "-118",
+            "away_ml": "-180",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-102",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "145",
+            "timestamp": "2025-03-24 10:00:02.949565-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "150",
+            "timestamp": "2025-03-24 12:00:03.153131-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-3.5",
+            "away_line": "-110",
+            "away_ml": "-160",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "135",
+            "timestamp": "2025-03-24 13:00:05.086097-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-3.5",
+            "away_line": "-110",
+            "away_ml": "-160",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "135",
+            "timestamp": "2025-03-24 14:00:08.222071-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-3.5",
+            "away_line": "-110",
+            "away_ml": "-160",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "3.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "135",
+            "timestamp": "2025-03-24 15:00:08.393635-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "223.5",
+            "away_spread": "-4.5",
+            "away_line": "-105",
+            "away_ml": "-175",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "145",
+            "timestamp": "2025-03-24 15:49:33.808798-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "224.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "155",
+            "timestamp": "2025-03-24 15:50:27.255726-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "224.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "155",
+            "timestamp": "2025-03-24 15:51:28.431170-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "224.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "155",
+            "timestamp": "2025-03-24 16:00:04.869565-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "224.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "155",
+            "timestamp": "2025-03-24 17:00:03.531271-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "224.5",
+            "away_spread": "-4.5",
+            "away_line": "-110",
+            "away_ml": "-190",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "4.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "155",
+            "timestamp": "2025-03-24 18:00:03.562785-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "nba.t.23": [
+            "nba.p.4614",
+            "nba.p.4886",
+            "nba.p.5068",
+            "nba.p.5322",
+            "nba.p.5324",
+            "nba.p.5472",
+            "nba.p.5642",
+            "nba.p.5763",
+            "nba.p.5824",
+            "nba.p.6453",
+            "nba.p.6609",
+            "nba.p.6694",
+            "nba.p.6709",
+            "nba.p.6753",
+            "nba.p.10293",
+            "nba.p.10320",
+            "nba.p.10341"
+        ],
+        "nba.t.2": [
+            "nba.p.4245",
+            "nba.p.4622",
+            "nba.p.5464",
+            "nba.p.5602",
+            "nba.p.5765",
+            "nba.p.5842",
+            "nba.p.5893",
+            "nba.p.5903",
+            "nba.p.6418",
+            "nba.p.6427",
+            "nba.p.6581",
+            "nba.p.6619",
+            "nba.p.6743",
+            "nba.p.10075",
+            "nba.p.10148",
+            "nba.p.10206",
+            "nba.p.10277"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/20181030/500x500/celtics_wbg.png",
+            "division_abbr": "",
+            "season": null,
+            "nextGame": "nba.g.2025032322",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "originLogoDark": "https://s.yimg.com/cv/apiv2/default/20181030/500x500/celtics.png",
+            "display_name": "Boston",
+            "rosterGroupshotNarrow": "https://s.yimg.com/cv/apiv2/nba/free-agency/MOBILE-Celtics-Update.png",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/20231117/70x70/celtics_wbg.png",
+            "wiki_id": [
+                "teamwiki_id",
+                "nba.t.2"
+            ],
+            "logo": "https://s.yimg.com/cv/apiv2/default/20181030/500x500/celtics_wbg.png",
+            "conference_position": "2",
+            "division": "Atlantic",
+            "default_league": "nba",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "navigation_links": {
+                "team_home": {
+                    "url": "/nba/teams/boston/"
+                },
+                "team_photos": {
+                    "url": "/nba/teams/boston/photos"
+                },
+                "team_tickets": {
+                    "url": "https://seatgeek.com/boston-celtics-tickets/?aid=14"
+                },
+                "team_roster": {
+                    "url": "/nba/teams/boston/roster"
+                },
+                "team_news": {
+                    "url": "/nba/teams/boston/news"
+                },
+                "team_injuries": {
+                    "url": "/nba/teams/boston/injuries"
+                },
+                "team_transactions": {
+                    "url": "/nba/teams/boston/transactions"
+                },
+                "team_schedule": {
+                    "url": "/nba/teams/boston/schedule"
+                },
+                "team_stats": {
+                    "url": "/nba/teams/boston/stats"
+                },
+                "team_store": {
+                    "url": "https://www.fanatics.com/nba/boston-celtics/o-2481+t-70361675+z-8593-1409122789"
+                }
+            },
+            "teamScheduleLink": "/nba/teams/boston/schedule",
+            "sportacular_url": "ysportacular://v2/teams/details?teamId=nba.t.2&sport=nba",
+            "rosterGroupshot": "https://s.yimg.com/cv/apiv2/nba/free-agency/DESKTOP-Celtics-Update.png",
+            "team_standing": {
+                "inseason_tournament": {
+                    "group_sequence": "1",
+                    "conf": {
+                        "wins": "3",
+                        "losses": "1"
+                    },
+                    "points_against": "114.8",
+                    "games_back": "0.0",
+                    "wpct": "0.750",
+                    "points_for": "120.5",
+                    "away": {
+                        "wins": "2",
+                        "losses": "0"
+                    },
+                    "div": {
+                        "wins": "0",
+                        "losses": "0"
+                    },
+                    "losses": "1",
+                    "point_diff": "5.7",
+                    "wins": "3",
+                    "streak": "W 3",
+                    "home": {
+                        "wins": "1",
+                        "losses": "1"
+                    },
+                    "group": "East Group C"
+                },
+                "team_away_record": {
+                    "display": "27-7",
+                    "played": 34,
+                    "wins": "27",
+                    "losses": "7"
+                },
+                "group_sequence": "1",
+                "team_division_record": {
+                    "display": "13-2",
+                    "played": 15,
+                    "wins": "13",
+                    "losses": "2"
+                },
+                "display": "1<sup>st</sup> Atlantic",
+                "live_movement": null,
+                "season": "2024",
+                "group_games_back": "0.0",
+                "points_against": "107.9",
+                "live_status": "false",
+                "group_position": "1",
+                "group_position_tied": false,
+                "group_name": "Atlantic",
+                "qualifying_method": "",
+                "clinched_home": false,
+                "conf_standings": {
+                    "position": "2",
+                    "games_back": "5.0"
+                },
+                "points_for": "116.5",
+                "clinched_playoff": true,
+                "team_home_record": {
+                    "display": "24-12",
+                    "played": 36,
+                    "wins": "24",
+                    "losses": "12"
+                },
+                "qualifying_method_id": null,
+                "eliminated_from_playoffs": "false",
+                "team_conference_record": {
+                    "display": "35-11",
+                    "played": 46,
+                    "wins": "35",
+                    "losses": "11"
+                },
+                "team_record": {
+                    "display": "51-19",
+                    "played": 70,
+                    "wins": "51",
+                    "losses": "19",
+                    "streak": "W 4"
+                },
+                "qualifying_league": null,
+                "clinched_division": false,
+                "magic_number": 6
+            },
+            "abbr": "BOS",
+            "record": "51-19",
+            "colorSecondary": "ba9653",
+            "originLogo": "https://s.yimg.com/cv/apiv2/default/20181030/500x500/celtics_wbg.png",
+            "seatgeek_id": "2088",
+            "players": [
+                "players_info"
+            ],
+            "twitter_handle": "celtics",
+            "conference_abbr": "",
+            "last_name": "Celtics",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/boston/",
+            "first_name": "Boston",
+            "full_name": "Boston Celtics",
+            "S2_id": null,
+            "conference": "Eastern",
+            "team_id": "nba.t.2",
+            "conference_id": "1",
+            "season_phase": null,
+            "colorPrimary": "007a33",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20231117/70x70/celtics.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.2"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181220/500x500/kings_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Sacramento",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181220/70x70/kings_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181220/500x500/kings_wbg.png",
+            "conference_position": "9",
+            "division": "Pacific",
+            "division_id": "4",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/sacramento/schedule",
+            "abbr": "SAC",
+            "record": "35-35",
+            "seatgeek_id": "2112",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Kings",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/sacramento/",
+            "first_name": "Sacramento",
+            "full_name": "Sacramento Kings",
+            "conference": "Western",
+            "team_id": "nba.t.23",
+            "conference_id": "2",
+            "colorPrimary": "5a2d81",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181220/70x70/kings.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.23"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.5765_2025-03-22",
+            "date": "2025-03-22",
+            "player_id": "nba.p.5765",
+            "type": null,
+            "reported_date": "2025-03-22",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.4622_2025-03-22",
+            "date": "2025-03-22",
+            "player_id": "nba.p.4622",
+            "type": null,
+            "reported_date": "2025-03-22",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.6427_2025-03-20",
+            "date": "2025-03-20",
+            "player_id": "nba.p.6427",
+            "type": null,
+            "reported_date": "2025-03-20",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5602_2025-03-15",
+            "date": "2025-03-15",
+            "player_id": "nba.p.5602",
+            "type": null,
+            "reported_date": "2025-03-15",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5824_2025-03-22",
+            "date": "2025-03-22",
+            "player_id": "nba.p.5824",
+            "type": null,
+            "reported_date": "2025-03-22",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.5464_2025-03-22",
+            "date": "2025-03-22",
+            "player_id": "nba.p.5464",
+            "type": null,
+            "reported_date": "2025-03-22",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.5642_2025-03-17",
+            "date": "2025-03-17",
+            "player_id": "nba.p.5642",
+            "type": null,
+            "reported_date": "2025-03-17",
+            "comment": "Ankle"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

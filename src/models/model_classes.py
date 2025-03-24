@@ -17,7 +17,7 @@ class BoxscoreData:
     lineups: Optional[List[Any]]
     teams: List[Any]
     players: List[Any]
-    stadiums: Any
+    stadium: Any
     misc: Optional[List[Any]]
 
 
@@ -37,11 +37,12 @@ class MatchupData:
     statusType: str
     gameType: str
     odds: List[Dict]
-    lineups: Dict
-    players: Dict
-    injuries: Dict
+    lineups: Optional[Dict[str, Dict]] = None
+    players: Optional[Dict] = None
+    teams: Optional[List[Dict]] = None
+    injuries: Optional[Dict] = None
     stadiumId: Optional[str] = None
-    isNuetral: bool = False
+    isNuetral: Optional[bool] = False
     
 
 @dataclass

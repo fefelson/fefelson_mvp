@@ -33,6 +33,7 @@ class YahooDownloadAgent(IDownloadAgent):
         
         except (URLError, HTTPError, ValueError) as e:
             logger.error(e)
+            # time.sleep(sleepTime)
             YahooDownloadAgent._fetch_url(url, sleepTime, attempts)
         return item
     

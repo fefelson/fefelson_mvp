@@ -1,0 +1,180 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032522",
+    "leagueId": "NBA",
+    "homeId": "nba.t.22",
+    "awayId": "nba.t.5",
+    "url": "/nba/cleveland-cavaliers-portland-trail-blazers-2025032522/",
+    "gameTime": "2025-03-25 22:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.22": [
+            "nba.p.5350",
+            "nba.p.5958",
+            "nba.p.6035",
+            "nba.p.6038",
+            "nba.p.6208",
+            "nba.p.6401",
+            "nba.p.6588",
+            "nba.p.6697",
+            "nba.p.6730",
+            "nba.p.6747",
+            "nba.p.10048",
+            "nba.p.10051",
+            "nba.p.10061",
+            "nba.p.10064",
+            "nba.p.10065",
+            "nba.p.10119",
+            "nba.p.10164",
+            "nba.p.10285"
+        ],
+        "nba.t.5": [
+            "nba.p.4884",
+            "nba.p.5826",
+            "nba.p.5835",
+            "nba.p.6166",
+            "nba.p.6167",
+            "nba.p.6212",
+            "nba.p.6256",
+            "nba.p.6267",
+            "nba.p.6269",
+            "nba.p.6397",
+            "nba.p.6452",
+            "nba.p.6514",
+            "nba.p.6746",
+            "nba.p.10066",
+            "nba.p.10145",
+            "nba.p.10279",
+            "nba.p.10397"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20220917/500x500/cavaliers_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Cleveland",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20220917/70x70/cavaliers_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20220917/500x500/cavaliers_wbg.png",
+            "conference_position": "1",
+            "division": "Central",
+            "division_id": "2",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/cleveland/schedule",
+            "abbr": "CLE",
+            "record": "57-14",
+            "seatgeek_id": "2094",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Cavaliers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/cleveland/",
+            "first_name": "Cleveland",
+            "full_name": "Cleveland Cavaliers",
+            "conference": "Eastern",
+            "team_id": "nba.t.5",
+            "conference_id": "1",
+            "colorPrimary": "71243c",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20220917/70x70/cavaliers.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.5"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/trailblazers_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Portland",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/trailblazers_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/trailblazers_wbgs.png",
+            "conference_position": "12",
+            "division": "Northwest",
+            "division_id": "7",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/portland/schedule",
+            "abbr": "POR",
+            "record": "32-40",
+            "seatgeek_id": "2106",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Trail Blazers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/portland/",
+            "first_name": "Portland",
+            "full_name": "Portland Trail Blazers",
+            "conference": "Western",
+            "team_id": "nba.t.22",
+            "conference_id": "2",
+            "colorPrimary": "e03a3e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/trailblazers_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.22"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.5958_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.5958",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Calf"
+        },
+        {
+            "id": "nba.inj.10066_2025-03-23",
+            "date": "2025-03-23",
+            "player_id": "nba.p.10066",
+            "type": null,
+            "reported_date": "2025-03-23",
+            "comment": "Personal"
+        },
+        {
+            "id": "nba.inj.10279_2025-03-21",
+            "date": "2025-03-21",
+            "player_id": "nba.p.10279",
+            "type": null,
+            "reported_date": "2025-03-21",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5350_2025-03-10",
+            "date": "2025-03-10",
+            "player_id": "nba.p.5350",
+            "type": null,
+            "reported_date": "2025-03-10",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6038_2025-03-15",
+            "date": "2025-03-15",
+            "player_id": "nba.p.6038",
+            "type": null,
+            "reported_date": "2025-03-15",
+            "comment": "Knee"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

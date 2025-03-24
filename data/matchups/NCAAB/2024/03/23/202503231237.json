@@ -1,0 +1,339 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503231237",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.1237",
+    "awayId": "ncaab.t.420",
+    "url": "/ncaab/northern-arizona-lumberjacks-queens-university-royals-202503231237/",
+    "gameTime": "2025-03-23 17:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 07:26:20.889327-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 08:00:08.277160-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-115",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 09:00:08.388477-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 12:57:32.813545-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 13:00:10.055370-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "151.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "",
+            "timestamp": "2025-03-23 14:00:16.364650-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "152.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "",
+            "timestamp": "2025-03-23 15:00:18.044383-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "152.5",
+            "away_spread": "1.5",
+            "away_line": "-110",
+            "away_ml": "105",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "",
+            "home_line": "",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "",
+            "timestamp": "2025-03-23 16:00:20.931364-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.1237": [
+            "ncaab.p.155387",
+            "ncaab.p.159972",
+            "ncaab.p.161001",
+            "ncaab.p.169539",
+            "ncaab.p.169674",
+            "ncaab.p.330362",
+            "ncaab.p.330374",
+            "ncaab.p.330390",
+            "ncaab.p.331170",
+            "ncaab.p.336024",
+            "ncaab.p.336025",
+            "ncaab.p.336027",
+            "ncaab.p.336030",
+            "ncaab.p.336033",
+            "ncaab.p.336038",
+            "ncaab.p.336044",
+            "ncaab.p.336056",
+            "ncaab.p.336059"
+        ],
+        "ncaab.t.420": [
+            "ncaab.p.158505",
+            "ncaab.p.159122",
+            "ncaab.p.162713",
+            "ncaab.p.162738",
+            "ncaab.p.163192",
+            "ncaab.p.168885",
+            "ncaab.p.168886",
+            "ncaab.p.168888",
+            "ncaab.p.168889",
+            "ncaab.p.330139",
+            "ncaab.p.331201",
+            "ncaab.p.335856",
+            "ncaab.p.335862",
+            "ncaab.p.337295"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/500x500/northern_arizona_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Northern Arizona",
+            "group_position": "7",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/70x70/northern_arizona_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/500x500/northern_arizona_wbgs.png",
+            "conference_position": "7",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/northern-arizona/schedule",
+            "abbr": "NAU",
+            "record": "18-15",
+            "seatgeek_id": "6396",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BSKY",
+            "last_name": "Lumberjacks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/northern-arizona",
+            "first_name": "Northern Arizona",
+            "full_name": "Northern Arizona Lumberjacks",
+            "conference": "Big Sky",
+            "team_id": "ncaab.t.420",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.4456",
+                    "rank": "282",
+                    "date": "2025-03-23",
+                    "previous_rank": "282",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "15",
+            "colorPrimary": "003466",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190104/70x70/northern_arizona_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.420"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20230224/500x500/queens-royals_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Queens University",
+            "group_position": "6",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20230224/70x70/queens-royals_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20230224/500x500/queens-royals_wbg.png",
+            "conference_position": "6",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/queens-university/schedule",
+            "abbr": "Quee",
+            "record": "19-14",
+            "seatgeek_id": null,
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "ASUN",
+            "last_name": "Royals",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/queens-university",
+            "first_name": "Queens University",
+            "full_name": "Queens University Royals",
+            "conference": "Atlantic Sun",
+            "team_id": "ncaab.t.1237",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.4839",
+                    "rank": "207",
+                    "date": "2025-03-23",
+                    "previous_rank": "209",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "107",
+            "colorPrimary": "C7CDD2",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20230224/70x70/queens-royals.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.1237"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

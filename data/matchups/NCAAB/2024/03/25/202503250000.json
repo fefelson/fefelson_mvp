@@ -1,0 +1,20 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503250000",
+    "leagueId": "NCAAB",
+    "homeId": "",
+    "awayId": "ncaab.t.269",
+    "url": null,
+    "gameTime": "2025-03-25 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": null,
+    "teams": null,
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

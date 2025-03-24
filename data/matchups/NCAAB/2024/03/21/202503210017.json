@@ -1,0 +1,388 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503210017",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.17",
+    "awayId": "ncaab.t.3",
+    "url": "/ncaab/akron-zips-arizona-wildcats-202503210017/",
+    "gameTime": "2025-03-21 19:35:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "750",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 10:14:05.140367-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "750",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 10:14:16.634917-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "167.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "750",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 11:00:07.026521-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "750",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 12:00:09.339576-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "675",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-21 13:00:17.735498-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "675",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-21 14:00:07.122255-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 15:00:29.716924-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 16:00:10.364064-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-21 17:00:18.316845-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "675",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-21 18:00:20.354113-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "166.5",
+            "away_spread": "14.5",
+            "away_line": "-115",
+            "away_ml": "700",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-21 19:00:25.267806-04:00"
+        }
+    ],
+    "lineups": null,
+    "players": {
+        "ncaab.t.17": [
+            "ncaab.p.158611",
+            "ncaab.p.158854",
+            "ncaab.p.159474",
+            "ncaab.p.159640",
+            "ncaab.p.159897",
+            "ncaab.p.163254",
+            "ncaab.p.168417",
+            "ncaab.p.168500",
+            "ncaab.p.168810",
+            "ncaab.p.169062",
+            "ncaab.p.169543",
+            "ncaab.p.300540",
+            "ncaab.p.329934",
+            "ncaab.p.329939",
+            "ncaab.p.329942",
+            "ncaab.p.329950",
+            "ncaab.p.329951",
+            "ncaab.p.336797",
+            "ncaab.p.336798",
+            "ncaab.p.336799"
+        ],
+        "ncaab.t.3": [
+            "ncaab.p.159442",
+            "ncaab.p.162811",
+            "ncaab.p.163247",
+            "ncaab.p.163249",
+            "ncaab.p.163398",
+            "ncaab.p.169171",
+            "ncaab.p.169399",
+            "ncaab.p.169462",
+            "ncaab.p.169616",
+            "ncaab.p.169617",
+            "ncaab.p.330159",
+            "ncaab.p.330169",
+            "ncaab.p.336131",
+            "ncaab.p.336142",
+            "ncaab.p.336143",
+            "ncaab.p.336155"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/11292023/500px/akronzips_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Akron",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/11292023/70px/akronzips_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/11292023/500px/akronzips_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/akron/schedule",
+            "abbr": "AKR",
+            "record": "28-6",
+            "seatgeek_id": "6602",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "MAC",
+            "last_name": "Zips",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/akron",
+            "first_name": "Akron",
+            "full_name": "Akron Zips",
+            "conference": "Mid-American",
+            "team_id": "ncaab.t.3",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.603",
+                    "rank": "19",
+                    "date": "2025-03-21",
+                    "previous_rank": "19",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "20",
+            "colorPrimary": "041e42",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/11292023/70px/akronzips.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.3"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/500x500/arizona_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Arizona",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/70x70/arizona_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/500x500/arizona_wbg.png",
+            "conference_position": "3",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/arizona/schedule",
+            "abbr": "ARIZ",
+            "record": "22-12",
+            "seatgeek_id": "4075",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIG12",
+            "last_name": "Wildcats",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/arizona",
+            "first_name": "Arizona",
+            "full_name": "Arizona Wildcats",
+            "conference": "Big 12",
+            "team_id": "ncaab.t.17",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "253",
+                    "rank": "21",
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "177",
+                    "rank": "20",
+                    "date": "2025-03-17",
+                    "previous_rank": "24",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5816",
+                    "rank": "40",
+                    "date": "2025-03-21",
+                    "previous_rank": "40",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "103",
+            "colorPrimary": "cc0033",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181204/70x70/arizona.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.17"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}
