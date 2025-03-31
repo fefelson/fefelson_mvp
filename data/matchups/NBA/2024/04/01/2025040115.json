@@ -1,0 +1,181 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025040115",
+    "leagueId": "NBA",
+    "homeId": "nba.t.15",
+    "awayId": "nba.t.21",
+    "url": "/nba/phoenix-suns-milwaukee-bucks-2025040115/",
+    "gameTime": "2025-04-01 19:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.15": [
+            "nba.p.4472",
+            "nba.p.5012",
+            "nba.p.5185",
+            "nba.p.5482",
+            "nba.p.5501",
+            "nba.p.5643",
+            "nba.p.5840",
+            "nba.p.6048",
+            "nba.p.6218",
+            "nba.p.6600",
+            "nba.p.6734",
+            "nba.p.6755",
+            "nba.p.6782",
+            "nba.p.6800",
+            "nba.p.10082",
+            "nba.p.10088",
+            "nba.p.10168",
+            "nba.p.10262"
+        ],
+        "nba.t.21": [
+            "nba.p.4244",
+            "nba.p.5009",
+            "nba.p.5192",
+            "nba.p.5363",
+            "nba.p.5473",
+            "nba.p.5484",
+            "nba.p.5733",
+            "nba.p.5864",
+            "nba.p.5905",
+            "nba.p.6032",
+            "nba.p.6224",
+            "nba.p.6232",
+            "nba.p.6434",
+            "nba.p.6719",
+            "nba.p.6751",
+            "nba.p.10292",
+            "nba.p.10309",
+            "nba.p.10313"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/mlb/20190318/500x500/suns_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Phoenix",
+            "group_position": "5",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/mlb/20190318/70x70/suns_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/mlb/20190318/500x500/suns_wbgs.png",
+            "conference_position": "11",
+            "division": "Pacific",
+            "division_id": "4",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/phoenix/schedule",
+            "abbr": "PHO",
+            "record": "35-40",
+            "seatgeek_id": "2111",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Suns",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/phoenix/",
+            "first_name": "Phoenix",
+            "full_name": "Phoenix Suns",
+            "conference": "Western",
+            "team_id": "nba.t.21",
+            "conference_id": "2",
+            "colorPrimary": "1d1160",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/mlb/20190318/70x70/suns_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.21"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/bucks_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Milwaukee",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/bucks_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181214/500x500/bucks_wbg.png",
+            "conference_position": "6",
+            "division": "Central",
+            "division_id": "2",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/milwaukee/schedule",
+            "abbr": "MIL",
+            "record": "40-34",
+            "seatgeek_id": "2097",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Bucks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/milwaukee/",
+            "first_name": "Milwaukee",
+            "full_name": "Milwaukee Bucks",
+            "conference": "Eastern",
+            "team_id": "nba.t.15",
+            "conference_id": "1",
+            "colorPrimary": "00471b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181214/70x70/bucks.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.15"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.6755_2025-03-29",
+            "date": "2025-03-29",
+            "player_id": "nba.p.6755",
+            "type": null,
+            "reported_date": "2025-03-29",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.5009_2025-03-16",
+            "date": "2025-03-16",
+            "player_id": "nba.p.5009",
+            "type": null,
+            "reported_date": "2025-03-16",
+            "comment": "Hamstring"
+        },
+        {
+            "id": "nba.inj.5482_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.5482",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Suspension"
+        },
+        {
+            "id": "nba.inj.5012_2025-03-19",
+            "date": "2025-03-19",
+            "player_id": "nba.p.5012",
+            "type": null,
+            "reported_date": "2025-03-19",
+            "comment": "Groin"
+        },
+        {
+            "id": "nba.inj.6600_2025-03-17",
+            "date": "2025-03-17",
+            "player_id": "nba.p.6600",
+            "type": null,
+            "reported_date": "2025-03-17",
+            "comment": "Thumb"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

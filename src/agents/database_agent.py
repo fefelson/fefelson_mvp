@@ -65,13 +65,14 @@ class SQLAlchemyDatabaseAgent(IDatabaseAgent):
             # If there is a redundant game_id in Games don't bother inserting anything else
             if not session.query(Game).filter_by(game_id=boxscore.game.game_id).first():
                 session.add(boxscore.game)
-                session.add(boxscore.overUnders)
+                if boxscore.overUnders:
+                    session.add(boxscore.overUnders)
                 # List-based fields including misc
                 list_fields = [
                     boxscore.teamStats,
                     boxscore.playerStats,
                     boxscore.periods,
-                    boxscore.gameLines,
+                    boxscore.gameLines if boxscore.gameLines is not None else [],
                     boxscore.lineups if boxscore.lineups is not None else [],
                     boxscore.misc if boxscore.misc is not None else []
                 ]

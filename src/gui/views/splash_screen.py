@@ -5,7 +5,7 @@ import os
 
 class SplashScreen(AS.AdvancedSplash):
 
-    def __init__(self, parent, timeout=3000):
+    def __init__(self, parent, timeout=2000):
         
         # Load the image for the splash screen
 
@@ -24,7 +24,7 @@ class SplashScreen(AS.AdvancedSplash):
         
         super().__init__(parent, bitmap=bitmap, timeout=timeout,
                            agwStyle=AS.AS_TIMEOUT |
-                           AS.AS_CENTER_ON_SCREEN |
+                           AS.AS_CENTER_ON_PARENT |
                            AS.AS_SHADOW_BITMAP,
                            shadowcolour=shadow)
    

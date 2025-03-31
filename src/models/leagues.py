@@ -29,6 +29,14 @@ class League(Processable, Updateable):
         self.logger = get_logger()
 
 
+    def get_current_season(self):
+        return self._leagueConfig.get("current_season")
+
+
+    def is_active(self):
+        return self._schedule.is_active(self._leagueConfig)
+
+
     def analyze(self):
         if self.needs_update():
             self.logger.info(f"{self._leagueId} Analytics")
@@ -49,7 +57,7 @@ class League(Processable, Updateable):
                     
 
     def needs_update(self):
-        return self._schedule.is_active(self._leagueConfig)
+        return self.is_active()
 
 
     def process(self):
@@ -67,6 +75,7 @@ class League(Processable, Updateable):
             self._leagueConfig.set("last_update", gameDate)
             self._leagueConfig._write_config()
             self.logger.debug(f"{self._leagueId} current up until {gameDate}")
+            self.analyze()
 
 
         for gameDate in self._schedule.process(self._leagueConfig, nGD=2):

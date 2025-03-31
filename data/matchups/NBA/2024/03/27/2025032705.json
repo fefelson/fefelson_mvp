@@ -1,0 +1,879 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025032705",
+    "leagueId": "NBA",
+    "homeId": "nba.t.5",
+    "awayId": "nba.t.24",
+    "url": "/nba/san-antonio-spurs-cleveland-cavaliers-2025032705/",
+    "gameTime": "2025-03-27 19:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "239.5",
+            "away_spread": "13.5",
+            "away_line": "-110",
+            "away_ml": "625",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-13.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1000",
+            "timestamp": "2025-03-27 06:11:18.056543-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "238.5",
+            "away_spread": "13.5",
+            "away_line": "-110",
+            "away_ml": "625",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-13.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1000",
+            "timestamp": "2025-03-27 07:00:20.347386-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "238.5",
+            "away_spread": "13.5",
+            "away_line": "-110",
+            "away_ml": "625",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-13.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1000",
+            "timestamp": "2025-03-27 08:00:04.846620-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "238.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-27 09:00:17.982761-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "700",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-27 10:00:12.204098-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "700",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-27 11:00:21.316238-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "237.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "700",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-27 12:00:04.522839-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "237.5",
+            "away_spread": "14.5",
+            "away_line": "-110",
+            "away_ml": "700",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1100",
+            "timestamp": "2025-03-27 13:00:15.192425-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "237.5",
+            "away_spread": "14.5",
+            "away_line": "-105",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-27 14:00:13.115548-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "14.5",
+            "away_line": "-105",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-27 15:00:15.734792-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "14.5",
+            "away_line": "-105",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-27 16:01:44.861004-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "14.5",
+            "away_line": "-105",
+            "away_ml": "725",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-14.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1200",
+            "timestamp": "2025-03-27 17:00:11.129288-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "13.5",
+            "away_line": "-105",
+            "away_ml": "650",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-13.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1000",
+            "timestamp": "2025-03-27 18:00:12.435441-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "236.5",
+            "away_spread": "13.5",
+            "away_line": "-105",
+            "away_ml": "650",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-13.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-1000",
+            "timestamp": "2025-03-27 19:00:13.468577-04:00"
+        }
+    ],
+    "lineups": {
+        "home_lineup": {
+            "all": {
+                "nba.p.6514": {
+                    "position": null,
+                    "player_id": "nba.p.6514",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive \u2013 Rest",
+                    "order": 14
+                },
+                "nba.p.6746": {
+                    "position": null,
+                    "player_id": "nba.p.6746",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 16
+                },
+                "nba.p.5835": {
+                    "position": "C",
+                    "player_id": "nba.p.5835",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 3
+                },
+                "nba.p.5826": {
+                    "position": "G",
+                    "player_id": "nba.p.5826",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 5
+                },
+                "nba.p.10066": {
+                    "position": null,
+                    "player_id": "nba.p.10066",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 12
+                },
+                "nba.p.10397": {
+                    "position": null,
+                    "player_id": "nba.p.10397",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 15
+                },
+                "nba.p.10145": {
+                    "position": null,
+                    "player_id": "nba.p.10145",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 10
+                },
+                "nba.p.10279": {
+                    "position": null,
+                    "player_id": "nba.p.10279",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - Injury/Illness",
+                    "order": 17
+                },
+                "nba.p.6452": {
+                    "position": null,
+                    "player_id": "nba.p.6452",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 8
+                },
+                "nba.p.6397": {
+                    "position": null,
+                    "player_id": "nba.p.6397",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 9
+                },
+                "nba.p.6166": {
+                    "position": null,
+                    "player_id": "nba.p.6166",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 7
+                },
+                "nba.p.6167": {
+                    "position": "G",
+                    "player_id": "nba.p.6167",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 4
+                },
+                "nba.p.6212": {
+                    "position": null,
+                    "player_id": "nba.p.6212",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - Injury/Illness",
+                    "order": 13
+                },
+                "nba.p.6256": {
+                    "position": "F",
+                    "player_id": "nba.p.6256",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 2
+                },
+                "nba.p.6267": {
+                    "position": "F",
+                    "player_id": "nba.p.6267",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 1
+                },
+                "nba.p.6269": {
+                    "position": null,
+                    "player_id": "nba.p.6269",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 6
+                },
+                "nba.p.4884": {
+                    "position": null,
+                    "player_id": "nba.p.4884",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 11
+                }
+            }
+        },
+        "home_lineup_order": {
+            "all": [
+                "nba.p.6267",
+                "nba.p.6256",
+                "nba.p.5835",
+                "nba.p.6167",
+                "nba.p.5826",
+                "nba.p.6269",
+                "nba.p.6166",
+                "nba.p.6452",
+                "nba.p.6397",
+                "nba.p.10145",
+                "nba.p.4884",
+                "nba.p.10066",
+                "nba.p.6212",
+                "nba.p.6514",
+                "nba.p.10397",
+                "nba.p.6746",
+                "nba.p.10279"
+            ]
+        },
+        "away_lineup": {
+            "all": {
+                "nba.p.6403": {
+                    "position": "F",
+                    "player_id": "nba.p.6403",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 2
+                },
+                "nba.p.6217": {
+                    "position": null,
+                    "player_id": "nba.p.6217",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 8
+                },
+                "nba.p.6624": {
+                    "position": null,
+                    "player_id": "nba.p.6624",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 14
+                },
+                "nba.p.3930": {
+                    "position": "G",
+                    "player_id": "nba.p.3930",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 5
+                },
+                "nba.p.5767": {
+                    "position": null,
+                    "player_id": "nba.p.5767",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - Injury/Illness",
+                    "order": 15
+                },
+                "nba.p.4888": {
+                    "position": "C",
+                    "player_id": "nba.p.4888",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 3
+                },
+                "nba.p.6715": {
+                    "position": null,
+                    "player_id": "nba.p.6715",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 12
+                },
+                "nba.p.10290": {
+                    "position": "G",
+                    "player_id": "nba.p.10290",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 4
+                },
+                "nba.p.10094": {
+                    "position": null,
+                    "player_id": "nba.p.10094",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - Injury/Illness",
+                    "order": 18
+                },
+                "nba.p.10367": {
+                    "position": null,
+                    "player_id": "nba.p.10367",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 17
+                },
+                "nba.p.10336": {
+                    "position": null,
+                    "player_id": "nba.p.10336",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - G League - Two-Way",
+                    "order": 16
+                },
+                "nba.p.6595": {
+                    "position": null,
+                    "player_id": "nba.p.6595",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "0",
+                    "dnp_reason": "Inactive - Injury/Illness",
+                    "order": 13
+                },
+                "nba.p.6133": {
+                    "position": null,
+                    "player_id": "nba.p.6133",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 10
+                },
+                "nba.p.6596": {
+                    "position": null,
+                    "player_id": "nba.p.6596",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 9
+                },
+                "nba.p.5013": {
+                    "position": "F",
+                    "player_id": "nba.p.5013",
+                    "on_court": 0,
+                    "starter": "1",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 1
+                },
+                "nba.p.6699": {
+                    "position": null,
+                    "player_id": "nba.p.6699",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 11
+                },
+                "nba.p.6710": {
+                    "position": null,
+                    "player_id": "nba.p.6710",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 6
+                },
+                "nba.p.6754": {
+                    "position": null,
+                    "player_id": "nba.p.6754",
+                    "on_court": 0,
+                    "starter": "0",
+                    "active": "1",
+                    "dnp_reason": null,
+                    "order": 7
+                }
+            }
+        },
+        "away_lineup_order": {
+            "all": [
+                "nba.p.5013",
+                "nba.p.6403",
+                "nba.p.4888",
+                "nba.p.10290",
+                "nba.p.3930",
+                "nba.p.6710",
+                "nba.p.6754",
+                "nba.p.6217",
+                "nba.p.6596",
+                "nba.p.6133",
+                "nba.p.6699",
+                "nba.p.6715",
+                "nba.p.6595",
+                "nba.p.6624",
+                "nba.p.5767",
+                "nba.p.10336",
+                "nba.p.10367",
+                "nba.p.10094"
+            ]
+        }
+    },
+    "players": {
+        "nba.t.5": [
+            "nba.p.6267",
+            "nba.p.6256",
+            "nba.p.5835",
+            "nba.p.6167",
+            "nba.p.5826",
+            "nba.p.6269",
+            "nba.p.6166",
+            "nba.p.6452",
+            "nba.p.6397",
+            "nba.p.10145",
+            "nba.p.4884",
+            "nba.p.10066",
+            "nba.p.6212",
+            "nba.p.6514",
+            "nba.p.10397",
+            "nba.p.6746",
+            "nba.p.10279"
+        ],
+        "nba.t.24": [
+            "nba.p.5013",
+            "nba.p.6403",
+            "nba.p.4888",
+            "nba.p.10290",
+            "nba.p.3930",
+            "nba.p.6710",
+            "nba.p.6754",
+            "nba.p.6217",
+            "nba.p.6596",
+            "nba.p.6133",
+            "nba.p.6699",
+            "nba.p.6715",
+            "nba.p.6595",
+            "nba.p.6624",
+            "nba.p.5767",
+            "nba.p.10336",
+            "nba.p.10367",
+            "nba.p.10094"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs_wbg.png",
+            "division_abbr": "",
+            "season": null,
+            "stat_categories": [
+                "team_stats"
+            ],
+            "originLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs.png",
+            "display_name": "San Antonio",
+            "rosterGroupshotNarrow": "https://s.yimg.com/cv/apiv2/nba/freeagency/small/SPURS-NBA-Free-Agency-Mobile-banner2.png",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/spurs_wbg.png",
+            "wiki_id": [
+                "teamwiki_id",
+                "nba.t.24"
+            ],
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs_wbg.png",
+            "conference_position": "13",
+            "division": "Southwest",
+            "default_league": "nba",
+            "division_id": "6",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/san-antonio/schedule",
+            "sportacular_url": "ysportacular://v2/teams/details?teamId=nba.t.24&sport=nba",
+            "rosterGroupshot": "https://s.yimg.com/cv/apiv2/nba/free-agency/SPURS-NBA-Free-Agency-Desktop-banner2.png",
+            "team_standing": {
+                "inseason_tournament": {
+                    "group_sequence": "4",
+                    "conf": {
+                        "wins": "2",
+                        "losses": "2"
+                    },
+                    "points_against": "110.8",
+                    "games_back": "1.0",
+                    "wpct": "0.500",
+                    "points_for": "111.5",
+                    "away": {
+                        "wins": "1",
+                        "losses": "1"
+                    },
+                    "div": {
+                        "wins": "0",
+                        "losses": "0"
+                    },
+                    "losses": "2",
+                    "point_diff": "0.7",
+                    "wins": "2",
+                    "streak": "L 1",
+                    "home": {
+                        "wins": "1",
+                        "losses": "1"
+                    },
+                    "group": "West Group B"
+                },
+                "team_away_record": {
+                    "display": "11-23",
+                    "played": 34,
+                    "wins": "11",
+                    "losses": "23"
+                },
+                "group_sequence": "4",
+                "team_division_record": {
+                    "display": "5-11",
+                    "played": 16,
+                    "wins": "5",
+                    "losses": "11"
+                },
+                "display": "4<sup>th</sup> Southwest",
+                "live_movement": null,
+                "season": "2024",
+                "group_games_back": "15.0",
+                "points_against": "116.2",
+                "live_status": "false",
+                "group_position": "4",
+                "group_position_tied": false,
+                "group_name": "Southwest",
+                "qualifying_method": "",
+                "clinched_home": false,
+                "conf_standings": {
+                    "position": "13",
+                    "games_back": "28.5"
+                },
+                "points_for": "114.3",
+                "clinched_playoff": false,
+                "team_home_record": {
+                    "display": "19-16",
+                    "played": 35,
+                    "wins": "19",
+                    "losses": "16"
+                },
+                "qualifying_method_id": null,
+                "team_conference_record": {
+                    "display": "20-26",
+                    "played": 46,
+                    "wins": "20",
+                    "losses": "26"
+                },
+                "team_record": {
+                    "display": "31-40",
+                    "played": 71,
+                    "wins": "31",
+                    "losses": "40",
+                    "streak": "L 1"
+                },
+                "qualifying_league": null,
+                "clinched_division": false,
+                "magic_number": null
+            },
+            "abbr": "SA",
+            "record": "31-40",
+            "originLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/spurs_wbg.png",
+            "seatgeek_id": "2117",
+            "players": [
+                "players_info"
+            ],
+            "twitter_handle": "spurs",
+            "conference_abbr": "",
+            "last_name": "Spurs",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/san-antonio/",
+            "first_name": "San Antonio",
+            "full_name": "San Antonio Spurs",
+            "S2_id": null,
+            "conference": "Western",
+            "team_id": "nba.t.24",
+            "conference_id": "2",
+            "season_phase": null,
+            "colorPrimary": "c4ced4",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/spurs.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.24"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20220917/500x500/cavaliers_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Cleveland",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20220917/70x70/cavaliers_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20220917/500x500/cavaliers_wbg.png",
+            "conference_position": "1",
+            "division": "Central",
+            "division_id": "2",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/cleveland/schedule",
+            "abbr": "CLE",
+            "record": "58-14",
+            "seatgeek_id": "2094",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Cavaliers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/cleveland/",
+            "first_name": "Cleveland",
+            "full_name": "Cleveland Cavaliers",
+            "conference": "Eastern",
+            "team_id": "nba.t.5",
+            "conference_id": "1",
+            "colorPrimary": "71243c",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20220917/70x70/cavaliers.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.5"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.6514_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.6514",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Rest"
+        },
+        {
+            "id": "nba.inj.5767_2025-03-13",
+            "date": "2025-03-13",
+            "player_id": "nba.p.5767",
+            "type": null,
+            "reported_date": "2025-03-13",
+            "comment": "Hand"
+        },
+        {
+            "id": "nba.inj.10094_2025-02-19",
+            "date": "2025-02-19",
+            "player_id": "nba.p.10094",
+            "type": null,
+            "reported_date": "2025-02-19",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.10066_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.10066",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Personal"
+        },
+        {
+            "id": "nba.inj.10367_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.10367",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.10279_2025-03-21",
+            "date": "2025-03-21",
+            "player_id": "nba.p.10279",
+            "type": null,
+            "reported_date": "2025-03-21",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6595_2025-02-24",
+            "date": "2025-02-24",
+            "player_id": "nba.p.6595",
+            "type": null,
+            "reported_date": "2025-02-24",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6212_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.6212",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Knee"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

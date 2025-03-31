@@ -23,8 +23,8 @@ class Analytics:
 
     def truncate_tables(self):
         with get_db_session() as session:
-            session.execute(text("TRUNCATE TABLE game_metrics"))
-            session.execute(text("TRUNCATE TABLE stat_metrics"))
+            session.execute(text(f"DELETE FROM game_metrics WHERE league_id = '{self.leagueId}'"))
+            session.execute(text(f"DELETE FROM stat_metrics WHERE league_id = '{self.leagueId}'"))
 
 
 
@@ -39,13 +39,15 @@ class Analytics:
     def process_quantiles(self, metric: str, dataFrame: pd.DataFrame, isMax: bool=True, ) -> Tuple[float, pd.DataFrame]:
         
         if isMax:
-            value = dataFrame[metric].max()
+            bestValue = dataFrame[metric].max()
+            worstValue = dataFrame[metric].min()
         else:
-            value = dataFrame[metric].min()
+            bestValue = dataFrame[metric].min()
+            worstValue = dataFrame[metric].max()
         # Compute the quantiles
         quantiles = dataFrame[metric].quantile([0.1, 0.2, 0.4, 0.6, 0.8, 0.9])
 
-        return (value, quantiles)
+        return (bestValue, worstValue, quantiles)
     
 
     def get_valid_group(self, entityId: str, dataFrame: pd.DataFrame) -> pd.DataFrame:
@@ -97,13 +99,14 @@ class Analytics:
     
 
     def set_stat_metric(self, timeFrame: str, entityType: str, metricLabel: str, dataFrame: pd.DataFrame, isMax: bool=True) -> StatMetric:
-        value, quants = self.process_quantiles(metricLabel, dataFrame, isMax=isMax)
+        bestValue, worstValue, quants = self.process_quantiles(metricLabel, dataFrame, isMax=isMax)
         return StatMetric(
                 league_id= self.leagueId,
                 entity_type= entityType,
                 timeframe= timeFrame,
                 metric_name= metricLabel,
-                value= value,
+                best_value= bestValue,
+                worst_value=worstValue,
                 q1 = quants[0.1],                
                 q2 = quants[0.2],                
                 q4 = quants[0.4],               
@@ -167,7 +170,7 @@ class BasketballAnalytics(Analytics):
         super().__init__(leagueId)
 
 
-    def _set_average(self, timeFrame: str, entityType: str, entityId: str, metric: str, validGroup: pd.DataFrame, isMax: bool=False) -> List[Any]:
+    def _set_average(self, timeFrame: str, entityType: str, entityId: str, metric: str, validGroup: pd.DataFrame, isMax: bool=True) -> List[Any]:
         records = []
         metricLabel = f"{entityType}_{metric}"
         dataFrame = validGroup.groupby(entityId)[metric].mean().reset_index(name=metricLabel)
@@ -315,6 +318,7 @@ class BasketballAnalytics(Analytics):
                     team.money_outcome,
                     ou.over_under,
                     ou.total,
+                    ou.total - ou.over_under AS att,
                     ou.ou_outcome = 1 AS over_outcome,
                     ou.ou_outcome = -1 AS under_outcome,
 
@@ -328,9 +332,10 @@ class BasketballAnalytics(Analytics):
 
                     -- Moneyline ROI
                     CASE 
-                        WHEN team.money_outcome = TRUE AND team.money_line > 0 THEN 100 + team.money_line
-                        WHEN team.money_outcome = TRUE AND team.money_line < 0 THEN (10000/(team.money_line*-1.0)) + 100
-                        ELSE 0 
+                        WHEN team.money_outcome = 1 AND team.money_line > 0 THEN 100 + team.money_line
+                        WHEN team.money_outcome = 1 AND team.money_line < 0 THEN (10000/(team.money_line*-1.0)) + 100
+                        WHEN team.money_outcome = 0 THEN 100
+                        ELSE 0
                     END AS money_roi,
 
                     -- Over ROI
@@ -399,6 +404,9 @@ class BasketballAnalytics(Analytics):
             [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "spread", team)]
             [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "result", team)]
             [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "ats", team)]
+            [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "over_under", team)]
+            [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "total", team)]
+            [tableRecords.append(x) for x in self._set_average(timeFrame, "team", "team_id", "att", team)]
             [tableRecords.append(x) for x in self._set_team_average(timeFrame, "money_line", team, opponent)]
             [tableRecords.append(x) for x in self.set_team_roi(timeFrame, "money_roi", team, opponent)]
             [tableRecords.append(x) for x in self.set_team_roi(timeFrame, "spread_roi", team, opponent)]

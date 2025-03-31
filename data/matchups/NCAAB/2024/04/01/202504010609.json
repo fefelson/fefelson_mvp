@@ -1,0 +1,221 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202504010609",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.609",
+    "awayId": "ncaab.t.598",
+    "url": "/ncaab/tulane-green-wave-usc-trojans-202504010609/",
+    "gameTime": "2025-04-01 23:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "ncaab.t.609": [
+            "ncaab.p.153960",
+            "ncaab.p.154263",
+            "ncaab.p.158893",
+            "ncaab.p.159043",
+            "ncaab.p.159705",
+            "ncaab.p.160158",
+            "ncaab.p.162545",
+            "ncaab.p.163416",
+            "ncaab.p.164084",
+            "ncaab.p.169362",
+            "ncaab.p.330042",
+            "ncaab.p.330074",
+            "ncaab.p.331335",
+            "ncaab.p.335819",
+            "ncaab.p.335820",
+            "ncaab.p.335832",
+            "ncaab.p.335839",
+            "ncaab.p.335840",
+            "ncaab.p.339683"
+        ],
+        "ncaab.t.598": [
+            "ncaab.p.163029",
+            "ncaab.p.168601",
+            "ncaab.p.168981",
+            "ncaab.p.169087",
+            "ncaab.p.169303",
+            "ncaab.p.169378",
+            "ncaab.p.169746",
+            "ncaab.p.169766",
+            "ncaab.p.330366",
+            "ncaab.p.331002",
+            "ncaab.p.331325",
+            "ncaab.p.335782",
+            "ncaab.p.335785",
+            "ncaab.p.335786",
+            "ncaab.p.335787",
+            "ncaab.p.336973"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/tulane_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Tulane",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/tulane_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/tulane_wbg.png",
+            "conference_position": "4",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/tulane/schedule",
+            "abbr": "TULN",
+            "record": "19-14",
+            "seatgeek_id": "4071",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "AAC",
+            "last_name": "Green Wave",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/tulane",
+            "first_name": "Tulane",
+            "full_name": "Tulane Green Wave",
+            "conference": "American",
+            "team_id": "ncaab.t.598",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.4991",
+                    "rank": "167",
+                    "date": "2025-03-31",
+                    "previous_rank": "168",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "201",
+            "colorPrimary": "006747",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/tulane.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.598"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/500x500/usc_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "USC",
+            "group_position": "14",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/70x70/usc_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/500x500/usc_wbg.png",
+            "conference_position": "14",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/usc/schedule",
+            "abbr": "USC",
+            "record": "16-17",
+            "seatgeek_id": "4082",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Trojans",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/usc",
+            "first_name": "USC",
+            "full_name": "USC Trojans",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.609",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5318",
+                    "rank": "106",
+                    "date": "2025-03-31",
+                    "previous_rank": "106",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "750000",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190107/70x70/usc.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.609"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

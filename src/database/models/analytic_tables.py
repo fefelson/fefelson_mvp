@@ -21,7 +21,8 @@ class StatMetric(Base):
     entity_type = Column(String, primary_key=True)  # e.g., 'player', 'game'
     timeframe = Column(String, primary_key=True)  # e.g., 'daily', '7d', 'all-time'
     metric_name = Column(String, primary_key=True)            # e.g., 'avg_points'
-    value = Column(Numeric)                 # The average value
+    best_value = Column(Numeric)                 # The average value
+    worst_value = Column(Numeric)                 # The average value
     q1 = Column(Numeric)                 # quantile1
     q2 = Column(Numeric)                 # quantile2
     q4 = Column(Numeric)                 # quantile4

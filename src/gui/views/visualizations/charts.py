@@ -17,8 +17,8 @@ class Chart:
     _yLabel = None
     _grid = True
     _backgroundColor = ColorScheme.chrome_chill
-    _frameColor = ColorScheme.chrome_chill
-    _titleColor = ColorScheme.black
+    _frameColor = ColorScheme.dark_matter_haunted_house
+    _titleColor = ColorScheme.laser_lemon
     _xLabelColor = None
     _yLabelColor = None
     _gridColor = ColorScheme.laser_lemon
@@ -47,6 +47,9 @@ class Chart:
 
 class TrackLine(Chart):
     
+    _frameColor = ColorScheme.lunar_lavender
+    _titleColor = ColorScheme.palm_emerald
+    _figHeight = 1  
     _title = "Line Movement"
     _xLabel = None
     _yLabel = None
@@ -56,11 +59,11 @@ class TrackLine(Chart):
 
 
     def set_panel(self, data):
-
+        self._title = f"{data['title']}"
         self.on_setup()
         self.set_axes(data)
 
-        self.axes.plot(data["xData"], data["yData"], marker='o', linestyle='-', color=ColorScheme.to_matplotlib_color(ColorScheme.stardust_gold), label=data["label"])
+        self.axes.plot(data["xData"], data["yData"], linestyle='dashdot', color=ColorScheme.to_matplotlib_color(ColorScheme.stardust_gold), label=data["label"])
 
         self.axes.legend(loc="lower left")
         self.canvas.draw()
@@ -74,8 +77,8 @@ class TrackLine(Chart):
         # Set axis limits of time dependent data dynamically
         start = 0
         end = 300 if data["xData"][-1] < 300 else data["xData"][-1] +60
-        y_min = data["yData"][-1] - 5
-        y_max = data["yData"][-1] + 5
+        y_min = min(data["yData"])-2
+        y_max = max(data["yData"]) +2
         self.axes.axis([start, end, y_min, y_max])
         
 
@@ -87,8 +90,8 @@ class BarChart(Chart):
     _figHeight = 2
     _figWidth = 3
 
-    _lowerBound = -40
-    _upperBound = 40
+    _lowerBound = -20
+    _upperBound = 20
     _aLabel = "Home"
     _bLabel = "Away"
 
@@ -107,13 +110,16 @@ class BarChart(Chart):
 
 
     def set_colors(self, team):
-        homeColor = ColorScheme.to_matplotlib_color(team["primary_color"])
-        awayColor = ColorScheme.to_matplotlib_color(team["secondary_color"])
+        homeColor = ColorScheme.to_matplotlib_color(team['primary_color'].iloc[0])
+        awayColor = ColorScheme.to_matplotlib_color(team["secondary_color"].iloc[0])
 
         return homeColor, awayColor
 
 
     def set_panel(self, team, aBoxes, bBoxes, sixAvg, thirteenAvg):
+
+        from pprint import pprint 
+        pprint(aBoxes)
         
         aColor, bColor = self.set_colors(team)
         self.on_setup()
@@ -140,8 +146,6 @@ class BarChart(Chart):
 class WinLossChart(BarChart):
     _aLabel = "Home"
     _bLabel = "Away"
-    _lowerBound = -40
-    _upperBound = 40
     _title = "Win / Loss"
 
     def __init__(self, parent, *args, **kwargs):
@@ -152,8 +156,6 @@ class SpreadChart(BarChart):
     
     _aLabel = "Home"
     _bLabel = "Away"
-    _lowerBound = -40
-    _upperBound = 40
     _title = "Favored By (Pts Spread)"
 
     def __init__(self, parent, *args, **kwargs):
@@ -163,8 +165,6 @@ class SpreadChart(BarChart):
 class ATSChart(BarChart):
     _aLabel = "Win"
     _bLabel = "Loss"
-    _lowerBound = -40
-    _upperBound = 40
     _title = "Against The Spread (ATS)"
 
     def __init__(self, parent, *args, **kwargs):

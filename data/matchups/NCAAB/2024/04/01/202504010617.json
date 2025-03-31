@@ -1,0 +1,218 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202504010617",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.617",
+    "awayId": "ncaab.t.125",
+    "url": "/ncaab/colorado-buffaloes-villanova-wildcats-202504010617/",
+    "gameTime": "2025-04-01 20:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "ncaab.t.617": [
+            "ncaab.p.153229",
+            "ncaab.p.159088",
+            "ncaab.p.162672",
+            "ncaab.p.162946",
+            "ncaab.p.163370",
+            "ncaab.p.163371",
+            "ncaab.p.169497",
+            "ncaab.p.329992",
+            "ncaab.p.330231",
+            "ncaab.p.330397",
+            "ncaab.p.335836",
+            "ncaab.p.335845",
+            "ncaab.p.335846",
+            "ncaab.p.335849",
+            "ncaab.p.335850"
+        ],
+        "ncaab.t.125": [
+            "ncaab.p.744",
+            "ncaab.p.158697",
+            "ncaab.p.162403",
+            "ncaab.p.168488",
+            "ncaab.p.168491",
+            "ncaab.p.168492",
+            "ncaab.p.300774",
+            "ncaab.p.330547",
+            "ncaab.p.330557",
+            "ncaab.p.330567",
+            "ncaab.p.330568",
+            "ncaab.p.335707",
+            "ncaab.p.335713",
+            "ncaab.p.335716",
+            "ncaab.p.335721",
+            "ncaab.p.335724",
+            "ncaab.p.335725"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190531/500x500/colorado_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Colorado",
+            "group_position": "16",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190531/70x70/colorado_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190531/500x500/colorado_wbgs.png",
+            "conference_position": "16",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/colorado/schedule",
+            "abbr": "COLO",
+            "record": "14-20",
+            "seatgeek_id": "4013",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIG12",
+            "last_name": "Buffaloes",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/colorado",
+            "first_name": "Colorado",
+            "full_name": "Colorado Buffaloes",
+            "conference": "Big 12",
+            "team_id": "ncaab.t.125",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.4932",
+                    "rank": "185",
+                    "date": "2025-03-31",
+                    "previous_rank": "185",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "103",
+            "colorPrimary": "cfb87c",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190531/70x70/colorado_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.125"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/villanova_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Villanova",
+            "group_position": "6",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/villanova_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/villanova_wbg.png",
+            "conference_position": "6",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/villanova/schedule",
+            "abbr": "NOVA",
+            "record": "19-14",
+            "seatgeek_id": "4051",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BIGE",
+            "last_name": "Wildcats",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/villanova",
+            "first_name": "Villanova",
+            "full_name": "Villanova Wildcats",
+            "conference": "Big East",
+            "team_id": "ncaab.t.617",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5166",
+                    "rank": "139",
+                    "date": "2025-03-31",
+                    "previous_rank": "139",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "102",
+            "colorPrimary": "00205b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/villanova.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.617"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

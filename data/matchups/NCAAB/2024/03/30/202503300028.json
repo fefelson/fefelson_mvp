@@ -1,0 +1,626 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202503300028",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.28",
+    "awayId": "ncaab.t.358",
+    "url": "/ncaab/michigan-state-spartans-auburn-tigers-202503300028/",
+    "gameTime": "2025-03-30 17:05:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "4.5",
+            "away_line": "-105",
+            "away_ml": "180",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-220",
+            "timestamp": "2025-03-30 08:15:38.212730-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "4.5",
+            "away_line": "-105",
+            "away_ml": "180",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-220",
+            "timestamp": "2025-03-30 09:00:15.594744-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "4.5",
+            "away_line": "-105",
+            "away_ml": "180",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-220",
+            "timestamp": "2025-03-30 10:00:13.410204-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "4.5",
+            "away_line": "-105",
+            "away_ml": "180",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-220",
+            "timestamp": "2025-03-30 11:00:09.424529-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "4.5",
+            "away_line": "-105",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-4.5",
+            "home_line": "-115",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 12:00:05.600617-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "5.5",
+            "away_line": "-120",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "100",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 13:00:06.427606-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 14:00:06.281334-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 15:00:09.208740-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 16:00:09.593941-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "147.5",
+            "away_spread": "5.5",
+            "away_line": "-115",
+            "away_ml": "185",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-5.5",
+            "home_line": "-105",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-225",
+            "timestamp": "2025-03-30 17:00:12.046340-04:00"
+        }
+    ],
+    "lineups": {
+        "home_lineup": {
+            "all": {
+                "ncaab.p.330254": {
+                    "position": null,
+                    "player_id": "ncaab.p.330254",
+                    "starter": "0",
+                    "order": 17
+                },
+                "ncaab.p.335897": {
+                    "position": null,
+                    "player_id": "ncaab.p.335897",
+                    "starter": "0",
+                    "order": 16
+                },
+                "ncaab.p.168433": {
+                    "position": null,
+                    "player_id": "ncaab.p.168433",
+                    "starter": "0",
+                    "order": 12
+                },
+                "ncaab.p.330245": {
+                    "position": null,
+                    "player_id": "ncaab.p.330245",
+                    "starter": "0",
+                    "order": 11
+                },
+                "ncaab.p.336889": {
+                    "position": null,
+                    "player_id": "ncaab.p.336889",
+                    "starter": "0",
+                    "order": 3
+                },
+                "ncaab.p.162485": {
+                    "position": null,
+                    "player_id": "ncaab.p.162485",
+                    "starter": "0",
+                    "order": 13
+                },
+                "ncaab.p.335911": {
+                    "position": null,
+                    "player_id": "ncaab.p.335911",
+                    "starter": "0",
+                    "order": 14
+                },
+                "ncaab.p.162453": {
+                    "position": null,
+                    "player_id": "ncaab.p.162453",
+                    "starter": "0",
+                    "order": 8
+                },
+                "ncaab.p.162522": {
+                    "position": null,
+                    "player_id": "ncaab.p.162522",
+                    "starter": "0",
+                    "order": 6
+                },
+                "ncaab.p.160036": {
+                    "position": null,
+                    "player_id": "ncaab.p.160036",
+                    "starter": "0",
+                    "order": 10
+                },
+                "ncaab.p.160039": {
+                    "position": null,
+                    "player_id": "ncaab.p.160039",
+                    "starter": "0",
+                    "order": 4
+                },
+                "ncaab.p.301709": {
+                    "position": null,
+                    "player_id": "ncaab.p.301709",
+                    "starter": "0",
+                    "order": 1
+                },
+                "ncaab.p.162526": {
+                    "position": null,
+                    "player_id": "ncaab.p.162526",
+                    "starter": "0",
+                    "order": 9
+                },
+                "ncaab.p.335909": {
+                    "position": null,
+                    "player_id": "ncaab.p.335909",
+                    "starter": "0",
+                    "order": 5
+                },
+                "ncaab.p.329811": {
+                    "position": null,
+                    "player_id": "ncaab.p.329811",
+                    "starter": "0",
+                    "order": 7
+                },
+                "ncaab.p.169323": {
+                    "position": null,
+                    "player_id": "ncaab.p.169323",
+                    "starter": "0",
+                    "order": 18
+                },
+                "ncaab.p.330253": {
+                    "position": null,
+                    "player_id": "ncaab.p.330253",
+                    "starter": "0",
+                    "order": 15
+                },
+                "ncaab.p.159016": {
+                    "position": null,
+                    "player_id": "ncaab.p.159016",
+                    "starter": "0",
+                    "order": 2
+                }
+            }
+        },
+        "home_lineup_order": {
+            "all": [
+                "ncaab.p.301709",
+                "ncaab.p.159016",
+                "ncaab.p.336889",
+                "ncaab.p.160039",
+                "ncaab.p.335909",
+                "ncaab.p.162522",
+                "ncaab.p.329811",
+                "ncaab.p.162453",
+                "ncaab.p.162526",
+                "ncaab.p.160036",
+                "ncaab.p.330245",
+                "ncaab.p.168433",
+                "ncaab.p.162485",
+                "ncaab.p.335911",
+                "ncaab.p.330253",
+                "ncaab.p.335897",
+                "ncaab.p.330254",
+                "ncaab.p.169323"
+            ]
+        },
+        "away_lineup": {
+            "all": {
+                "ncaab.p.331212": {
+                    "position": null,
+                    "player_id": "ncaab.p.331212",
+                    "starter": "0",
+                    "order": 3
+                },
+                "ncaab.p.331215": {
+                    "position": null,
+                    "player_id": "ncaab.p.331215",
+                    "starter": "0",
+                    "order": 2
+                },
+                "ncaab.p.163289": {
+                    "position": null,
+                    "player_id": "ncaab.p.163289",
+                    "starter": "0",
+                    "order": 1
+                },
+                "ncaab.p.162788": {
+                    "position": null,
+                    "player_id": "ncaab.p.162788",
+                    "starter": "0",
+                    "order": 6
+                },
+                "ncaab.p.331209": {
+                    "position": null,
+                    "player_id": "ncaab.p.331209",
+                    "starter": "0",
+                    "order": 5
+                },
+                "ncaab.p.337061": {
+                    "position": null,
+                    "player_id": "ncaab.p.337061",
+                    "starter": "0",
+                    "order": 9
+                },
+                "ncaab.p.337063": {
+                    "position": null,
+                    "player_id": "ncaab.p.337063",
+                    "starter": "0",
+                    "order": 14
+                },
+                "ncaab.p.337054": {
+                    "position": null,
+                    "player_id": "ncaab.p.337054",
+                    "starter": "0",
+                    "order": 11
+                },
+                "ncaab.p.337055": {
+                    "position": null,
+                    "player_id": "ncaab.p.337055",
+                    "starter": "0",
+                    "order": 13
+                },
+                "ncaab.p.159021": {
+                    "position": null,
+                    "player_id": "ncaab.p.159021",
+                    "starter": "0",
+                    "order": 16
+                },
+                "ncaab.p.337056": {
+                    "position": null,
+                    "player_id": "ncaab.p.337056",
+                    "starter": "0",
+                    "order": 15
+                },
+                "ncaab.p.169584": {
+                    "position": null,
+                    "player_id": "ncaab.p.169584",
+                    "starter": "0",
+                    "order": 8
+                },
+                "ncaab.p.169585": {
+                    "position": null,
+                    "player_id": "ncaab.p.169585",
+                    "starter": "0",
+                    "order": 7
+                },
+                "ncaab.p.169586": {
+                    "position": null,
+                    "player_id": "ncaab.p.169586",
+                    "starter": "0",
+                    "order": 4
+                },
+                "ncaab.p.169587": {
+                    "position": null,
+                    "player_id": "ncaab.p.169587",
+                    "starter": "0",
+                    "order": 12
+                },
+                "ncaab.p.331210": {
+                    "position": null,
+                    "player_id": "ncaab.p.331210",
+                    "starter": "0",
+                    "order": 10
+                }
+            }
+        },
+        "away_lineup_order": {
+            "all": [
+                "ncaab.p.163289",
+                "ncaab.p.331215",
+                "ncaab.p.331212",
+                "ncaab.p.169586",
+                "ncaab.p.331209",
+                "ncaab.p.162788",
+                "ncaab.p.169585",
+                "ncaab.p.169584",
+                "ncaab.p.337061",
+                "ncaab.p.331210",
+                "ncaab.p.337054",
+                "ncaab.p.169587",
+                "ncaab.p.337055",
+                "ncaab.p.337063",
+                "ncaab.p.337056",
+                "ncaab.p.159021"
+            ]
+        }
+    },
+    "players": {
+        "ncaab.t.28": [
+            "ncaab.p.301709",
+            "ncaab.p.159016",
+            "ncaab.p.336889",
+            "ncaab.p.160039",
+            "ncaab.p.335909",
+            "ncaab.p.162522",
+            "ncaab.p.329811",
+            "ncaab.p.162453",
+            "ncaab.p.162526",
+            "ncaab.p.160036",
+            "ncaab.p.330245",
+            "ncaab.p.168433",
+            "ncaab.p.162485",
+            "ncaab.p.335911",
+            "ncaab.p.330253",
+            "ncaab.p.335897",
+            "ncaab.p.330254",
+            "ncaab.p.169323"
+        ],
+        "ncaab.t.358": [
+            "ncaab.p.163289",
+            "ncaab.p.331215",
+            "ncaab.p.331212",
+            "ncaab.p.169586",
+            "ncaab.p.331209",
+            "ncaab.p.162788",
+            "ncaab.p.169585",
+            "ncaab.p.169584",
+            "ncaab.p.337061",
+            "ncaab.p.331210",
+            "ncaab.p.337054",
+            "ncaab.p.169587",
+            "ncaab.p.337055",
+            "ncaab.p.337063",
+            "ncaab.p.337056",
+            "ncaab.p.159021"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/500x500/michigan_state_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Michigan St.",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/70x70/michigan_state_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20190409/500x500/michigan_state_wbgs.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/michigan-state/schedule",
+            "abbr": "MSU",
+            "record": "30-6",
+            "seatgeek_id": "4057",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "BTEN",
+            "last_name": "Spartans",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/michigan-state",
+            "first_name": "Michigan State",
+            "full_name": "Michigan State Spartans",
+            "conference": "Big Ten",
+            "team_id": "ncaab.t.358",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "1080",
+                    "rank": "8",
+                    "date": "2025-03-17",
+                    "previous_rank": "7",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "568",
+                    "rank": "7",
+                    "date": "2025-03-17",
+                    "previous_rank": "6",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.6384",
+                    "rank": "7",
+                    "date": "2025-03-30",
+                    "previous_rank": "7",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "3",
+            "colorPrimary": "18453b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaawb/20190409/70x70/michigan_state_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.358"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/auburn_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Auburn",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/auburn_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181214/500x500/auburn_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/auburn/schedule",
+            "abbr": "AUB",
+            "record": "31-5",
+            "seatgeek_id": "4087",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SEC",
+            "last_name": "Tigers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/auburn",
+            "first_name": "Auburn",
+            "full_name": "Auburn Tigers",
+            "conference": "Southeastern",
+            "team_id": "ncaab.t.28",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": "1291",
+                    "rank": "4",
+                    "date": "2025-03-17",
+                    "previous_rank": "3",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": "672",
+                    "rank": "4",
+                    "date": "2025-03-17",
+                    "previous_rank": "3",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.682",
+                    "rank": "1",
+                    "date": "2025-03-30",
+                    "previous_rank": "1",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "10",
+            "colorPrimary": "0c2340",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181127/70x70/auburn.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.28"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

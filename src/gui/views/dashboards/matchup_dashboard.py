@@ -1,14 +1,12 @@
 import wx
 
 from ..panels.chart_panel import ChartPanel
-from ..panels.matchup_panel import MatchupPanel
-from ..panels.matchup_ticker_panel import MatchupTickerPanel, ThumbPanel
 from ..panels.team_panel import TeamPanel
+from ..panels.ticker_panel import TickerPanel
+from ..panels.tracking_panel import TrackingPanel
 
 
 emerald_fog = wx.Colour(50, 168, 82)         # #32A852
-
-spacetime_funnel_cake = wx.Colour(245, 245, 220)  # #F5F5DC
 # A soft, beige-cream, like funnel cake dusted with powdered sugar in a spacetime distortion.
 
 rune_rose = wx.Colour(188, 143, 143)
@@ -23,34 +21,41 @@ class MatchupDashboard(wx.Panel):
         super().__init__(parent, *args, **kwargs)
         self.SetBackgroundColour(dark_matter_haunted_house)
 
-        self.sizer = wx.BoxSizer()
 
-        self.tickerPanel = MatchupTickerPanel(self)
+        self.tickerPanel = TickerPanel(self)
         self.tickerPanel.SetBackgroundColour(dark_matter_haunted_house)
         
         # self.matchupPanel = MatchupPanel(self)
         # self.matchupPanel.SetBackgroundColour(emerald_fog)
 
-        self.teamPanel = TeamPanel(self)
-        self.teamPanel.SetBackgroundColour(rune_rose)
+        self.awayPanel = TeamPanel(self)
+        self.awayPanel.SetBackgroundColour(rune_rose)
+        
+        self.homePanel = TeamPanel(self)
+        self.homePanel.SetBackgroundColour(rune_rose)
+        
+        self.trackingPanel = TrackingPanel(self)
 
         self.chartPanel = ChartPanel(self)
-        self.chartPanel.SetBackgroundColour(dark_matter_haunted_house)
+        self.chartPanel.Hide()
+        
+        teamSizer = wx.BoxSizer()
+        teamSizer.Add(self.awayPanel, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+        teamSizer.Add(self.homePanel, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+        teamSizer.Add(self.chartPanel, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
 
-        self.sizer.Add(self.tickerPanel, 0, wx.EXPAND | wx.TOP, 10)
-        # self.sizer.Add(self.matchupPanel, 13, wx.EXPAND)
-        self.sizer.Add(self.teamPanel, 13, wx.EXPAND | wx.TOP, 10)
-        self.sizer.Add(self.chartPanel, 7, wx.EXPAND | wx.TOP | wx.LEFT | wx.RIGHT, 10)
-        self.SetSizer(self.sizer)
+        bodySizer = wx.BoxSizer(wx.VERTICAL)
+        bodySizer.Add(self.trackingPanel, 0, wx.EXPAND | wx.ALL, 10 )
+        bodySizer.Add(teamSizer, 1, wx.EXPAND)
+
+        sizer = wx.BoxSizer()
+        sizer.Add(self.tickerPanel, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 10)
+        sizer.Add(bodySizer, 1, wx.EXPAND)
+        
+        self.SetSizer(sizer)
 
 
-    def new_thumb_panels(self, matchups, ctrl=None):
-        for matchup in matchups:
-            thumbPanel=ThumbPanel(self.tickerPanel.scrolledPanel, ctrl)
-            self.tickerPanel.scrollSizer.Add(thumbPanel, 0, wx.BOTTOM, 10)
-            thumbPanel.setPanel(matchup)
-            thumbPanel.SetBackgroundColour(spacetime_funnel_cake)
-            # thumbPanel.Show()
+    
 
         
 

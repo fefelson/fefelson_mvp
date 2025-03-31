@@ -1,0 +1,219 @@
+{
+    "provider": "yahoo",
+    "gameId": "ncaab.g.202504010581",
+    "leagueId": "NCAAB",
+    "homeId": "ncaab.t.581",
+    "awayId": "ncaab.t.316",
+    "url": "/ncaab/loyola-chicago-ramblers-chattanooga-mocs-202504010581/",
+    "gameTime": "2025-04-01 21:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": null,
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "ncaab.t.581": [
+            "ncaab.p.159113",
+            "ncaab.p.160510",
+            "ncaab.p.162954",
+            "ncaab.p.163091",
+            "ncaab.p.200363",
+            "ncaab.p.330599",
+            "ncaab.p.330618",
+            "ncaab.p.330644",
+            "ncaab.p.333242",
+            "ncaab.p.336378",
+            "ncaab.p.336386",
+            "ncaab.p.336400",
+            "ncaab.p.336401",
+            "ncaab.p.336412",
+            "ncaab.p.337160",
+            "ncaab.p.337164"
+        ],
+        "ncaab.t.316": [
+            "ncaab.p.159142",
+            "ncaab.p.163016",
+            "ncaab.p.163087",
+            "ncaab.p.168532",
+            "ncaab.p.168782",
+            "ncaab.p.168783",
+            "ncaab.p.168785",
+            "ncaab.p.169758",
+            "ncaab.p.330061",
+            "ncaab.p.330080",
+            "ncaab.p.330094",
+            "ncaab.p.335400",
+            "ncaab.p.336065",
+            "ncaab.p.336076",
+            "ncaab.p.336077",
+            "ncaab.p.336083",
+            "ncaab.p.336084"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/500x500/loyola_chicago_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Loyola Chicago",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/70x70/loyola_chicago_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181212/500x500/loyola_chicago_wbg.png",
+            "conference_position": "4",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/loyola-chicago/schedule",
+            "abbr": "Loyo",
+            "record": "25-11",
+            "seatgeek_id": "6436",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "A10",
+            "last_name": "Ramblers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/loyola-chicago",
+            "first_name": "Loyola Chicago",
+            "full_name": "Loyola Chicago Ramblers",
+            "conference": "Atlantic 10",
+            "team_id": "ncaab.t.316",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5445",
+                    "rank": "84",
+                    "date": "2025-03-31",
+                    "previous_rank": "84",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "101",
+            "colorPrimary": "582931",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/20240224/70x70/loyola.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.316"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/chattanooga_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Chattanooga",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/chattanooga_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/500x500/chattanooga_wbg.png",
+            "conference_position": "1",
+            "division": "D-I",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/ncaab/teams/chattanooga/schedule",
+            "abbr": "CHAT",
+            "record": "27-9",
+            "seatgeek_id": "6417",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "SOUTH",
+            "last_name": "Mocs",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/ncaab/teams/chattanooga",
+            "first_name": "Chattanooga",
+            "full_name": "Chattanooga Mocs",
+            "conference": "Southern",
+            "team_id": "ncaab.t.581",
+            "rankings": {
+                "ncaab.poll.1": {
+                    "primary": "true",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "AP Top 25",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.1"
+                },
+                "ncaab.poll.3": {
+                    "primary": "false",
+                    "points": false,
+                    "rank": false,
+                    "date": "2025-03-17",
+                    "previous_rank": 0,
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "USA Today/ESPN",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.3"
+                },
+                "ncaab.poll.5": {
+                    "primary": "false",
+                    "points": "0.5713",
+                    "rank": "52",
+                    "date": "2025-03-31",
+                    "previous_rank": "52",
+                    "teams": [
+                        "teams"
+                    ],
+                    "source": "RPI Rankings",
+                    "relevant": "true",
+                    "poll_key": "ncaab.poll.5"
+                }
+            },
+            "conference_id": "29",
+            "colorPrimary": "00386b",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/ncaab/20181231/70x70/chattanooga.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "ncaab.t.581"
+            ]
+        }
+    ],
+    "injuries": null,
+    "stadiumId": null,
+    "isNuetral": false
+}

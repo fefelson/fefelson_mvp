@@ -1,0 +1,229 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025040101",
+    "leagueId": "NBA",
+    "homeId": "nba.t.1",
+    "awayId": "nba.t.22",
+    "url": "/nba/portland-trail-blazers-atlanta-hawks-2025040101/",
+    "gameTime": "2025-04-01 19:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.1": [
+            "nba.p.5336",
+            "nba.p.5487",
+            "nba.p.5651",
+            "nba.p.5681",
+            "nba.p.6016",
+            "nba.p.6236",
+            "nba.p.6259",
+            "nba.p.6398",
+            "nba.p.6429",
+            "nba.p.6562",
+            "nba.p.6698",
+            "nba.p.6786",
+            "nba.p.6791",
+            "nba.p.10053",
+            "nba.p.10069",
+            "nba.p.10105",
+            "nba.p.10129",
+            "nba.p.10296"
+        ],
+        "nba.t.22": [
+            "nba.p.5350",
+            "nba.p.5958",
+            "nba.p.6035",
+            "nba.p.6038",
+            "nba.p.6208",
+            "nba.p.6401",
+            "nba.p.6588",
+            "nba.p.6697",
+            "nba.p.6730",
+            "nba.p.6747",
+            "nba.p.10048",
+            "nba.p.10051",
+            "nba.p.10061",
+            "nba.p.10064",
+            "nba.p.10065",
+            "nba.p.10119",
+            "nba.p.10164",
+            "nba.p.10285"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/trailblazers_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Portland",
+            "group_position": "4",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/trailblazers_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/500x500/trailblazers_wbgs.png",
+            "conference_position": "12",
+            "division": "Northwest",
+            "division_id": "7",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/portland/schedule",
+            "abbr": "POR",
+            "record": "32-43",
+            "seatgeek_id": "2106",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Trail Blazers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/portland/",
+            "first_name": "Portland",
+            "full_name": "Portland Trail Blazers",
+            "conference": "Western",
+            "team_id": "nba.t.22",
+            "conference_id": "2",
+            "colorPrimary": "e03a3e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/trailblazers_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.22"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181211/500x500/hawks_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Atlanta",
+            "group_position": "1",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181211/70x70/hawks_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181211/500x500/hawks_wbg.png",
+            "conference_position": "7",
+            "division": "Southeast",
+            "division_id": "5",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/atlanta/schedule",
+            "abbr": "ATL",
+            "record": "36-38",
+            "seatgeek_id": "2098",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Hawks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/atlanta/",
+            "first_name": "Atlanta",
+            "full_name": "Atlanta Hawks",
+            "conference": "Eastern",
+            "team_id": "nba.t.1",
+            "conference_id": "1",
+            "colorPrimary": "e03a3e",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181211/70x70/hawks.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.1"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.5336_2025-03-12",
+            "date": "2025-03-12",
+            "player_id": "nba.p.5336",
+            "type": null,
+            "reported_date": "2025-03-12",
+            "comment": "Hand"
+        },
+        {
+            "id": "nba.inj.5958_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.5958",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Calf"
+        },
+        {
+            "id": "nba.inj.10053_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.10053",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.10048_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.10048",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Concussion"
+        },
+        {
+            "id": "nba.inj.5350_2025-03-10",
+            "date": "2025-03-10",
+            "player_id": "nba.p.5350",
+            "type": null,
+            "reported_date": "2025-03-10",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.10105_2024-12-18",
+            "date": "2024-12-18",
+            "player_id": "nba.p.10105",
+            "type": null,
+            "reported_date": "2024-12-18",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.6562_2025-01-23",
+            "date": "2025-01-23",
+            "player_id": "nba.p.6562",
+            "type": null,
+            "reported_date": "2025-01-23",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.10129_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.10129",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Calf"
+        },
+        {
+            "id": "nba.inj.5487_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.5487",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6730_2025-03-27",
+            "date": "2025-03-27",
+            "player_id": "nba.p.6730",
+            "type": null,
+            "reported_date": "2025-03-27",
+            "comment": "Rib"
+        },
+        {
+            "id": "nba.inj.6038_2025-03-15",
+            "date": "2025-03-15",
+            "player_id": "nba.p.6038",
+            "type": null,
+            "reported_date": "2025-03-15",
+            "comment": "Knee"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

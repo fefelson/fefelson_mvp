@@ -1,0 +1,270 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025040129",
+    "leagueId": "NBA",
+    "homeId": "nba.t.29",
+    "awayId": "nba.t.9",
+    "url": "/nba/golden-state-warriors-memphis-grizzlies-2025040129/",
+    "gameTime": "2025-04-01 20:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.29": [
+            "nba.p.5825",
+            "nba.p.5959",
+            "nba.p.6015",
+            "nba.p.6164",
+            "nba.p.6209",
+            "nba.p.6255",
+            "nba.p.6422",
+            "nba.p.6459",
+            "nba.p.6572",
+            "nba.p.6617",
+            "nba.p.6737",
+            "nba.p.6757",
+            "nba.p.10070",
+            "nba.p.10287",
+            "nba.p.10327",
+            "nba.p.10340",
+            "nba.p.10344",
+            "nba.p.10415"
+        ],
+        "nba.t.9": [
+            "nba.p.4612",
+            "nba.p.4912",
+            "nba.p.5069",
+            "nba.p.5490",
+            "nba.p.5637",
+            "nba.p.5739",
+            "nba.p.6020",
+            "nba.p.6549",
+            "nba.p.6556",
+            "nba.p.6686",
+            "nba.p.6745",
+            "nba.p.6772",
+            "nba.p.10080",
+            "nba.p.10115",
+            "nba.p.10308",
+            "nba.p.10358",
+            "nba.p.10435"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20191016/500x500/warriors_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Golden State",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20191016/70x70/warriors_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20191016/500x500/warriors_wbg.png",
+            "conference_position": "6",
+            "division": "Pacific",
+            "division_id": "4",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/golden-state/schedule",
+            "abbr": "GS",
+            "record": "43-31",
+            "seatgeek_id": "2108",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Warriors",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/golden-state/",
+            "first_name": "Golden State",
+            "full_name": "Golden State Warriors",
+            "conference": "Western",
+            "team_id": "nba.t.9",
+            "conference_id": "2",
+            "colorPrimary": "1d428a",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20191016/70x70/warriors.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.9"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181218/500x500/grizzlies_wbg.png",
+            "division_abbr": "",
+            "season": null,
+            "stat_categories": [
+                "team_stats"
+            ],
+            "originLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181218/500x500/grizzlies.png",
+            "display_name": "Memphis",
+            "rosterGroupshotNarrow": "https://s.yimg.com/cv/apiv2/nba/free-agency/MOBILE-Grizzlies-with-Andre-Update.png",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181218/70x70/grizzlies_wbg.png",
+            "wiki_id": [
+                "teamwiki_id",
+                "nba.t.29"
+            ],
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181218/500x500/grizzlies_wbg.png",
+            "conference_position": "5",
+            "division": "Southwest",
+            "default_league": "nba",
+            "division_id": "6",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/memphis/schedule",
+            "sportacular_url": "ysportacular://v2/teams/details?teamId=nba.t.29&sport=nba",
+            "rosterGroupshot": "https://s.yimg.com/cv/apiv2/nba/free-agency/DESKTOP-Grizzlies-with-Andre-Update.png",
+            "team_standing": {
+                "inseason_tournament": {
+                    "group_sequence": "4",
+                    "conf": {
+                        "wins": "1",
+                        "losses": "3"
+                    },
+                    "points_against": "118.8",
+                    "games_back": "2.0",
+                    "wpct": "0.250",
+                    "points_for": "116.0",
+                    "away": {
+                        "wins": "0",
+                        "losses": "2"
+                    },
+                    "div": {
+                        "wins": "1",
+                        "losses": "1"
+                    },
+                    "losses": "3",
+                    "point_diff": "-2.8",
+                    "wins": "1",
+                    "streak": "L 1",
+                    "home": {
+                        "wins": "1",
+                        "losses": "1"
+                    },
+                    "group": "West Group C"
+                },
+                "team_away_record": {
+                    "display": "19-18",
+                    "played": 37,
+                    "wins": "19",
+                    "losses": "18"
+                },
+                "group_sequence": "2",
+                "team_division_record": {
+                    "display": "10-5",
+                    "played": 15,
+                    "wins": "10",
+                    "losses": "5"
+                },
+                "display": "2<sup>nd</sup> Southwest",
+                "live_movement": null,
+                "season": "2024",
+                "group_games_back": "4.5",
+                "points_against": "117.1",
+                "live_status": "false",
+                "group_position": "2",
+                "group_position_tied": false,
+                "group_name": "Southwest",
+                "qualifying_method": "",
+                "clinched_home": false,
+                "conf_standings": {
+                    "position": "5",
+                    "games_back": "18.0"
+                },
+                "points_for": "122.2",
+                "clinched_playoff": false,
+                "team_home_record": {
+                    "display": "25-12",
+                    "played": 37,
+                    "wins": "25",
+                    "losses": "12"
+                },
+                "qualifying_method_id": null,
+                "eliminated_from_playoffs": "false",
+                "team_conference_record": {
+                    "display": "26-21",
+                    "played": 47,
+                    "wins": "26",
+                    "losses": "21"
+                },
+                "team_record": {
+                    "display": "44-30",
+                    "played": 74,
+                    "wins": "44",
+                    "losses": "30",
+                    "streak": "L 2"
+                },
+                "qualifying_league": null,
+                "clinched_division": false,
+                "magic_number": null
+            },
+            "abbr": "MEM",
+            "record": "44-30",
+            "originLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181218/500x500/grizzlies_wbg.png",
+            "seatgeek_id": "2115",
+            "players": [
+                "players_info"
+            ],
+            "twitter_handle": "memgrizz",
+            "conference_abbr": "",
+            "last_name": "Grizzlies",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/memphis/",
+            "first_name": "Memphis",
+            "full_name": "Memphis Grizzlies",
+            "S2_id": null,
+            "conference": "Western",
+            "team_id": "nba.t.29",
+            "conference_id": "2",
+            "season_phase": null,
+            "colorPrimary": "5d76a9",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181218/70x70/grizzlies.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.29"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.6549_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.6549",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.6209_2025-03-19",
+            "date": "2025-03-19",
+            "player_id": "nba.p.6209",
+            "type": null,
+            "reported_date": "2025-03-19",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5739_2025-03-27",
+            "date": "2025-03-27",
+            "player_id": "nba.p.5739",
+            "type": null,
+            "reported_date": "2025-03-27",
+            "comment": "Thumb"
+        },
+        {
+            "id": "nba.inj.10344_2025-02-24",
+            "date": "2025-02-24",
+            "player_id": "nba.p.10344",
+            "type": null,
+            "reported_date": "2025-02-24",
+            "comment": "Knee"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

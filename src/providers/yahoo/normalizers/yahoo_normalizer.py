@@ -69,8 +69,8 @@ class YahooNormalizer(INormalAgent):
             try:
                 result = teamPts - oppPts
                 spread_key = f"{a_h}_spread"
-                spreadOutcome = (result > float(odds[spread_key])) - (result < float(odds[spread_key]))
-                moneyOutcome = teamPts > oppPts  # Boolean, automatically 1 (win) or 0 (loss)
+                spreadOutcome = (result + float(odds[spread_key])>0) - (result + float(odds[spread_key]) < 0)
+                moneyOutcome = (teamPts > oppPts) - (teamPts < oppPts)  # Boolean, automatically 1 (win) or 0 (loss)
                 
                 newGameLine = GameLine(
                     team_id=teamIds[a_h],
@@ -81,7 +81,7 @@ class YahooNormalizer(INormalAgent):
                     money_line=None if odds[f"{a_h}_ml"] == '' else odds[f"{a_h}_ml"], 
                     result=result,
                     spread_outcome=spreadOutcome,
-                    money_outcome=None if odds[f"{a_h}_ml"] == '' else moneyOutcome
+                    money_outcome=moneyOutcome
                 )
                 gameLines.append(newGameLine)
             except ValueError:

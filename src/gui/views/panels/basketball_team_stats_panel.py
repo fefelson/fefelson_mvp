@@ -1,9 +1,7 @@
 import wx
-import matplotlib
-matplotlib.use('WxAgg')
-from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
-from matplotlib.figure import Figure
 
+from ..components.opposite_chart_component import OppositeChart
+from ..components.opposite_shot_component import OppositeShot
 
 class BasketballTeamStatsPanel(wx.ScrolledWindow):
 
@@ -13,22 +11,21 @@ class BasketballTeamStatsPanel(wx.ScrolledWindow):
         self.SetScrollbars(20, 20, 10, 10)
 
 
-        valueFont = wx.Font(10, wx.FONTFAMILY_ROMAN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString)
-        teamFont = wx.Font(15, wx.FONTFAMILY_ROMAN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString)
-        oppFont =wx.Font(12, wx.FONTFAMILY_ROMAN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, wx.EmptyString)
+        teamFont = wx.Font(12, wx.FONTFAMILY_ROMAN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString)
 
-
-        self.teamLabel = wx.StaticText(self, label="Team", style=wx.ALIGN_CENTER_HORIZONTAL)
+        self.teamLabel = wx.StaticText(self, label="Offense", style=wx.ALIGN_CENTER_HORIZONTAL)
         self.teamLabel.SetFont(teamFont)
         
-        self.oppLabel = wx.StaticText(self, label="Opp", style=wx.ALIGN_CENTER_HORIZONTAL)
-        self.oppLabel.SetFont(oppFont)
+        self.oppLabel = wx.StaticText(self, label="Defense", style=wx.ALIGN_CENTER_HORIZONTAL)
+        self.oppLabel.SetFont(teamFont)
 
-        charts = {}
-        for off_def in ("offense", "defense"):
-            fig1 = Figure(figsize=(1.5, 0.2),  layout='constrained')
-            ax1 = fig1.add_subplot(111)
-            charts[off_def] = FigureCanvas(self, -1, fig1)
+        self.teamPts = OppositeChart(self, "Points")
+        self.teamFG = OppositeShot(self, "Field Goals")
+        self.teamFT = OppositeShot(self, "Free Throws")
+        self.teamTP = OppositeShot(self, "Three Points")
+        self.teamTurn = OppositeChart(self, "Turnovers")
+        self.teamReb = OppositeChart(self, "Rebounds")
+        self.teamAst = OppositeChart(self, "Assists")
         
         
         nameSizer = wx.BoxSizer()
@@ -36,15 +33,17 @@ class BasketballTeamStatsPanel(wx.ScrolledWindow):
         nameSizer.Add(wx.StaticLine(self, size=(-1,15)), 1, wx.EXPAND)
         nameSizer.Add(self.teamLabel, 1, wx.EXPAND)
 
-        ptsSizer = wx.BoxSizer()
-        ptsSizer.Add(charts["defense"], 1, wx.EXPAND)
-        ptsSizer.Add(wx.StaticText(self, label="Points"), 1, wx.EXPAND)
-        ptsSizer.Add(charts["offense"], 1, wx.EXPAND)
-
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(nameSizer, 0, wx.EXPAND)
-        sizer.Add(ptsSizer, 0, wx.EXPAND)
+        sizer.Add(self.teamPts, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamFG, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamFT, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamTP, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamTurn, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamReb, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+        sizer.Add(self.teamAst, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.BOTTOM, 15)
+
         self.SetSizer(sizer)        
 
 

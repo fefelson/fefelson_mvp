@@ -1,0 +1,263 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025040118",
+    "leagueId": "NBA",
+    "homeId": "nba.t.18",
+    "awayId": "nba.t.20",
+    "url": "/nba/philadelphia-76ers-new-york-knicks-2025040118/",
+    "gameTime": "2025-04-01 19:30:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.18": [
+            "nba.p.4163",
+            "nba.p.5432",
+            "nba.p.5474",
+            "nba.p.5480",
+            "nba.p.5836",
+            "nba.p.5843",
+            "nba.p.6021",
+            "nba.p.6037",
+            "nba.p.6044",
+            "nba.p.6047",
+            "nba.p.6412",
+            "nba.p.6578",
+            "nba.p.6714",
+            "nba.p.10297",
+            "nba.p.10303",
+            "nba.p.10314",
+            "nba.p.10317",
+            "nba.p.10321"
+        ],
+        "nba.t.20": [
+            "nba.p.4152",
+            "nba.p.4469",
+            "nba.p.4725",
+            "nba.p.5015",
+            "nba.p.5294",
+            "nba.p.5475",
+            "nba.p.5647",
+            "nba.p.6029",
+            "nba.p.6413",
+            "nba.p.6567",
+            "nba.p.6582",
+            "nba.p.6636",
+            "nba.p.10109",
+            "nba.p.10125",
+            "nba.p.10192",
+            "nba.p.10276",
+            "nba.p.10310",
+            "nba.p.10335",
+            "nba.p.10413",
+            "nba.p.10436"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181217/500x500/76ers_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Philadelphia",
+            "group_position": "5",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181217/70x70/76ers_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181217/500x500/76ers_wbg.png",
+            "conference_position": "13",
+            "division": "Atlantic",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/philadelphia/schedule",
+            "abbr": "PHI",
+            "record": "23-52",
+            "seatgeek_id": "2091",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "76ers",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/philadelphia/",
+            "first_name": "Philadelphia",
+            "full_name": "Philadelphia 76ers",
+            "conference": "Eastern",
+            "team_id": "nba.t.20",
+            "conference_id": "1",
+            "colorPrimary": "006bb6",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181217/70x70/76ers.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.20"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181226/500x500/knicks_wbg.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "New York",
+            "group_position": "2",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181226/70x70/knicks_wbg.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181226/500x500/knicks_wbg.png",
+            "conference_position": "3",
+            "division": "Atlantic",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/new-york/schedule",
+            "abbr": "NY",
+            "record": "47-27",
+            "seatgeek_id": "2090",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Knicks",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/new-york/",
+            "first_name": "New York",
+            "full_name": "New York Knicks",
+            "conference": "Eastern",
+            "team_id": "nba.t.18",
+            "conference_id": "1",
+            "colorPrimary": "006bb6",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181226/70x70/knicks.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.18"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.4469_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.4469",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Wrist"
+        },
+        {
+            "id": "nba.inj.5647_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.5647",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.4725_2025-03-04",
+            "date": "2025-03-04",
+            "player_id": "nba.p.4725",
+            "type": null,
+            "reported_date": "2025-03-04",
+            "comment": "Groin"
+        },
+        {
+            "id": "nba.inj.10276_2024-12-14",
+            "date": "2024-12-14",
+            "player_id": "nba.p.10276",
+            "type": null,
+            "reported_date": "2024-12-14",
+            "comment": "Meniscus"
+        },
+        {
+            "id": "nba.inj.5294_2025-02-23",
+            "date": "2025-02-23",
+            "player_id": "nba.p.5294",
+            "type": null,
+            "reported_date": "2025-02-23",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.10303_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.10303",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.4152_2025-02-10",
+            "date": "2025-02-10",
+            "player_id": "nba.p.4152",
+            "type": null,
+            "reported_date": "2025-02-10",
+            "comment": "Hip"
+        },
+        {
+            "id": "nba.inj.6044_2025-03-06",
+            "date": "2025-03-06",
+            "player_id": "nba.p.6044",
+            "type": null,
+            "reported_date": "2025-03-06",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.5474_2025-03-26",
+            "date": "2025-03-26",
+            "player_id": "nba.p.5474",
+            "type": null,
+            "reported_date": "2025-03-26",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.10317_2025-02-27",
+            "date": "2025-02-27",
+            "player_id": "nba.p.10317",
+            "type": null,
+            "reported_date": "2025-02-27",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5475_2025-03-14",
+            "date": "2025-03-14",
+            "player_id": "nba.p.5475",
+            "type": null,
+            "reported_date": "2025-03-14",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5015_2025-03-13",
+            "date": "2025-03-13",
+            "player_id": "nba.p.5015",
+            "type": null,
+            "reported_date": "2025-03-13",
+            "comment": "Toe"
+        },
+        {
+            "id": "nba.inj.6567_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.6567",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Rest"
+        },
+        {
+            "id": "nba.inj.6578_2025-03-21",
+            "date": "2025-03-21",
+            "player_id": "nba.p.6578",
+            "type": null,
+            "reported_date": "2025-03-21",
+            "comment": "Groin"
+        },
+        {
+            "id": "nba.inj.6413_2025-03-03",
+            "date": "2025-03-03",
+            "player_id": "nba.p.6413",
+            "type": null,
+            "reported_date": "2025-03-03",
+            "comment": "Back"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

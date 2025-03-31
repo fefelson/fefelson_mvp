@@ -8,22 +8,22 @@ from .sports.basketball.leagues import NBA, NCAAB
 class MainApp(wx.App):
     def OnInit(self):
 
+        leagueList = (NBA(), NCAAB())
+
+        leagues = {league._leagueId: league for league in leagueList if league.is_active()}
         
         self.frame = FelsonFrame()
+        self.matchupController = MatchupController(self.frame, leagues)
+        self.matchupController.set_gamedate(None)
+        
+        # self.frame.Show() # remove to use splash screen
         splash = SplashScreen(self.frame)
         splash.Show()
 
-        self.matchupController = MatchupController(self.frame)
         # self.compareTeamsController = CompareTeamsController(self.frame)
-
-        
-        # # Instantiate controllers with their respective panels
-        # self.player_stats_controller = PlayerStatsController(self.frame.player_stats_panel)
-        # self.game_log_controller = GameLogController(self.frame.game_log_panel)
-
-        
-
         return True
+    
+    
 
 if __name__ == "__main__":
     noLog = wx.LogNull()

@@ -1,0 +1,237 @@
+{
+    "provider": "yahoo",
+    "gameId": "nba.g.2025040104",
+    "leagueId": "NBA",
+    "homeId": "nba.t.4",
+    "awayId": "nba.t.28",
+    "url": "/nba/toronto-raptors-chicago-bulls-2025040104/",
+    "gameTime": "2025-04-01 20:00:00-04:00",
+    "season": "2024",
+    "week": null,
+    "statusType": "pregame",
+    "gameType": "Regular Season",
+    "odds": [],
+    "lineups": null,
+    "players": {
+        "nba.t.4": [
+            "nba.p.4897",
+            "nba.p.5764",
+            "nba.p.5823",
+            "nba.p.6030",
+            "nba.p.6043",
+            "nba.p.6169",
+            "nba.p.6234",
+            "nba.p.6396",
+            "nba.p.6402",
+            "nba.p.6433",
+            "nba.p.6548",
+            "nba.p.6580",
+            "nba.p.6708",
+            "nba.p.6731",
+            "nba.p.10083",
+            "nba.p.10265",
+            "nba.p.10402",
+            "nba.p.10410"
+        ],
+        "nba.t.28": [
+            "nba.p.4682",
+            "nba.p.5601",
+            "nba.p.5640",
+            "nba.p.5894",
+            "nba.p.6165",
+            "nba.p.6417",
+            "nba.p.6515",
+            "nba.p.6603",
+            "nba.p.6704",
+            "nba.p.6799",
+            "nba.p.6802",
+            "nba.p.6803",
+            "nba.p.10101",
+            "nba.p.10278",
+            "nba.p.10325",
+            "nba.p.10330",
+            "nba.p.10333",
+            "nba.p.10391"
+        ]
+    },
+    "teams": [
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20190508/500x500/raptors_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Toronto",
+            "group_position": "3",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181221/70x70/raptors_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20190508/500x500/raptors_wbgs.png",
+            "conference_position": "11",
+            "division": "Atlantic",
+            "division_id": "1",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/toronto/schedule",
+            "abbr": "TOR",
+            "record": "28-47",
+            "seatgeek_id": "2092",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Raptors",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/toronto/",
+            "first_name": "Toronto",
+            "full_name": "Toronto Raptors",
+            "conference": "Eastern",
+            "team_id": "nba.t.28",
+            "conference_id": "1",
+            "colorPrimary": "ce1141",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/mlb/20190318/70x70/raptors.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.28"
+            ]
+        },
+        {
+            "logoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181212/500x500/bulls_wbgs.png",
+            "division_abbr": "",
+            "stat_categories": [
+                "team_stats"
+            ],
+            "display_name": "Chicago",
+            "group_position": "5",
+            "sportacularLogo": "https://s.yimg.com/cv/apiv2/default/nba/20181212/70x70/bulls_wbgs.png",
+            "logo": "https://s.yimg.com/cv/apiv2/default/nba/20181212/500x500/bulls_wbgs.png",
+            "conference_position": "9",
+            "division": "Central",
+            "division_id": "2",
+            "subdivision": null,
+            "subdivision_id": null,
+            "teamScheduleLink": "/nba/teams/chicago/schedule",
+            "abbr": "CHI",
+            "record": "33-41",
+            "seatgeek_id": "2093",
+            "players": [
+                "players_info"
+            ],
+            "conference_abbr": "",
+            "last_name": "Bulls",
+            "conference_seed": null,
+            "playoff_seed": null,
+            "teamHomeLink": "/nba/teams/chicago/",
+            "first_name": "Chicago",
+            "full_name": "Chicago Bulls",
+            "conference": "Eastern",
+            "team_id": "nba.t.4",
+            "conference_id": "1",
+            "colorPrimary": "ce1141",
+            "sportacularLogoDark": "https://s.yimg.com/cv/apiv2/default/nba/20181212/70x70/bulls_s.png",
+            "page_metadata": [
+                "teampage_metadata",
+                "nba.t.4"
+            ]
+        }
+    ],
+    "injuries": [
+        {
+            "id": "nba.inj.5601_2025-12-07",
+            "date": "2025-12-07",
+            "player_id": "nba.p.5601",
+            "type": null,
+            "reported_date": "2025-12-07",
+            "comment": "Ankle"
+        },
+        {
+            "id": "nba.inj.6548_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.6548",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Hip"
+        },
+        {
+            "id": "nba.inj.6417_2025-03-29",
+            "date": "2025-03-29",
+            "player_id": "nba.p.6417",
+            "type": null,
+            "reported_date": "2025-03-29",
+            "comment": "Rest"
+        },
+        {
+            "id": "nba.inj.6803_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.6803",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Hand"
+        },
+        {
+            "id": "nba.inj.10101_2025-03-02",
+            "date": "2025-03-02",
+            "player_id": "nba.p.10101",
+            "type": null,
+            "reported_date": "2025-03-02",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.6580_2025-03-01",
+            "date": "2025-03-01",
+            "player_id": "nba.p.6580",
+            "type": null,
+            "reported_date": "2025-03-01",
+            "comment": "Shoulder"
+        },
+        {
+            "id": "nba.inj.6030_2025-03-30",
+            "date": "2025-03-30",
+            "player_id": "nba.p.6030",
+            "type": null,
+            "reported_date": "2025-03-30",
+            "comment": "Thumb"
+        },
+        {
+            "id": "nba.inj.10325_2025-02-19",
+            "date": "2025-02-19",
+            "player_id": "nba.p.10325",
+            "type": null,
+            "reported_date": "2025-02-19",
+            "comment": "Knee"
+        },
+        {
+            "id": "nba.inj.5640_2025-03-29",
+            "date": "2025-03-29",
+            "player_id": "nba.p.5640",
+            "type": null,
+            "reported_date": "2025-03-29",
+            "comment": "Rest"
+        },
+        {
+            "id": "nba.inj.6433_2025-03-20",
+            "date": "2025-03-20",
+            "player_id": "nba.p.6433",
+            "type": null,
+            "reported_date": "2025-03-20",
+            "comment": "Foot"
+        },
+        {
+            "id": "nba.inj.6731_2025-03-28",
+            "date": "2025-03-28",
+            "player_id": "nba.p.6731",
+            "type": null,
+            "reported_date": "2025-03-28",
+            "comment": "Illness"
+        },
+        {
+            "id": "nba.inj.5764_2025-03-01",
+            "date": "2025-03-01",
+            "player_id": "nba.p.5764",
+            "type": null,
+            "reported_date": "2025-03-01",
+            "comment": "Wrist"
+        }
+    ],
+    "stadiumId": null,
+    "isNuetral": false
+}

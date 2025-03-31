@@ -1,21 +1,19 @@
-from src.database.models.games import Game
-from src.database.models.game_lines import GameLine
-from src.database.models.teams import Team
-from src.database.models.database import get_db_session
 
-from pprint import pprint
+from src.database.models.database import get_db_session, Base
+from sqlalchemy.sql import text
 
 
+def reset_db():
 
-
-def list_all_games():
     with get_db_session() as session:
-        games = session.query(Team).all()  # Returns list of Game objects
-        return games
+        # Disable foreign key checks (for PostgreSQL, adjust if needed)
 
-# Test it
-result = list_all_games()
-print(f"Found {len(result)} games:")
-for game in result[:5]:  # First 5 for brevity
-    print(game)
-    
+        # Truncate all tables
+        for table in reversed(Base.metadata.sorted_tables):
+            session.execute(text(f"TRUNCATE TABLE {table.name} RESTART IDENTITY CASCADE;"))
+
+        # Re-enable foreign key checks
+
+
+if __name__ == "__main__":
+    reset_db()

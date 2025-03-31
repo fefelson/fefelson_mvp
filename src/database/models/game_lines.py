@@ -12,8 +12,8 @@ class GameLine(Base):
     spread_line = Column(Integer, default=-110)
     money_line = Column(Integer, nullable=True)
     result = Column(Integer, nullable=False)
-    spread_outcome = Column(Integer, nullable=False)
-    money_outcome = Column(Boolean, nullable=True)
+    spread_outcome = Column(Integer, nullable=True)
+    money_outcome = Column(Integer, nullable=False)
 
     team = relationship("Team", foreign_keys=[team_id])
     opponent = relationship("Team", foreign_keys=[opp_id])
