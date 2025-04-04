@@ -175,6 +175,51 @@
             "over_line": "-110",
             "home_ml": "-185",
             "timestamp": "2025-03-31 16:00:03.199021-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-170",
+            "timestamp": "2025-03-31 17:00:07.774323-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-170",
+            "timestamp": "2025-03-31 18:00:10.212923-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "225.5",
+            "away_spread": "3.5",
+            "away_line": "-110",
+            "away_ml": "140",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-3.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-170",
+            "timestamp": "2025-03-31 19:00:14.257937-04:00"
         }
     ],
     "lineups": null,
@@ -237,7 +282,7 @@
             "subdivision_id": null,
             "teamScheduleLink": "/nba/teams/houston/schedule",
             "abbr": "HOU",
-            "record": "48-26",
+            "record": "49-26",
             "seatgeek_id": "2114",
             "players": [
                 "players_info"
@@ -301,20 +346,12 @@
     ],
     "injuries": [
         {
-            "id": "nba.inj.6707_2025-03-29",
-            "date": "2025-03-29",
-            "player_id": "nba.p.6707",
+            "id": "nba.inj.3704_2025-03-31",
+            "date": "2025-03-31",
+            "player_id": "nba.p.3704",
             "type": null,
-            "reported_date": "2025-03-29",
-            "comment": "Rest"
-        },
-        {
-            "id": "nba.inj.10288_2025-03-08",
-            "date": "2025-03-08",
-            "player_id": "nba.p.10288",
-            "type": null,
-            "reported_date": "2025-03-08",
-            "comment": "Thumb"
+            "reported_date": "2025-03-31",
+            "comment": "Groin"
         },
         {
             "id": "nba.inj.5892_2025-01-25",

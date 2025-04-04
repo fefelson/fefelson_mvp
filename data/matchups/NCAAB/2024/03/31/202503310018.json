@@ -160,6 +160,51 @@
             "over_line": "-115",
             "home_ml": "200",
             "timestamp": "2025-03-31 16:00:09.044292-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "154.5",
+            "away_spread": "-5.5",
+            "away_line": "-115",
+            "away_ml": "-250",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "5.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "200",
+            "timestamp": "2025-03-31 17:00:21.551213-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "154.5",
+            "away_spread": "-5.5",
+            "away_line": "-115",
+            "away_ml": "-250",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "5.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "200",
+            "timestamp": "2025-03-31 18:00:22.492745-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "154.5",
+            "away_spread": "-5.5",
+            "away_line": "-115",
+            "away_ml": "-250",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "5.5",
+            "home_line": "-105",
+            "under_line": "-105",
+            "over_line": "-115",
+            "home_ml": "200",
+            "timestamp": "2025-03-31 19:00:17.004317-04:00"
         }
     ],
     "lineups": null,
@@ -264,9 +309,9 @@
                 },
                 "ncaab.poll.5": {
                     "primary": "false",
-                    "points": "0.5554",
-                    "rank": "66",
-                    "date": "2025-03-30",
+                    "points": "0.5549",
+                    "rank": "69",
+                    "date": "2025-03-31",
                     "previous_rank": "66",
                     "teams": [
                         "teams"
@@ -346,8 +391,8 @@
                     "primary": "false",
                     "points": "0.5331",
                     "rank": "103",
-                    "date": "2025-03-30",
-                    "previous_rank": "104",
+                    "date": "2025-03-31",
+                    "previous_rank": "103",
                     "teams": [
                         "teams"
                     ],

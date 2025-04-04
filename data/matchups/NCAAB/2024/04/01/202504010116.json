@@ -10,7 +10,98 @@
     "week": null,
     "statusType": "pregame",
     "gameType": null,
-    "odds": [],
+    "odds": [
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 08:08:24.498305-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 09:00:13.205235-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 10:00:14.311854-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 11:00:15.818479-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 12:00:14.042178-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "141.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "360",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-475",
+            "timestamp": "2025-04-01 13:00:14.797458-04:00"
+        }
+    ],
     "lineups": null,
     "players": {
         "ncaab.t.116": [
@@ -109,9 +200,9 @@
                 },
                 "ncaab.poll.5": {
                     "primary": "false",
-                    "points": "0.4542",
-                    "rank": "264",
-                    "date": "2025-03-31",
+                    "points": "0.4553",
+                    "rank": "263",
+                    "date": "2025-04-01",
                     "previous_rank": "264",
                     "teams": [
                         "teams"
@@ -189,9 +280,9 @@
                 },
                 "ncaab.poll.5": {
                     "primary": "false",
-                    "points": "0.536",
+                    "points": "0.5352",
                     "rank": "97",
-                    "date": "2025-03-31",
+                    "date": "2025-04-01",
                     "previous_rank": "97",
                     "teams": [
                         "teams"

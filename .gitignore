@@ -6,5 +6,6 @@ __pycache__/
 venv/
 logs/
 data/boxscores/
+data/matchups/
 *.log
 .env 

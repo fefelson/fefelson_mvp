@@ -2,10 +2,7 @@ from abc import ABC, abstractmethod
 from itertools import chain
 
 from ..database.models.database import engine, get_db_session
-from ..database.models.games import Game
-from ..database.models.players import Player
-from ..database.models.stadiums import Stadium
-from ..database.models.teams import Team
+from ..database.models import Game, Player, Stadium, Team
 from ..models.model_classes import BoxscoreData
 
 from ..utils.logging_manager import get_logger

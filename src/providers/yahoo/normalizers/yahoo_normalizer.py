@@ -3,13 +3,7 @@ from typing import List, Any, Dict
 import pytz
 
 from ....agents.normalize_agent import INormalAgent
-from ....database.models.games import Game
-from ....database.models.game_lines import GameLine
-from ....database.models.over_unders import OverUnder
-from ....database.models.periods import Period
-from ....database.models.players import Player
-from ....database.models.stadiums import Stadium
-from ....database.models.teams import Team 
+from ....database.models import Game, GameLine, OverUnder, Period, Player, Stadium, Team
 from ....models.model_classes import ScoreboardData, BoxscoreData, MatchupData
 from ....utils.logging_manager import get_logger
 

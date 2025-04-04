@@ -1,9 +1,6 @@
 import math
 
-from ...database.models.basketball.basketball_player_stats import BasketballPlayerStat
-from ...database.models.basketball.basketball_team_stats import BasketballTeamStat
-from ...database.models.basketball.basketball_shots import BasketballShot
-
+from ...database.models import BasketballPlayerStat, BasketballTeamStat, BasketballShot
 
 
 class BasketballNormalizer:

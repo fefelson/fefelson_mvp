@@ -175,6 +175,51 @@
             "over_line": "-110",
             "home_ml": "-425",
             "timestamp": "2025-03-31 16:00:03.198961-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "217.5",
+            "away_spread": "9.5",
+            "away_line": "-115",
+            "away_ml": "310",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-400",
+            "timestamp": "2025-03-31 17:00:07.774264-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "217.5",
+            "away_spread": "9.5",
+            "away_line": "-115",
+            "away_ml": "310",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-105",
+            "under_line": "-110",
+            "over_line": "-110",
+            "home_ml": "-400",
+            "timestamp": "2025-03-31 18:00:18.888412-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "218.5",
+            "away_spread": "9.5",
+            "away_line": "-110",
+            "away_ml": "350",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-9.5",
+            "home_line": "-110",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-450",
+            "timestamp": "2025-03-31 19:00:13.332437-04:00"
         }
     ],
     "lineups": null,
@@ -309,20 +354,20 @@
             "comment": "Hamstring"
         },
         {
+            "id": "nba.inj.5007_2025-03-31",
+            "date": "2025-03-31",
+            "player_id": "nba.p.5007",
+            "type": null,
+            "reported_date": "2025-03-31",
+            "comment": "Thigh"
+        },
+        {
             "id": "nba.inj.5316_2025-03-14",
             "date": "2025-03-14",
             "player_id": "nba.p.5316",
             "type": null,
             "reported_date": "2025-03-14",
             "comment": "Hand"
-        },
-        {
-            "id": "nba.inj.6219_2025-03-29",
-            "date": "2025-03-29",
-            "player_id": "nba.p.6219",
-            "type": null,
-            "reported_date": "2025-03-29",
-            "comment": "Rest"
         },
         {
             "id": "nba.inj.10097_2025-01-14",
@@ -365,20 +410,20 @@
             "comment": "Wrist"
         },
         {
+            "id": "nba.inj.6275_2025-03-31",
+            "date": "2025-03-31",
+            "player_id": "nba.p.6275",
+            "type": null,
+            "reported_date": "2025-03-31",
+            "comment": "Hip"
+        },
+        {
             "id": "nba.inj.6057_2024-11-14",
             "date": "2024-11-14",
             "player_id": "nba.p.6057",
             "type": null,
             "reported_date": "2024-11-14",
             "comment": "ACL"
-        },
-        {
-            "id": "nba.inj.5433_2025-03-29",
-            "date": "2025-03-29",
-            "player_id": "nba.p.5433",
-            "type": null,
-            "reported_date": "2025-03-29",
-            "comment": "Ankle"
         },
         {
             "id": "nba.inj.6226_2025-02-10",

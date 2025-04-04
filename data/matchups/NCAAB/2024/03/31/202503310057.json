@@ -160,6 +160,21 @@
             "over_line": "-105",
             "home_ml": "-425",
             "timestamp": "2025-03-31 16:00:10.369782-04:00"
+        },
+        {
+            "book_name": "BetMGM",
+            "total": "144.5",
+            "away_spread": "8.5",
+            "away_line": "-105",
+            "away_ml": "320",
+            "book_id": "101",
+            "last_update": "0",
+            "home_spread": "-8.5",
+            "home_line": "-115",
+            "under_line": "-115",
+            "over_line": "-105",
+            "home_ml": "-425",
+            "timestamp": "2025-03-31 17:00:22.918842-04:00"
         }
     ],
     "lineups": null,
