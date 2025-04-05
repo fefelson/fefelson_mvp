@@ -2,7 +2,7 @@ import logging
 import os
 
 # Ensure logs directory exists
-log_dir = os.path.expanduser("~/fefelson_mvp/logs")  # Expand ~ to full path
+log_dir = os.path.expanduser("~/FEFelson/fefelson_mvp/logs")  # Expand ~ to full path
 os.makedirs(log_dir, exist_ok=True)
 
 class ColoredFormatter(logging.Formatter):

@@ -4,13 +4,14 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import pandas as pd
 
 from sklearn.model_selection import train_test_split
 
 from ..src.analytics.tensors.core import ExpandableEmbedding
 
 # File Paths (Modify for DB interaction later)
-DATA_FILE = "/home/ededub/FEFelson/mlb/data.json"
+pitches_pickle_file = os.environ["HOME"]+"/FEFelson/fefelson_mvp/data/pitches_train_test.pkl"
 MODEL_CHECKPOINT = "pitch_model.pth"
 EMBEDDINGS_FILE = "pitch_embeddings.pth"
 
@@ -18,8 +19,8 @@ EMBEDDINGS_FILE = "pitch_embeddings.pth"
 
 
 
-class SwingModel(nn.Module):
-    def __init__(self, embedding_layer, hidden_dim=32):
+class SwingMissModel(nn.Module):
+    def __init__(self, embedding_layer, hidden_dim=8):
         super().__init__()
         self.embedding_layer = embedding_layer
         self.fc1 = nn.Linear(embedding_layer.embedding_dim + 3, hidden_dim)
@@ -29,12 +30,12 @@ class SwingModel(nn.Module):
         pitch_embed = self.embedding_layer(pitch_type)
         x = torch.cat([pitch_embed, velocity.unsqueeze(1), x.unsqueeze(1), y.unsqueeze(1)], dim=1)
         x = torch.relu(self.fc1(x))
-        x = torch.sigmoid(self.fc2(x))  # Binary classification (swing or no swing)
+        x = torch.sigmoid(self.fc2(x))  # Swing and miss or no swing and strike
         return x
     
 
 class StrikeModel(nn.Module):
-    def __init__(self, embedding_layer, hidden_dim=32):
+    def __init__(self, embedding_layer, hidden_dim=8):
         super().__init__()
         self.embedding_layer = embedding_layer
         self.fc1 = nn.Linear(embedding_layer.embedding_dim + 3, hidden_dim)
@@ -79,35 +80,24 @@ def save_model(model, optimizer, filepath=MODEL_CHECKPOINT):
         'optimizer_state_dict': optimizer.state_dict()
     }, filepath)
 
-def load_model(model, optimizer, filepath=MODEL_CHECKPOINT):
-    if os.path.exists(filepath):
-        checkpoint = torch.load(filepath)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-        print("Model Loaded Successfully")
-    else:
-        print("No checkpoint found.")
+# def load_model(model, optimizer, filepath=MODEL_CHECKPOINT):
+#     if os.path.exists(filepath):
+#         checkpoint = torch.load(filepath)
+#         model.load_state_dict(checkpoint['model_state_dict'])
+#         optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+#         print("Model Loaded Successfully")
+#     else:
+#         print("No checkpoint found.")
 
 def save_embeddings(model, filepath=EMBEDDINGS_FILE):
     torch.save(model.pitch_embedding.weight.detach(), filepath)
 
-def load_embeddings(model, filepath=EMBEDDINGS_FILE):
-    if os.path.exists(filepath):
-        model.pitch_embedding.weight.data.copy_(torch.load(filepath))
-        print("Embeddings Loaded Successfully")
+# def load_embeddings(model, filepath=EMBEDDINGS_FILE):
+#     if os.path.exists(filepath):
+#         model.pitch_embedding.weight.data.copy_(torch.load(filepath))
+#         print("Embeddings Loaded Successfully")
 
-# Data Preprocessing
-def load_data(filepath=DATA_FILE):
-    with open(filepath) as file:
-        info = json.load(file)
-    data = []
-    for pitch in info["p"]:
-        try:
-            result = 4 if int(pitch["result"]) == 10 else int(pitch["result"])
-            data.append((int(pitch["pitch_type"]), int(pitch["velocity"]), int(pitch["horizontal"]), int(pitch["vertical"]), result))
-        except KeyError:
-            pass
-    return data
+
 
 def normalize_data(data):
     horizontal_values = np.array([d[2] for d in data])
@@ -149,10 +139,19 @@ def train_model(model, train_loader, optimizer, criterion, epochs=50):
 
 # Main Execution
 if __name__ == "__main__":
-    raw_data = load_data()
-    processed_data = normalize_data(raw_data)
-    X_train, X_test, y_train, y_test = train_test_split(
-        [x[:-3] for x in processed_data], [x[-3:] for x in processed_data], test_size=0.2, random_state=42)
+    from ..src.agents.file_agent import PickleAgent
+
+    pitches = PickleAgent.read(pitches_pickle_file)
+
+    xTrain = pitches["X_train"]
+    yTrain = pitches["y_train"]
+
+    print(xTrain)
+    combined_df = pd.merge(xTrain, yTrain, on='pitch_num', how='inner')
+    
+    from pprint import pprint
+    pprint(combined_df)
+    raise
     
     
     
@@ -162,24 +161,29 @@ if __name__ == "__main__":
     pitchTypeEmbeddings = ExpandableEmbedding(discreteN==10, initial_dim=4)
 
     # Train basic model (swing or no swing) using 4-dim embeddings
+    swingMissModel = SwingMissModel(pitchTypeEmbeddings)
+
+    optimizer = optim.Adam(swingMissModel.parameters(), lr=0.001)
+    criterion = nn.CrossEntropyLoss()
+    
+    # load_model(model, optimizer)
+    # load_embeddings(model)
+    train_model(model, train_loader, optimizer, criterion)
+
+
     strikeZoneModel = StrikeZoneModel(pitchTypeEmbeddings)
     train_model(swing_model, ...)
 
-    # Later, expand embeddings for more complex task
-    embedding_layer.expand(new_dim=8)
+    # # Later, expand embeddings for more complex task
+    # embedding_layer.expand(new_dim=8)
 
-    # Now train the next-level model (e.g., ball vs. strike)
-    strike_model = StrikeModel(embedding_layer)
-    train_model(strike_model, ...)
+    # # Now train the next-level model (e.g., ball vs. strike)
+    # strike_model = StrikeModel(embedding_layer)
+    # train_model(strike_model, ...)
     
-    swingModel = SwingModel()
+    # swingModel = SwingModel()
     
     
-    strikeModel = StrikeModel()
-    model = PitchOutcomeModel(num_pitch_types)
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-    criterion = nn.CrossEntropyLoss()
+    # strikeModel = StrikeModel()
+    # model = PitchOutcomeModel(num_pitch_types)
     
-    load_model(model, optimizer)
-    load_embeddings(model)
-    train_model(model, train_loader, optimizer, criterion)

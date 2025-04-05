@@ -40,7 +40,7 @@ class YahooDownloadAgent(IDownloadAgent):
 
     @staticmethod
     def _form_scoreboard_url(leagueId: str, gameDate: str) -> str:
-        slugId = {"NBA": "nba", "NCAAB": "college-basketball"}[leagueId]
+        slugId = {"NBA": "nba", "NCAAB": "college-basketball", "MLB": "mlb"}[leagueId]
         schedUrl = YahooDownloadAgent.BASE_URL+"/{0[slugId]}/scoreboard/?confId=all&schedState={0[schedState]}&dateRange={0[dateRange]}".format({"slugId":slugId, "schedState":"", "dateRange":gameDate})        
         return schedUrl
     

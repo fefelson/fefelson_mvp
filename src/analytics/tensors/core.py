@@ -38,18 +38,17 @@ class ExpandableEmbedding(nn.Module):
 class PitchDictDataset(Dataset):
     def __init__(self, xData, yData):
 
-        for outcome in yData:
-            if 
+        
         if yData[-1] in (0, 1):
             self._xData = xData
             self._yData = yData
                         
             train_pitches = TensorDataset(
-                torch.tensor([d[0] for d in xTrain], dtype=torch.long),
-                torch.tensor([d[1] for d in xTrain], dtype=torch.float),
-                torch.tensor([d[2] for d in xTrain], dtype=torch.float),
-                torch.tensor([d[3] for d in xTrain], dtype=torch.float),
-                torch.tensor([d[0] for d in yTrain], dtype=torch.bool),
+                torch.tensor(xData["pitch_type"], dtype=torch.long),
+                torch.tensor(xData["horizontal"], dtype=torch.float),
+                torch.tensor(xData["vertical"], dtype=torch.float),
+                torch.tensor(xData["velocity"], dtype=torch.float),
+                torch.tensor(yData["result"], dtype=torch.bool),
                 torch.tensor([d[1] for d in yTrain], dtype=torch.bool),
                 torch.tensor([d[2] for d in yTrain], dtype=torch.long))
         self.X_data = X_data

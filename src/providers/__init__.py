@@ -25,5 +25,5 @@ def get_download_agent(leagueId: str, provider: Optional[str]=None) -> "IDownloa
                       "NCAAB": YahooDownloadAgent,
                       "NFL": YahooDownloadAgent,
                       "NCAAF": YahooDownloadAgent,
-                      "NBA": YahooDownloadAgent}
+                      "MLB": YahooDownloadAgent}
             }[provider][leagueId]

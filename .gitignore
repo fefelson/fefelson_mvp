@@ -9,3 +9,4 @@ data/boxscores/
 data/matchups/
 *.log
 .env 
+.pkl
