@@ -1,6 +1,5 @@
-from datetime import datetime
 from typing import Any, Dict
-import os
+import os 
 
 from ..capabilities import Fileable, Normalizable, Processable, Downloadable, Databaseable
 from ..capabilities.databaseable import SQLAlchemyDatabaseAgent
@@ -21,7 +20,7 @@ basePath = os.path.join(os.environ["HOME"], "FEFelson/leagues")
 
 
 
-class Boxscore(Databaseable, Downloadable, Fileable, Normalizable, Processable):
+class Player(Databaseable, Downloadable, Fileable, Normalizable, Processable):
 
     _fileType = "pickle"
     _fileAgent = get_file_agent(_fileType)
@@ -33,14 +32,14 @@ class Boxscore(Databaseable, Downloadable, Fileable, Normalizable, Processable):
 
         self.leagueId = leagueId
         self.set_file_agent(self._fileAgent)
-        
+        self._set_dbAgent(self._dbAgent)
 
         self.logger = get_logger()
 
 
-    def download(self, game: dict) -> Dict[str, Any]:
-        downloadAgent = get_download_agent(self.leagueId, game["provider"])
-        return downloadAgent.fetch_boxscore(game)
+    def download(self, playerId: str) -> Dict[str, Any]:
+        downloadAgent = get_download_agent(self.leagueId)
+        return downloadAgent.fetch_player(self.leagueId, playerId)
 
 
     def load_from_db(self):
@@ -51,28 +50,27 @@ class Boxscore(Databaseable, Downloadable, Fileable, Normalizable, Processable):
 
     def normalize(self, webData: dict) -> Dict[str, Any]:
         normalAgent = get_normal_agent(self.leagueId, webData["provider"])
-        return normalAgent.normalize_boxscore(webData)
+        return normalAgent.normalize_player(webData)
 
 
-    def process(self, game: dict) :
-        self.logger.debug("processing Boxscore")
+    def process(self, playerId: str) :
+        self.logger.debug("processing Player")
         
-        self.set_file_path(game)
+        self.set_file_path(playerId)
         if self.file_exists():
             webData = self.read_file()
-            boxscore = self.normalize(webData)
+            # player = self.normalize(webData)
         else:
-            if game["url"]:
-                webData = self.download(game)
-                self.write_file(webData)
-                boxscore = self.normalize(webData)
-                self.save_to_db(boxscore)       
+            webData = self.download(playerId)
+            self.write_file(webData)
+            # player = self.normalize(webData) 
+            # self.save_to_db(player)   
     
 
-    def save_to_db(self, boxscore: dict):
+    def save_to_db(self, player: "Player"):
         """Saves self.data to the database."""
         try:
-            self._dbAgent.insert_boxscore(boxscore)
+            self.dbAgent.insert_player(player)
         except Exception as e:
             # Catch unexpected errors
             self.logger.error(f"Failed to save boxscore to db: Unexpected error - {type(e).__name__}: {str(e)}")
@@ -84,12 +82,10 @@ class Boxscore(Databaseable, Downloadable, Fileable, Normalizable, Processable):
         
 
 
-    def set_file_path(self, game: dict):
-        if game.get("week"):
-            gamePath = f"/{self.leagueId.lower()}/boxscores/{game['season']}/{game['week']}/{game['provider']}/{game['gameId'].split('.')[-1]}.{self._fileAgent.get_ext()}"
-        else:
-            month, day = str(datetime.fromisoformat(game["gameTime"]).date()).split("-")[1:]
-            gamePath = f"/{self.leagueId.lower()}/boxscores/{game['season']}/{month}/{day}/{game['provider']}/{game['gameId'].split('.')[-1]}.{self._fileAgent.get_ext()}"  
-        self.filePath = basePath+gamePath
+    def set_file_path(self, playerId: str):
+        ext = self.fileAgent.get_ext()
+        playerId = playerId.split(".")[-1]
+        playerPath = f"/{self.leagueId.lower()}/players/{playerId}.{ext}"
+        self.filePath = basePath+playerPath
 
     

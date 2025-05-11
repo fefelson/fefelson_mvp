@@ -2,8 +2,8 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Numeric, Date
 
 from .database import Base
 
-class GameMetric(Base):
-    __tablename__ = 'game_metrics'
+class StatMetric(Base):
+    __tablename__ = 'stat_metrics'
     league_id = Column(String, ForeignKey('leagues.league_id', ondelete='CASCADE'), primary_key=True)
     entity_type = Column(String, primary_key=True) # player, game, team
     entity_id = Column(String, primary_key=True)  # e.g., 'player123'
@@ -15,8 +15,8 @@ class GameMetric(Base):
    
 
 
-class StatMetric(Base):
-    __tablename__ = 'stat_metrics'
+class LeagueMetric(Base):
+    __tablename__ = 'league_metrics'
     league_id = Column(String, ForeignKey('leagues.league_id', ondelete='CASCADE'), primary_key=True)
     entity_type = Column(String, primary_key=True)  # e.g., 'player', 'game'
     timeframe = Column(String, primary_key=True)  # e.g., 'daily', '7d', 'all-time'

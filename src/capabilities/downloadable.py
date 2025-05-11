@@ -1,6 +1,3 @@
-
-from ..utils.logging_manager import get_logger
-
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional
 
@@ -11,33 +8,34 @@ from typing import Any, Dict, Optional
 
 class Downloadable(ABC):
     """Enables downloading data from a URL"""
-    
-    def __init__(self, downloadAgent: Optional["IDownloadAgent"]=None):
-        self.downloadAgent = downloadAgent  # Fetches raw data
-        self.url: Optional[str] = None 
-        self.logger = get_logger()
 
 
-    def _set_download_agent(self, downloadAgent: "IDownloadAgent"):
-        self.downloadAgent = downloadAgent
-
-
-    def _set_url(self, url: str) -> None:
-        if not isinstance(url, str):
-            raise TypeError("url must be a string")
-        self.url = url
-
-
+    @abstractmethod
     def download(self) -> Dict[str, Any]:
         """Fetches data from the URL and converts it into dict."""
-        self.logger.info(f"Downloadable.download called for {self.url}")
-        return self.downloadAgent._fetch_url(self.url)
-                       
+        raise NotImplementedError
+
+
+
+#################################################################
+#################################################################
+
+
+class DownloadAgent(ABC):
     
     @abstractmethod
-    def set_url(self, url: str=None) -> None:
-        """Sets the URL to download from, optionally using provided item."""
-        self._set_url(url)
+    def _fetch_url(url: str):
+        pass
+
+    @abstractmethod
+    def fetch_boxscore(url: str):
+        pass 
+
+    @abstractmethod
+    def fetch_scoreboard(url: str):
+        pass
+    
+
 
     
 

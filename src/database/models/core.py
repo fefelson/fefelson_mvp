@@ -61,7 +61,7 @@ class Team(Base):
     school_id = Column(String, ForeignKey('schools.school_id'), nullable=True)
     first_name = Column(String, nullable=False)
     last_name = Column(String, nullable=False)
-    abbreviation = Column(String, nullable=False)
+    abrv = Column(String, nullable=False)
     conference = Column(String, nullable=True)
     division = Column(String, nullable=True)
     primary_color = Column(String, nullable=True)
@@ -70,8 +70,8 @@ class Team(Base):
     league = relationship("League", back_populates="teams")
     school = relationship("School", back_populates="teams")
     draft_players = relationship("Player", foreign_keys="Player.draft_team_id", back_populates="draft_team")
-    home_games = relationship("Game", foreign_keys="Game.home_team_id", back_populates="home_team")
-    away_games = relationship("Game", foreign_keys="Game.away_team_id", back_populates="away_team")
+    home_games = relationship("Game", foreign_keys="Game.home_id", back_populates="home_team")
+    away_games = relationship("Game", foreign_keys="Game.away_id", back_populates="away_team")
     won_games = relationship("Game", foreign_keys="Game.winner_id", back_populates="winner")
     lost_games = relationship("Game", foreign_keys="Game.loser_id", back_populates="loser")
 
@@ -93,12 +93,15 @@ class Player(Base):
     throws = Column(String, nullable=True)
     position = Column(String, nullable=True)
     birthdate = Column(Date, nullable=True)
-    current_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
+    current_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=True)
     uniform_number = Column(String, nullable=True)
+    college = Column(String, nullable=True)
     draft_year = Column(Integer, nullable=True)
+    draft_round = Column(Integer, nullable=True)
     draft_pick = Column(Integer, nullable=True)
     draft_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=True)
     graduation_yr = Column(String, nullable=True)
+    rookie_season = Column(Integer, nullable=True)
 
     sport = relationship("Sport", back_populates="players")
     draft_team = relationship("Team", foreign_keys=[draft_team_id], back_populates="draft_players")
@@ -113,8 +116,8 @@ class Game(Base):
     __tablename__ = 'games'
     game_id = Column(String, primary_key=True)
     league_id = Column(String, ForeignKey('leagues.league_id', ondelete='CASCADE'), nullable=False)
-    home_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
-    away_team_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
+    home_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
+    away_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=False)
     winner_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=True)
     loser_id = Column(String, ForeignKey('teams.team_id', ondelete='SET NULL'), nullable=True)
     stadium_id = Column(String, ForeignKey('stadiums.stadium_id'), nullable=True)
@@ -123,11 +126,11 @@ class Game(Base):
     season = Column(Integer, nullable=False)
     week = Column(Integer, nullable=True)
     game_type = Column(String, CheckConstraint("game_type IN ('season', 'postseason', 'final')"), nullable=False)
-    game_result = Column(String, CheckConstraint("game_result IN ('won', 'tie')"), default='won')
+    game_result = Column(String, CheckConstraint("game_result IN ('won', 'tied')"), default='won')
 
     league = relationship("League", back_populates="games")
-    home_team = relationship("Team", foreign_keys=[home_team_id], back_populates="home_games")
-    away_team = relationship("Team", foreign_keys=[away_team_id], back_populates="away_games")
+    home_team = relationship("Team", foreign_keys=[home_id], back_populates="home_games")
+    away_team = relationship("Team", foreign_keys=[away_id], back_populates="away_games")
     winner = relationship("Team", foreign_keys=[winner_id], back_populates="won_games")
     loser = relationship("Team", foreign_keys=[loser_id], back_populates="lost_games")
     stadium = relationship("Stadium", back_populates="games")
@@ -162,3 +165,16 @@ class Period(Base):
     game = relationship("Game")
     team = relationship("Team", foreign_keys=[team_id])
     opponent = relationship("Team", foreign_keys=[opp_id])
+
+
+
+##############################################################################
+##############################################################################
+
+
+class ProviderMapping(Base):
+    __tablename__ = 'provider_mapping'
+    provider = Column(String, primary_key=True)  # e.g., "yahoo", "espn"
+    entity_type = Column(String, primary_key=True) # game, player, team
+    entity_id = Column(String, primary_key=True) # inside ID
+    provider_id = Column(String, nullable=False) # outside ID

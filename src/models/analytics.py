@@ -4,7 +4,7 @@ from typing import Any, List, Tuple
 import pandas as pd
 
 from ..database.models.database import get_db_session
-from ..database.models.analytic_tables import StatMetric, GameMetric
+from ..database.models.analytic_tables import StatMetric, LeagueMetric
 from ..utils.logging_manager import get_logger
 
 
@@ -81,7 +81,7 @@ class Analytics:
         return timeFrames
     
 
-    def set_game_metric(self, timeFrame: str, entityType: str, entityId: str, metricLabel: str, dataFrame: pd.DataFrame) -> List[GameMetric]:
+    def set_game_metric(self, timeFrame: str, entityType: str, entityId: str, metricLabel: str, dataFrame: pd.DataFrame) -> List[StatMetric]:
         records = []
         for _, row in dataFrame.iterrows():
             records.append(
@@ -449,6 +449,18 @@ class NCAABAnalytics(BasketballAnalytics):
 
     def __init__(self):
         super().__init__("NCAAB")
+
+
+########################################################################################
+########################################################################################
+
+
+
+class MLBAnalytics(Analytics):
+
+
+    def __init__(self):
+        super().__init__("MLB")
 
 
     

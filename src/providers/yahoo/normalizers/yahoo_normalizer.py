@@ -1,17 +1,24 @@
+from copy import deepcopy
 from datetime import datetime
 from typing import List, Any, Dict
 import pytz
 
-from ....agents.normalize_agent import INormalAgent
-from ....database.models import Game, GameLine, OverUnder, Period, Player, Stadium, Team
-from ....models.model_classes import ScoreboardData, BoxscoreData, MatchupData
+from ....capabilities.normalizeable import NormalAgent
 from ....utils.logging_manager import get_logger
+
+
+##########################################################################
+##########################################################################
 
 
 est = pytz.timezone('America/New_York')
 
 
-class YahooNormalizer(INormalAgent):
+##########################################################################
+##########################################################################
+
+
+class YahooNormalizer(NormalAgent):
     """ normalizer for Yahoo data."""
 
     def __init__(self, leagueId: str, sportId: str):
@@ -21,7 +28,139 @@ class YahooNormalizer(INormalAgent):
         self.logger = get_logger()
 
 
-    def _set_game_info(self, game: Dict[str, Any]) -> "Game":
+    def normalize_boxscore(self, webData: dict) -> dict:
+        # self.logger.debug("Normalize Yahoo boxscore")
+
+        gameId = webData["gameData"]["gameid"]
+        gameData = webData["gameData"]
+
+        return {
+            "game": self._set_game_info(gameData),
+            "teamStats": self._set_team_stats(webData),
+            "playerStats": self._set_player_stats(webData),
+            "periods": self._set_period_data(gameData),
+            "gameLines": self._set_game_lines(gameData),
+            "overUnder": self._set_over_under(gameData), 
+            "lineups": self._set_lineups(webData),
+            "teams": [team for team in self._set_teams(webData["teamData"]["teams"])
+                   if team["team_id"] in (gameData["away_team_id"], gameData["home_team_id"])],
+            "players": self._set_players(webData["playerData"]),
+            "stadium": self._set_stadium(gameData),
+            "misc": self._set_misc(webData)
+        }
+
+
+    def normalize_matchup(self, webData: dict) -> dict:
+        self.logger.debug("Normalize Yahoo matchup")
+
+        gameData = webData["gameData"]
+        gameId = gameData["gameid"]
+
+        try:
+           odds = []
+           for o in gameData["odds"].values():
+               o["timestamp"] = str(datetime.now().astimezone(est))
+               odds.append(o)
+        except KeyError:
+            odds = []
+       
+        return {
+            "provider": "yahoo",
+            "gameId": gameData["gameid"],
+            "leagueId": self.leagueId,
+            "homeId": gameData["home_team_id"],
+            "awayId": gameData["away_team_id"],
+            "url": gameData["navigation_links"]["boxscore"]["url"],
+            "gameTime": str(datetime.strptime(gameData["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
+            "season": gameData["season"],
+            "week": gameData.get("week", None),
+            "statusType": gameData["status_type"].lower(),
+            "gameType": gameData["game_type"].split(".")[-1].lower() if gameData["game_type"] else None,
+            "odds": odds,
+            "lineups": gameData.get("lineups", None),
+            "players": gameData["playersByTeam"] if gameData.get("playersByTeam") else None,
+            "teams": [webData["TeamsStore"]["teams"][teamId] for teamId in [gameData["{}_team_id".format(a_h)] for a_h in ("away", "home")]],
+            "injuries": [player["injury"] for player in webData["PlayersStore"]["players"].values() if player.get("injury", None)],
+            "stadiumId": gameData.get("stadium_id", None),
+            "isNuetral": bool(gameData.get("tournament")),
+        }
+
+
+    def normalize_player(self, data: dict) -> dict:
+        self.logger.debug("Normalize Yahoo player")
+        
+        if data.get("draft_team"):
+            draftPick = None if data["draft_team"]["pick"] == '' else data["draft_team"]["pick"]
+            draftRound = None if not isinstance(data["draft_team"]["round"], int) else data["draft_team"]["round"]
+            draftYear = None if data["draft_team"]["season"] == '' else data["draft_team"]["season"]
+            draftTeam = None if data["draft_team"]["team"]["team_id"] == '' else data["draft_team"]["team"]["team_id"]
+        else:
+            draftPick = None; draftRound = None; draftYear = None; draftTeam = None
+        
+        return {
+                "player_id": data["player_id"],
+                "sport_id": self.sportId,
+                "first_name": data["first_name"],
+                "last_name": data["last_name"],
+                "height": data["bio"]["height_cm"],
+                "weight": data["bio"]["weight_kg"],
+                "bats": data["bat"],
+                "throws": data["throw"],
+                "birthdate": str(datetime.strptime(data["bio"]["birth_date"], "%Y-%m-%d").date()),
+                "college": data.get("college"),
+                "draft_year": draftYear,
+                "draft_round":draftRound,
+                "draft_pick": draftPick,
+                "draft_team_id": draftTeam,
+                "rookie_season": data["bio"]["rookie_season"]
+        }
+
+
+    def normalize_scoreboard(self, webData: dict) -> dict:
+        self.logger.debug("Normalize Yahoo scoreboard")
+
+        games = []
+        for gameId, game in webData["GamesStore"]["games"].items():
+            if gameId.split(".")[0] == self.leagueId.lower():
+            
+                try:
+                    odds = []
+                    for o in game["odds"].values():
+                        o["timestamp"] = str(datetime.now().astimezone(est))
+                        odds.append(o)
+                except KeyError:
+                    odds = []
+
+                try:
+                    url= game["navigation_links"]["boxscore"]["url"]
+                except (TypeError, KeyError):
+                    url = None
+
+                games.append({
+                        "provider": "yahoo",
+                        "gameId": game["gameid"],
+                        "leagueId": self.leagueId,
+                        "homeId": game["home_team_id"],
+                        "awayId": game["away_team_id"],
+                        "url": url,
+                        "gameTime": str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
+                        "season": game["season"],
+                        "week": game.get("week", None),
+                        "statusType": game["status_type"].lower(),
+                        "gameType": game["game_type"].split(".")[-1].lower() if game["game_type"] else None,
+                        "odds": odds
+                    })      
+        return {"provider": "yahoo",
+                "league_id": self.leagueId,
+                "games": games
+                } 
+
+
+    def normalize_team(self, raw_data: dict) -> dict:
+        raise NotImplementedError
+
+
+    def _set_game_info(self, game: Dict[str, Any]) -> dict:
             
         winnerId = game.get("winning_team_id")
         if winnerId:
@@ -30,56 +169,58 @@ class YahooNormalizer(INormalAgent):
         else:
             loserId = None
 
-        newGame = Game(
-            game_id = game["gameid"],
-            league_id = self.leagueId,
-            home_team_id = game["home_team_id"],
-            away_team_id = game["away_team_id"],
-            winner_id = winnerId,
-            loser_id = loserId,
-            stadium_id = game.get("stadium_id", None),
-            is_neutral_site = bool(game.get("tournament", 0)),
-            game_date = str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
-            season = game["season"],
-            week = game.get("week", None),
-            game_type = game["season_phase_id"].split(".")[-1],
-            game_result = game["outcome_type"].split(".")[-1]
-        )
-        return newGame
+        return {
+            "game_id": game["gameid"],
+            "league_id": self.leagueId,
+            "home_id": game["home_team_id"],
+            "away_id": game["away_team_id"],
+            "winner_id": winnerId,
+            "loser_id": loserId,
+            "stadium_id": game.get("stadium_id", None),
+            "is_neutral_site": bool(game.get("tournament", 0)),
+            "game_date": str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
+            "season": game["season"],
+            "week": game.get("week", None),
+            "game_type": game["season_phase_id"].split(".")[-1].lower(),
+            "game_result": game["outcome_type"].split(".")[-1].lower() if game["outcome_type"] else "unknown"
+        }
 
         
-    def _set_game_lines(self, data: Dict[str, Any]) -> List[GameLine]:
+    def _set_game_lines(self, data: Dict[str, Any]) -> List[Dict]:
         gameId = data["gameid"]
         teamIds = {"away": data["away_team_id"], "home": data["home_team_id"]}
         oppIds = {"away": teamIds["home"], "home": teamIds["away"]}
         
         gameLines = []
-        odds = list(data["odds"].values())[-1]
+        try:
+            odds = list(data["odds"].values())[-1]
 
-        awayPts = int(data["total_away_points"])
-        homePts = int(data["total_home_points"])
+            awayPts = int(data["total_away_points"])
+            homePts = int(data["total_home_points"])
 
-        for a_h, teamPts, oppPts in [("away", awayPts, homePts), ("home", homePts, awayPts)]:
-            try:
-                result = teamPts - oppPts
-                spread_key = f"{a_h}_spread"
-                spreadOutcome = (result + float(odds[spread_key])>0) - (result + float(odds[spread_key]) < 0)
-                moneyOutcome = (teamPts > oppPts) - (teamPts < oppPts)  # Boolean, automatically 1 (win) or 0 (loss)
-                
-                newGameLine = GameLine(
-                    team_id=teamIds[a_h],
-                    opp_id=oppIds[a_h],
-                    game_id=gameId,
-                    spread=odds[spread_key],
-                    spread_line= -110 if odds[f"{a_h}_line"] == '' else odds[f"{a_h}_line"] ,
-                    money_line=None if odds[f"{a_h}_ml"] == '' else odds[f"{a_h}_ml"], 
-                    result=result,
-                    spread_outcome=spreadOutcome,
-                    money_outcome=moneyOutcome
-                )
-                gameLines.append(newGameLine)
-            except ValueError:
-                pass
+            for a_h, teamPts, oppPts in [("away", awayPts, homePts), ("home", homePts, awayPts)]:
+                try:
+                    result = teamPts - oppPts
+                    spread_key = f"{a_h}_spread"
+                    spreadOutcome = (result + float(odds[spread_key])>0) - (result + float(odds[spread_key]) < 0)
+                    moneyOutcome = (teamPts > oppPts) - (teamPts < oppPts)  # Boolean, automatically 1 (win) or 0 (loss)
+                    
+                    gameLines.append({
+                        "team_id": teamIds[a_h],
+                        "opp_id": oppIds[a_h],
+                        "game_id": gameId,
+                        "spread": odds[spread_key],
+                        "spread_line": -110 if odds[f"{a_h}_line"] == '' else odds[f"{a_h}_line"] ,
+                        "money_line": None if odds[f"{a_h}_ml"] == '' else odds[f"{a_h}_ml"], 
+                        "result": result,
+                        "spread_outcome": spreadOutcome,
+                        "money_outcome": moneyOutcome
+                    })
+                except ValueError:
+                    pass
+        except (KeyError, UnboundLocalError, TypeError) as e:
+            # self.logger.warning(f"No Odds Data for {gameId}")
+            pass
         return gameLines
     
 
@@ -87,65 +228,72 @@ class YahooNormalizer(INormalAgent):
         raise NotImplementedError
 
 
-    def _set_over_under(self, data: Dict[str, Any]) -> OverUnder:
+    def _set_over_under(self, data: Dict[str, Any]) -> dict:
         gameId = data["gameid"]
-        odds = list(data["odds"].values())[-1]
-        total = int(data["total_away_points"]) + int(data["total_home_points"])
-
         try:
-            overUnder = OverUnder(
-                game_id=gameId,
-                over_under=odds["total"],
-                over_line=-110 if odds["over_line"] == '' else odds["over_line"],
-                under_line=-110 if odds["under_line"] == '' else odds["under_line"],
-                total=total,
-                ou_outcome=(float(total) > float(odds["total"])) - (float(total) < float(odds["total"]))
-                )
-        except ValueError:
+            odds = list(data["odds"].values())[-1]
+        except:
+            odds = None
+        total = int(data["total_away_points"]) + int(data["total_home_points"])
+        
+        overUnder = None
+        try:
+            overUnder = {
+                "game_id": gameId,
+                "over_under": odds["total"],
+                "over_line": -110 if odds["over_line"] == '' else odds["over_line"],
+                "under_line": -110 if odds["under_line"] == '' else odds["under_line"],
+                "total": total,
+                "ou_outcome": (float(total) > float(odds["total"])) - (float(total) < float(odds["total"]))
+            }
+        except (KeyError, UnboundLocalError, TypeError, ValueError) as e:
+            # self.logger.warning(f"No Odds Data for {gameId}")
             pass
         return overUnder
 
 
-    def _set_period_data(self, data: Dict[str, Any]) -> List[Period]:
+    def _set_period_data(self, data: Dict[str, Any]) -> List[dict]:
         gameId = data["gameid"]
         teamIds = {"away": data["away_team_id"], "home": data["home_team_id"]}
         oppIds = {"away": teamIds["home"], "home": teamIds["away"]}
 
         periods = []
-        for p in data["game_periods"]:
-            periodId = p["period_id"]
-            for a_h in ("away", "home"):
-                newPeriod = Period(
-                    game_id=gameId,
-                    team_id=teamIds[a_h],
-                    opp_id=oppIds[a_h],
-                    period=periodId,
-                    pts=p["{}_points".format(a_h)]
-                )
-                periods.append(newPeriod)
+        try:
+            for p in data["game_periods"]:
+                periodId = p["period_id"]
+                for a_h in ("away", "home"):
+                   
+                   periods.append({
+                        "game_id": gameId,
+                        "team_id": teamIds[a_h],
+                        "opp_id": oppIds[a_h],
+                        "period": periodId,
+                        "pts": int(p["{}_points".format(a_h)])
+                    })
+        except (TypeError, ValueError):
+            pass
         return periods
 
 
-    def _set_players(self, data: Dict[str, Any]) -> List[Player]:
+    def _set_players(self, data: Dict[str, Any]) -> List[dict]:
         posTypes = dict([(key, value["abbr"]) for key, value in data["positions"].items()])
-        
         players = []
         for key, value in data["players"].items():
+            
             try:
                 position = posTypes.get(value.get("primary_position_id", {}), None)
             except TypeError:
                 position = None
             
-            newPlayer = Player(
-                player_id=value["player_id"],
-                sport_id=self.sportId,
-                first_name=value["first_name"],
-                last_name=value["last_name"],
-                position=position,
-                current_team_id=value["team_id"],
-                uniform_number=value.get("uniform_number", -1)
-            )
-            players.append(newPlayer)
+            players.append({
+                "player_id": value["player_id"],
+                "sport_id": self.sportId,
+                "first_name": value["first_name"],
+                "last_name": value["last_name"],
+                "position": position,
+                "current_team_id": value["team_id"],
+                "uniform_number": value.get("uniform_number", -1)
+            })
         return players
 
 
@@ -164,157 +312,40 @@ class YahooNormalizer(INormalAgent):
         return playerList
 
 
-    def _set_stadium(self, data: Dict[str, Any]) -> Stadium:
-        return Stadium(
-            stadium_id=data["stadium_id"],
-            name=data.get("stadium", None)
-            )
+    def _set_stadium(self, data: Dict[str, Any]) -> dict:
+        return {
+            "stadium_id": data["stadium_id"],
+            "name": data.get("stadium", None)
+        }
 
 
-    def _set_teams(self, data: dict) -> List["Team"]:
+    def _set_teams(self, data: dict) -> List[dict]:
         teams = []
         for team in [value for key, value in data.items() if self.leagueId.lower() in key]:
-            newTeam = Team(
-                team_id=team["team_id"],
-                league_id=self.leagueId,
-                first_name=team["first_name"],
-                last_name=team["last_name"],
-                abbreviation=team.get("abbr", "N/A"),
-                conference=team.get("conference_abbr", None),
-                division=team.get("division", None),
-                primary_color=team.get("colorPrimary", None),
-                secondary_color=team.get("colorSecondary", None)
-                )
-            teams.append(newTeam)
+            team["first_name"] = "Oakland" if team["last_name"] == "Athletics" else team["first_name"]
+            teams.append({
+                "team_id": team["team_id"],
+                "league_id": self.leagueId,
+                "first_name": team["first_name"],
+                "last_name": team["last_name"],
+                "abrv": team.get("abbr", "N/A"),
+                "conference": team.get("conference_abbr", None),
+                "division": team.get("division", None),
+                "primary_color": team.get("colorPrimary", None),
+                "secondary_color": team.get("colorSecondary", None)
+                })
         return teams  
     
 
-    def _set_lineup_data(self, data: dict) -> List["LineupData"]:
+    def _set_lineup_data(self, data: dict) -> List[dict]:
         raise NotImplementedError
 
 
-    
-    def _set_scoreboard_matchup(self, game: Dict[str, Any]) -> "MatchupData":
-       
-        try:
-           odds = []
-           for o in game["odds"].values():
-               o["timestamp"] = str(datetime.now().astimezone(est))
-               odds.append(o)
-        except KeyError:
-            odds = []
-
-        try:
-            url= game["navigation_links"]["boxscore"]["url"]
-        except TypeError:
-            url = None
-
-        return MatchupData(
-            provider="yahoo",
-            gameId = game["gameid"],
-            leagueId = self.leagueId,
-            homeId = game["home_team_id"],
-            awayId = game["away_team_id"],
-            url = url,
-            gameTime = str(datetime.strptime(game["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
-            season = game["season"],
-            week = game.get("week", None),
-            statusType=game["status_type"],
-            gameType=game["game_type"].split(".")[-1] if game["game_type"] else None,
-            odds=odds,
-        )
-
-
-    def _set_team_stats(self, data: dict) -> List["TeamStatData"]:
+    def _set_team_stats(self, data: dict) -> List[dict]:
         raise NotImplementedError
 
 
-    def _set_player_stats(self, data: dict) -> List["PlayerStatData"]:
-        raise NotImplementedError
+    def _set_player_stats(self, data: dict) -> List[dict]:
+        raise NotImplementedError           
 
-    
-    def normalize_boxscore(self, webData: dict) -> "BoxscoreData":
-        self.logger.debug("Normalize boxscore")
-
-        gameId = webData["PageStore"]["pageData"]["entityId"]
-        gameData = webData["GamesStore"]["games"][gameId]
-        gameInfo = self._set_game_info(gameData)
-
-        try:
-            gameLines = self._set_game_lines(gameData)
-            overUnder = self._set_over_under(gameData)
-        except (KeyError, UnboundLocalError) as e:
-            self.logger.warning(f"No Odds Data for {gameId}")
-            gameLines, overUnder = None, None
-
-        boxscore = BoxscoreData(
-            game=gameInfo,
-            teamStats=self._set_team_stats(webData),
-            playerStats=self._set_player_stats(webData),
-            periods=self._set_period_data(gameData),
-            gameLines=gameLines,
-            overUnders=overUnder,
-            lineups=None,
-            teams=[team for team in self._set_teams(webData["TeamsStore"]["teams"])
-                   if team.team_id in (gameInfo.home_team_id, gameInfo.away_team_id)],
-            players=self._set_players(webData["PlayersStore"]),
-            stadium=self._set_stadium(gameData),
-            misc=self._set_misc(webData)
-        )
-        return boxscore
-
-
-    def normalize_matchup(self, webData: dict) -> "MatchupData":
-
-        gameId = webData["PageStore"]["pageData"]["entityId"]
-        gameData = webData["GamesStore"]["games"][gameId]
-
-        try:
-           odds = []
-           for o in gameData["odds"].values():
-               o["timestamp"] = str(datetime.now().astimezone(est))
-               odds.append(o)
-        except KeyError:
-            odds = []
-
-       
-        return MatchupData(
-            provider="yahoo",
-            gameId = gameData["gameid"],
-            leagueId = self.leagueId,
-            homeId = gameData["home_team_id"],
-            awayId = gameData["away_team_id"],
-            url = gameData["navigation_links"]["boxscore"]["url"],
-            gameTime = str(datetime.strptime(gameData["start_time"], "%a, %d %b %Y %H:%M:%S %z").astimezone(est)), 
-            season = gameData["season"],
-            week = gameData.get("week", None),
-            statusType=gameData["status_type"],
-            gameType=gameData["game_type"].split(".")[-1] if gameData["game_type"] else None,
-            odds=odds,
-            lineups=gameData.get("lineups", None),
-            players=gameData["playersByTeam"] if gameData.get("playersByTeam") else None,
-            teams = [webData["TeamsStore"]["teams"][teamId] for teamId in [gameData["{}_team_id".format(a_h)] for a_h in ("away", "home")]],
-            injuries=[player["injury"] for player in webData["PlayersStore"]["players"].values() if player.get("injury", None)],
-            stadiumId = gameData.get("stadium_id", None),
-            isNuetral = bool(gameData.get("tournament", 0)),
-        )
-    
-
-    def normalize_player(self, webData: dict) -> "Player":
-        raise NotImplementedError
-
-
-    def normalize_scoreboard(self, webData: dict) -> "ScoreboardData":
-
-        leagueId = webData["PageStore"]["pageData"]["entityData"]["leagueName"]
-        games = [self._set_scoreboard_matchup(game) for gameId, game in webData["GamesStore"]["games"].items() if gameId.split(".")[0] == leagueId.lower()]  
-                    
-        return ScoreboardData(provider="yahoo", 
-                              league_id=leagueId,
-                              games=games,
-                              )          
-    
-
-    def normalize_team(self, raw_data: dict) -> "Team":
-        raise NotImplementedError
         

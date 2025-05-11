@@ -1,7 +1,7 @@
 import math
 from typing import Any, Dict, List
 
-from .yahoo_normalizer import YahooNormalizer
+from .espn_normalizer import ESPNNormalizer
 from ....sports.normalizers import BasketballNormalizer
 
 
@@ -10,8 +10,8 @@ from ....sports.normalizers import BasketballNormalizer
 
 
 
-class YahooBasketballNormalizer(BasketballNormalizer, YahooNormalizer):
-    """Normalizer for Yahoo Basketball data (NBA and NCAAB)."""
+class ESPNBasketballNormalizer(BasketballNormalizer, ESPNNormalizer):
+    """Normalizer for ESPN Basketball data (NBA and NCAAB)."""
 
     def __init__(self, leagueId: str):
         super().__init__(leagueId.upper(), "sport_basketball")
@@ -19,8 +19,7 @@ class YahooBasketballNormalizer(BasketballNormalizer, YahooNormalizer):
         # League-specific settings
         self._base_minutes = 48 if self.leagueId == "NBA" else 40
         self._regulation_periods = 4 if self.leagueId == "NBA" else 2
-        self._id_prefix = "nba" if self.leagueId == "NBA" else "ncaab"
-        self._stat_variation = f"{self._id_prefix}.stat_variation.2"
+    
 
 
     def _set_linueups(self, webData):

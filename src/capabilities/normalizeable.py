@@ -10,15 +10,28 @@ from typing import Any, Optional
 class Normalizable(ABC):
     """Handles normalizg web data."""
     
-    def __init__(self, normalAgent: Optional["INormalAgent"]=None):
-        self.normalAgent = normalAgent  
-
-
-    def _set_normal_agent(self, normalAgent: "INormalAgent"):
-        self.normalAgent = normalAgent 
-
-
 
     @abstractmethod
     def normalize(self, webData: dict) -> Any:
-        pass
+        raise NotImplementedError
+
+
+######################################################################
+######################################################################
+
+
+class NormalAgent(ABC):
+    
+    @abstractmethod
+    def normalize_scoreboard(self, webData: dict) -> dict:
+        raise NotImplementedError
+
+
+    @abstractmethod
+    def normalize_boxscore(self, webData: dict) -> dict:
+        raise NotImplementedError
+
+
+    @abstractmethod
+    def normalize_player(self, webData: dict) -> dict:
+        raise NotImplementedError

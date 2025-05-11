@@ -1,10 +1,11 @@
+from copy import deepcopy
 from typing import Any, Dict
 from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
 import json
 
-from ...agents import IDownloadAgent
+from ...capabilities.downloadable import DownloadAgent
 from ...utils.logging_manager import get_logger
 
 
@@ -13,7 +14,7 @@ from ...utils.logging_manager import get_logger
 
 logger = get_logger()
 
-class YahooDownloadAgent(IDownloadAgent):
+class YahooDownloadAgent(DownloadAgent):
 
     BASE_URL = "https://sports.yahoo.com"
 
@@ -39,15 +40,38 @@ class YahooDownloadAgent(IDownloadAgent):
     
 
     @staticmethod
-    def _form_scoreboard_url(leagueId: str, gameDate: str) -> str:
+    def fetch_scoreboard(leagueId: str, gameDate: str) -> dict:
         slugId = {"NBA": "nba", "NCAAB": "college-basketball", "MLB": "mlb"}[leagueId]
-        schedUrl = YahooDownloadAgent.BASE_URL+"/{0[slugId]}/scoreboard/?confId=all&schedState={0[schedState]}&dateRange={0[dateRange]}".format({"slugId":slugId, "schedState":"", "dateRange":gameDate})        
-        return schedUrl
+        schedState=""
+        schedUrl = YahooDownloadAgent.BASE_URL+f"/{slugId}/scoreboard/?confId=all&schedState={schedState}&dateRange={gameDate}"       
+        item = YahooDownloadAgent._fetch_url(schedUrl)
+        item["provider"] = "yahoo"
+        return item 
+
+
+    @staticmethod
+    def fetch_player(leagueId:str, playerId: str):
+        slugId = {"NBA": "nba", "NCAAB": "college-basketball", "MLB": "mlb"}[leagueId]
+        url = YahooDownloadAgent.BASE_URL+f"/{slugId}/players/{playerId.split('.')[-1]}/"
+        data = YahooDownloadAgent._fetch_url(url)["PlayersStore"]["players"][playerId]
+        data["provider"] = "yahoo"
+        return data
     
 
     @staticmethod
-    def _form_boxscore_url(url: str) -> str:
-        return YahooDownloadAgent.BASE_URL+url
+    def fetch_boxscore(game: dict) -> dict:
+        url = YahooDownloadAgent.BASE_URL+game["url"]
+        data = YahooDownloadAgent._fetch_url(url)
+        gameId = data["PageStore"]["pageData"]["entityId"]
+
+        webData = {}
+        webData["provider"] = "yahoo"
+        webData["gameData"] = data["GamesStore"]["games"][gameId]
+        webData["teamData"] = data["TeamsStore"]
+        webData["playerData"] = data["PlayersStore"]
+        webData["statsData"] = data["StatsStore"]
+        return deepcopy(webData)
+        
 
 
         

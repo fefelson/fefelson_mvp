@@ -1,5 +1,5 @@
 from typing import List
-
+from ..capabilities.fileable import JSONAgent
 from ..capabilities import Downloadable, Normalizable, Processable
 from ..providers import get_download_agent, get_normal_agent # factory methods
 from ..utils.logging_manager import get_logger
@@ -16,22 +16,21 @@ class Scoreboard(Downloadable, Normalizable, Processable):
         self.logger = get_logger()
 
 
-    def normalize(self, webData: dict) -> "ScoreboardData":
-        return self.normalAgent.normalize_scoreboard(webData)
+    def normalize(self, webData: dict) -> dict:
+        normalAgent = get_normal_agent(self.leagueId, webData["provider"])
+        return normalAgent.normalize_scoreboard(webData)
 
 
-    def process(self, gameDate: str) -> List["GameData"]:
-        self.logger.info(f"{self.leagueId} Scoreboard processing {gameDate}")
-        self._set_download_agent(get_download_agent(self.leagueId)) # Using factory method
-        normalAgent = get_normal_agent(self.leagueId)
-        self._set_normal_agent(normalAgent(self.leagueId)) # Using factory method
-        
-        self.set_url(gameDate)
-        scoreboard = self.normalize(self.download())
-        return scoreboard.games
+    def process(self, gameDate: str, provider) -> List[dict]:
+        self.logger.debug(f"{self.leagueId} Scoreboard processing {gameDate}")
+                
+        webData = self.download(gameDate, provider)
+        scoreboard = self.normalize(webData)
+        return scoreboard["games"]
 
 
-    def set_url(self, gameDate: str):
-        self.url = self.downloadAgent._form_scoreboard_url(self.leagueId, gameDate)
+    def download(self, gameDate, provider):
+        downloadAgent = get_download_agent(self.leagueId, provider)
+        return downloadAgent.fetch_scoreboard(self.leagueId, gameDate)
 
     

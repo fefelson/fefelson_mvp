@@ -2,8 +2,7 @@ from typing import Dict, Any
 from threading import Lock
 import os
 
-from ..agents.file_agent import IFileAgent, get_file_agent
-from ..capabilities import Fileable
+from ..capabilities.fileable import Fileable, get_file_agent
 
 
 ##################################################################
@@ -21,7 +20,7 @@ class LeagueConfig(Fileable):
         
         self.leagueId = leagueId
         self.set_file_path()
-        self._set_file_Agent(self._fileAgent)
+        self.set_file_agent(self._fileAgent)
         self.config: Dict[str, Any] = self._load_config()
 
 
