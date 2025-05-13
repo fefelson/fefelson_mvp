@@ -26,7 +26,7 @@ class BaseModel(nn.Module):
     _modelName = None
     _leagueId = None  
 
-    def __init__(self, *, entityId: str=None, defaultId: str="DEFAULT"):
+    def __init__(self, *, entityId: str, defaultId: str=None):
         super().__init__()
         print(f"\ntensors.core:31 BaseModel- entityId:{entityId}, defaultId:{defaultId}, modelName: {self._modelName}")
         self.entityId = entityId
@@ -37,10 +37,9 @@ class BaseModel(nn.Module):
     def _load(self):
 
         entityPath = os.path.join(BASE_PATH, self._leagueId, "simulations", self._entityType, self.entityId, f"{self._modelName}.pt")
-        defaultPath = os.path.join(BASE_PATH, self._leagueId, "simulations", self._entityType, self.defaultId, f"{self._modelName}.pt")
-        if not os.path.exists(entityPath):
+        if not os.path.exists(entityPath) and self.defaultId is not None:
             logger.debug("PATH NOT FOUND -- USING DEFAULT")
-            entityPath = defaultPath
+            entityPath =  os.path.join(BASE_PATH, self._leagueId, "simulations", self._entityType, self.defaultId, f"{self._modelName}.pt")
         try:
             self.load_state_dict(torch.load(entityPath))
         except FileNotFoundError:
@@ -133,7 +132,7 @@ class CustomDataset(Dataset):
             if not ft_values:
                 continue
             for ftr in self._select_stmt(ft_values):
-				
+                # print("_get_item_:136",ftr, row[ftr["ftr"]])
                 dtype = torch.float32 if ftr["ftr"] in [ftr["ftr"] for ftr in self._select_stmt(self._numeric_features)] else torch.long
                 feature_types[ftr["ftr"]] = torch.tensor(row[ftr["ftr"]], dtype=dtype)
             features[ft_key] = deepcopy(feature_types)
@@ -209,8 +208,9 @@ class CustomDataset(Dataset):
             col = col.split(".")[-1]
             # Convert to numeric, coercing errors to NaN, then to nullable integer
             df[col] = pd.to_numeric(df[col], errors='coerce').astype('Int64')
-            # Set NaN values to 
-            df.loc[df[col].isna(), col] = df[col].mode()
+            # Set NaN values to mode
+            mode = df[col].dropna().mode()
+            df.loc[df[col].isna(), col] = mode.iloc[0]
 
         # print(df.head(10))
         # raise

@@ -111,6 +111,18 @@ class PitchTypeDataset(CustomDataset):
     _label = "pitch_type_id"
 
 
+class PitchLocationDataset(PitchTypeDataset):
+
+    _features = {"count":COUNT_FEATURES, "batter":["batter_age", "batter_exp", "batter_faces_break"], "pitcher": ["pitcher_age", "pitcher_exp", "pitcher_throws_lefty",], "pitch":["pitch_type_id",]}
+    _label = "pitch_location"
+
+
+class PitchVelocityDataset(PitchTypeDataset):
+
+    _features = {"count":COUNT_FEATURES, "batter":["batter_age", "batter_exp", "batter_faces_break"], "pitcher": ["pitcher_age", "pitcher_exp", "pitcher_throws_lefty",], "pitch":["pitch_type_id",]}
+    _label = "velocity"
+
+
 
 class PitcherSwingDataset(SwingResultDataset):
 

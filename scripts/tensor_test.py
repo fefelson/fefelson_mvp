@@ -1,11 +1,15 @@
 import pandas as pd
 import torch
 
-from ..src.tensors.baseball.baseball_atomics import (PitchTypeSelect)
-from ..src.tensors.baseball.datasets import (PitchTypeDataset)
+from ..src.tensors.baseball.baseball_atomics import (PitchTypeSelect, IsHit, NumBasesIfHit)
+from ..src.tensors.baseball.datasets import (PitchTypeDataset, IsHitDataset, NumBasesIfHitDataset)
 from ..src.tensors.trainer import BinaryTrainer, ClassifyTrainer
 
 from ..src.database.models.database import get_db_session
+
+PITCH_TYPE_LABELS = ["changeup", "curve", "cutter", "two-seam fb", "fastball", "forkball", "four-seam fb",
+                                         "sweeper", "splitter", "screwball", "sinker", "slider", "slow curve", "slurve", 
+                                         "knuckle curve", "knuckleball", "eephus pitch"]
 
 
 BATTER_QUERY = """SELECT DISTINCT player_id, first_name, last_name, bats
@@ -15,8 +19,10 @@ BATTER_QUERY = """SELECT DISTINCT player_id, first_name, last_name, bats
 
 
 PITCHER_QUERY = """SELECT DISTINCT player_id, first_name, last_name, throws
-                FROM players AS p
-                INNER JOIN at_bats AS ab on p.player_id = ab.pitcher_id        
+                FROM players 
+                INNER JOIN pitches AS p ON players.player_id = p.pitcher_id
+                GROUP BY p.pitcher_id
+                HAVING COUNT(pitch_id) > 999
                 """
 
 
@@ -35,40 +41,40 @@ def query_db(query):
     return df
 
 
-# def num_bases():
+def num_bases():
     
-#     atomicTrainer = ClassifyTrainer(class_labels=["single", "double", "triple", "hr"])
-#     atomicTrainer.dojo(NumBasesIfHit(), NumBasesIfHitDataset(), patience=5)
-    
-
-#     for _, row in query_db(STADIUM_QUERY).iterrows():
-
-#         stadiumId = row["stadium_id"]
-#         print(f"\n\n{row['name']}\n")
-
-#         atomicTrainer = ClassifyTrainer(class_labels=["single", "double", "triple", "hr"])
-#         try:
-#             atomicTrainer.dojo(NumBasesIfHit(stadiumId=stadiumId), NumBasesIfHitDataset(entityId=stadiumId))
-#         except ValueError:
-#             pass
-
-
-# def is_hit():
-    
-#     atomicTrainer = BinaryTrainer(class_labels=["out", "hit"])
-#     atomicTrainer.dojo(IsHit(), IsHitDataset(), patience=5)
+    atomicTrainer = ClassifyTrainer(class_labels=["single", "double", "triple", "hr"])
+    atomicTrainer.dojo(NumBasesIfHit(), NumBasesIfHitDataset(), patience=5)
     
 
-#     for _, row in query_db(STADIUM_QUERY).iterrows():
+    for _, row in query_db(STADIUM_QUERY).iterrows():
 
-#         stadiumId = row["stadium_id"]
-#         print(f"\n\n{row['name']}\n")
+        stadiumId = row["stadium_id"]
+        print(f"\n\n{row['name']}\n")
 
-#         atomicTrainer = BinaryTrainer(class_labels=["out", "hit"])
-#         try:
-#             atomicTrainer.dojo(IsHit(stadiumId=stadiumId), IsHitDataset(entityId=stadiumId))
-#         except ValueError:
-#             pass
+        atomicTrainer = ClassifyTrainer(class_labels=["single", "double", "triple", "hr"])
+        try:
+            atomicTrainer.dojo(NumBasesIfHit(stadiumId=stadiumId), NumBasesIfHitDataset(entityId=stadiumId))
+        except ValueError:
+            pass
+
+
+def is_hit():
+    
+    atomicTrainer = BinaryTrainer(class_labels=["out", "hit"])
+    atomicTrainer.dojo(IsHit(), IsHitDataset(), patience=5)
+    
+
+    for _, row in query_db(STADIUM_QUERY).iterrows():
+
+        stadiumId = row["stadium_id"]
+        print(f"\n\n{row['name']}\n")
+
+        atomicTrainer = BinaryTrainer(class_labels=["out", "hit"])
+        try:
+            atomicTrainer.dojo(IsHit(stadiumId=stadiumId), IsHitDataset(entityId=stadiumId))
+        except ValueError:
+            pass
 
 
 # def is_hr():
@@ -103,20 +109,15 @@ def query_db(query):
 def pitch_type_select():
 
     
-    atomicTrainer = ClassifyTrainer(class_labels=["changeup", "curve", "cutter", "two-seam fb", "fastball", "forkball", "four-seam fb",
-                                         "sweeper", "splitter", "screwball", "sinker", "slider", "slow curve", "slurve", 
-                                         "knuckle curve", "knuckleball", "eephus pitch"])
+    atomicTrainer = ClassifyTrainer(class_labels=PITCH_TYPE_LABELS)
     for throws in ("R", "L"):
-        print(f"tensor_test:109  throws:{throws}")
-        atomicTrainer.dojo(PitchTypeSelect(entityId=throws, defaultId=throws), PitchTypeDataset(condition=f"pitcher.throws = '{throws}'")) 
+        atomicTrainer.dojo(PitchTypeSelect(entityId=throws), PitchTypeDataset(condition=f"pitcher.throws = '{throws}'"), patience=-1) 
 
     for _, row in query_db(PITCHER_QUERY).iterrows():
 
-        atomicTrainer = ClassifyTrainer(class_labels=["changeup", "curve", "cutter", "two-seam fb", "fastball", "forkball", "four-seam fb",
-                                         "sweeper", "splitter", "screwball", "sinker", "slider", "slow curve", "slurve", 
-                                         "knuckle curve", "knuckleball", "eephus pitch"])
+        atomicTrainer = ClassifyTrainer(class_labels=PITCH_TYPE_LABELS)
         try:
-            atomicTrainer.dojo(PitchTypeSelect(entityId=row['player_id'], defaultId=row['throws']), PitchTypeDataset(entityId=row['player_id'])) 
+            atomicTrainer.dojo(PitchTypeSelect(entityId=row['player_id']), PitchTypeDataset(entityId=row['player_id'])) 
         except ValueError:
             pass
 
@@ -126,7 +127,7 @@ if __name__ == "__main__":
     torch.manual_seed(42)
     torch.use_deterministic_algorithms(True)
 
-    
+    # num_bases()
     pitch_type_select()
         
     

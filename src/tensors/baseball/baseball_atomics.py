@@ -28,8 +28,8 @@ class ContactResult(BaseModel):
     _HIDDEN_DIM = 12
     _OUTPUT_DIM = 1
 
-    def __init__(self, stadiumId=None):
-        super().__init__(entityId=stadiumId)
+    def __init__(self, stadiumId="DEFAULT"):
+        super().__init__(entityId=stadiumId, defaultId="DEFAULT")
   
         self.hitHardness = nn.Embedding(HIT_HARDNESSES, self._HIT_DIM)
         self.hitStyle = nn.Embedding(HIT_STYLES, self._HIT_DIM)
@@ -69,62 +69,62 @@ class ContactResult(BaseModel):
 ######################################################################
 
 class PitchResult(BaseModel):
-    pass
+    
 
-#     _leagueId = "mlb"
-#     _HIDDEN_DIM = 12
-#     _OUTPUT_DIM = 1
-
-#     def __init__(self, entityId=None):
-#         super().__init__(entityId)
-
-#         self.batter = Batter()
-#         self.pitcher = Pitcher()
-#         self.pitch = Pitch()
-
-#         self.shared = nn.Sequential(
-#             nn.Linear(Batter._OUTPUT_DIM+Pitcher._OUTPUT_DIM+Pitch._OUTPUT_DIM, self._HIDDEN_DIM),
-#             nn.ReLU(),
-#             nn.Dropout(),
-#             nn.Linear(self._HIDDEN_DIM, self._HIDDEN_DIM),
-#             nn.ReLU(),
-#             nn.Dropout(),
-#             nn.Linear(self._HIDDEN_DIM, self._OUTPUT_DIM)
-#         )
-#         self._load()
-
-
-#     def forward(self, features):
-#         # Example: Get embeddings (2D tensors, e.g., [batch_size, embedding_dim])
-#         batter = self.batter(features) 
-#         pitcher = self.pitcher(features) 
-#         pitch = self.pitch(features)
-
-#         x = torch.cat([
-#             batter,
-#             pitcher,
-#             pitch,
-#             sequence,
-#         ], dim=1)  # [batch_size, total_features] 
-
-#         return self.shared(x)
-
-
-######################################################################
-######################################################################
-
-class PitchSelect(BaseModel):
-
-    _entityType = "pitchers" 
     _leagueId = "mlb"
-    _modelName = "pitch_select"
-    _PITCHER_EM_DIM = 6
-    _COUNT_EM_DIM = 6
     _HIDDEN_DIM = 12
     _OUTPUT_DIM = 1
 
+    def __init__(self, entityId=None):
+        super().__init__(entityId)
 
-    def __init__(self, *, entityId=None, defaultId="R"):
+        self.batter = Batter()
+        self.pitcher = Pitcher()
+        self.pitch = Pitch()
+
+        self.shared = nn.Sequential(
+            nn.Linear(Batter._OUTPUT_DIM+Pitcher._OUTPUT_DIM+Pitch._OUTPUT_DIM, self._HIDDEN_DIM),
+            nn.ReLU(),
+            nn.Dropout(),
+            nn.Linear(self._HIDDEN_DIM, self._HIDDEN_DIM),
+            nn.ReLU(),
+            nn.Dropout(),
+            nn.Linear(self._HIDDEN_DIM, self._OUTPUT_DIM)
+        )
+        self._load()
+
+
+    def forward(self, features):
+        # Example: Get embeddings (2D tensors, e.g., [batch_size, embedding_dim])
+        batter = self.batter(features) 
+        pitcher = self.pitcher(features) 
+        pitch = self.pitch(features)
+
+        x = torch.cat([
+            batter,
+            pitcher,
+            pitch,
+            sequence,
+        ], dim=1)  # [batch_size, total_features] 
+
+        return self.shared(x)
+
+
+######################################################################
+######################################################################
+
+class PitchTypeSelect(BaseModel):
+
+    _entityType = "pitchers" 
+    _leagueId = "mlb"
+    _modelName = "pitch_type_select"
+    _PITCHER_EM_DIM = 6
+    _COUNT_EM_DIM = 6
+    _HIDDEN_DIM = 12
+    _OUTPUT_DIM = PITCH_TYPES
+
+
+    def __init__(self, *, entityId, defaultId=None):
         super().__init__(entityId=entityId, defaultId=defaultId)
 
         self.pitcher_age = ContinuousEmbed(1, self._PITCHER_EM_DIM)
@@ -178,9 +178,7 @@ class PitchSelect(BaseModel):
 ######################################################################
 
 
-class PitchTypeSelect(PitchSelect):
-    _modelName = "pitch_type"
-    _OUTPUT_DIM = PITCH_TYPES
+
 
 
 ######################################################################

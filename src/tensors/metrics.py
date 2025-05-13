@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 from sklearn.metrics import precision_recall_curve, auc, roc_auc_score
 
 
@@ -413,58 +415,23 @@ def compute_mse_loss(probs: np.ndarray, labels: np.ndarray) -> float:
 
 
 
-# def _compute_metrics(self, total_loss: float, all_labels: np.ndarray, all_probs: np.ndarray, 
-#                             all_preds: np.ndarray, dataset_length: int) -> Tuple:
-#         """
-#         Compute and validate metrics for predictions.
-#         Returns:
-#             tuple: (avg_loss, accuracy, f1, brier, ece, log_loss, pr_auc, roc_auc)
-#         """
-#         # Compute existing metrics
-#         avg_loss = total_loss / dataset_length if dataset_length > 0 else float('inf')
-#         accuracy = np.sum(all_preds == all_labels) / len(all_labels) if len(all_labels) > 0 else 0.0
-#         f1 = f1_score(all_labels, all_preds, average='macro')
-#         brier = compute_brier_score(all_probs, all_labels)
-#         ece = compute_ece(all_probs, all_labels)
 
-#         # Compute metrics based on loss_type
-#         pr_auc, roc_auc = self._compute_auc(all_probs, all_labels)
+def print_confusion_matrix(class_labels: list, all_labels: np.ndarray, all_preds: np.ndarray, epoch: int = None):
+        """
+        Print confusion matrix.
+        """
+        cm = confusion_matrix(all_labels, all_preds)
+        if cm.shape != (len(class_labels), len(class_labels)):
+            print(f"Error: Confusion matrix shape {cm.shape} does not match num_classes {len(class_labels)}")
+            return
+        cm_df = pd.DataFrame(cm, index=class_labels, columns=class_labels)
+        prefix = f"Epoch {epoch+1}" if epoch is not None else "Test"
+        print(f"Confusion Matrix ({prefix}):\n{cm_df}")
+        print()
 
-#         # Handle NaN cases (e.g., if metric computation fails due to single-class data)
-#         pr_auc = float(pr_auc) if not np.isnan(pr_auc) else 0.0
-#         roc_auc = float(roc_auc) if not np.isnan(roc_auc) else 0.0
-
-#         # Sharpness calculation
-#         sharpness = float(np.mean(all_probs[(all_preds == all_labels)]))
-
-#         return {"loss":avg_loss, "a*":accuracy, "f1":f1, "brier":brier, "ece":ece, "pr":pr_auc, "roc":roc_auc, "sharp": sharpness}
-
-
-
-# def _print_confusion_matrix(self, all_labels: np.ndarray, all_preds: np.ndarray, epoch: int = None):
-#         """
-#         Print confusion matrix.
-#         """
-#         cm = confusion_matrix(all_labels, all_preds)
-#         if cm.shape != (len(self.class_labels), len(self.class_labels)):
-#             print(f"Error: Confusion matrix shape {cm.shape} does not match num_classes {len(self.class_labels)}")
-#             return
-#         cm_df = pd.DataFrame(cm, index=self.class_labels, columns=self.class_labels)
-#         prefix = f"Epoch {epoch+1}" if epoch is not None else "Test"
-#         print(f"Confusion Matrix ({prefix}):\n{cm_df}")
-#         print()
-
-#         precision = precision_score(all_labels, all_preds, average=None)
-#         recall = recall_score(all_labels, all_preds, average=None)
-#         f1 = f1_score(all_labels, all_preds, average=None)
-#         for i, name in enumerate(self.class_labels):
-#             print(f"{name}: Precision={precision[i]:.3f}, Recall={recall[i]:.3f}, F1={f1[i]:.3f}")
-
-# print(f"\n\nEpoch {epoch+1}:\tTrain Loss: {train_metrics['loss']:.4f}, A*: {train_metrics['a*']:.4f}, F1: {train_metrics['f1']:.4f}, "
-#                   f"ECE: {train_metrics['ece']:.4f}, Brier: {train_metrics['brier']:.4f}, Sharp: {train_metrics['sharp']:.4f}, "
-#                   f"PR-AUC: {train_metrics['pr']:.4f}, ROC-AUC: {train_metrics['roc']:.4f}")
-#             print(f"\t\tVal   Loss: {val_metrics['loss']:.4f}, A*: {val_metrics['a*']:.4f}, F1: {val_metrics['f1']:.4f}, "
-#                   f"ECE: {val_metrics['ece']:.4f}, Brier: {val_metrics['brier']:.4f}, Sharp: {val_metrics['sharp']:.4f}, "
-#                   f"PR-AUC: {val_metrics['pr']:.4f}, ROC-AUC: {val_metrics['roc']:.4f}\n")
-
+        precision = precision_score(all_labels, all_preds, average=None)
+        recall = recall_score(all_labels, all_preds, average=None)
+        f1 = f1_score(all_labels, all_preds, average=None)
+        for i, name in enumerate(class_labels):
+            print(f"{name}: Precision={precision[i]:.3f}, Recall={recall[i]:.3f}, F1={f1[i]:.3f}")
 

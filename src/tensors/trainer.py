@@ -1,13 +1,12 @@
 import numpy as np
 import pandas as pd
-from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 import torch
 from tqdm import tqdm
 from typing import List, Tuple
 
 from .core import get_data_loader, split_dataset
-from .metrics import ( compute_brier_score, compute_ece, compute_pr_auc, compute_roc_auc, 
-                        compute_multiclass_pr_auc, compute_multiclass_roc_auc)
+from .metrics import ( f1_score, compute_brier_score, compute_ece, compute_pr_auc, compute_roc_auc, 
+                        compute_multiclass_pr_auc, compute_multiclass_roc_auc, print_confusion_matrix)
 
 
 ######################################################################
@@ -33,6 +32,18 @@ class AtomicTrainer:
 
     def _prob_fn(self, outputs):
         raise NotImplementedError
+
+
+    def _print_metrics(self, metrics: dict, stage: str):
+        print(f"\n=== {stage} Metrics ===")
+        print(f"Loss: {metrics['loss']:.4f}", end='\t')
+        print(f"A*: {metrics['a*']*100:.2f}%", end='\t')
+        print(f"F1: {metrics['f1']*100:.2f}%", end='\t')
+        print(f"Brier: {metrics['brier']*100:.4f}%", end='\t')
+        print(f"ECE: {metrics['ece']*100:.4f}%", end='\t')
+        print(f"PR AUC: {metrics['pr_auc']*100:.2f}%", end='\t')
+        print(f"ROC AUC: {metrics['roc_auc']*100:.2f}%", end='\t')
+        print(f"Sharpness: {metrics['sharp']*100:.2f}%\n")
 
 
     def _run_machine(self, model, data_loader, dsc="Running", optimizer=None):
@@ -62,18 +73,17 @@ class AtomicTrainer:
             preds = self._pred_fn(outputs)
             probs = self._prob_fn(outputs)
 
-            all_preds.extend([p.numpy().flatten() for p in preds])
-            all_labels.extend([l.detach().numpy().flatten() for l in labels])
-            all_probs.extend([p.detach().numpy() for p in probs])
+            all_preds.append(preds.detach().numpy())
+            all_labels.append(labels.detach().numpy())
+            all_probs.append(probs.detach().numpy())
 
-        return total_loss, np.concatenate(all_labels), np.concatenate(all_probs), np.concatenate(all_preds)
+        return total_loss, np.concatenate(all_labels, axis=0), np.concatenate(all_probs, axis=0), np.concatenate(all_preds, axis=0)
 
 
     def _test_model(self, model, test_data):
         model.eval()
         with torch.no_grad():
-            total_loss, all_labels, all_probs, all_preds = self._run_machine(model, test_data, "Testing")
-        return total_loss, all_labels, all_probs, all_preds
+            return self._run_machine(model, test_data, "Testing")
 
 
     def _train_model(self, model, train_data, optimizer):
@@ -84,8 +94,7 @@ class AtomicTrainer:
     def _validate_model(self, model, val_data):
         model.eval()
         with torch.no_grad():
-            total_loss, all_labels, all_probs, all_preds = self._run_machine(model, val_data, "Validating")
-        return total_loss, all_labels, all_probs, all_preds
+            return self._run_machine(model, val_data, "Validating")
 
 
     def _validate_outputs(self, outputs: torch.Tensor):
@@ -118,24 +127,23 @@ class AtomicTrainer:
         for epoch in range(epochs):
             train_loss, train_labels, train_probs, train_preds = self._train_model(model, train_data, optimizer)
             val_loss, val_labels, val_probs, val_preds = self._validate_model(model, val_data)
-            print("dojo:173")
-            raise
+
             # Compute metrics
             train_metrics = self._compute_metrics(train_loss, train_labels, train_probs, train_preds, len(dataset))
             val_metrics = self._compute_metrics(val_loss, val_labels, val_probs, val_preds, len(dataset))
             
             # # # Print metrics
-            print(train_metrics)
-            print(val_metrics)
+            
+            self._print_metrics(train_metrics, "Training")
+            self._print_metrics(val_metrics, "Validating")
 
             # Save model on validation improvement
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
                 patience_counter = 0
 
-                # self._print_confusion_matrix(val_labels, val_preds, epoch)
+                # print_confusion_matrix(self.class_labels, val_labels, val_preds, epoch)
                 model._save(val_metrics)
-                print("\n")
             else:
                 patience_counter += 1
 
@@ -147,7 +155,8 @@ class AtomicTrainer:
         test_loss, test_labels, test_probs, test_preds = self._test_model(model, test_data)
         test_metrics = self._compute_metrics(test_loss, test_labels, test_probs, test_preds, len(dataset))
 
-        print(test_metrics)
+        self._print_metrics(test_metrics, "Testing")
+        # print_confusion_matrix(self.class_labels, test_labels, test_preds)
     
 
         
@@ -175,8 +184,22 @@ class BinaryTrainer(AtomicTrainer):
         self.criterion = self._loss_function(pos_weight=class_weights)
 
 
-    def _compute_metrics(self, *args, **kwargs):
-        raise NotImplementedError  
+    def _compute_metrics(self, total_loss: float, all_labels: np.ndarray, all_probs: np.ndarray, 
+                            all_preds: np.ndarray, dataset_length: int) -> dict:
+        """
+        Compute and validate metrics for predictions.
+        """
+        # Compute existing metrics
+        return {
+            "loss": total_loss / dataset_length if dataset_length > 0 else float('inf'),
+            "a*": np.sum(all_preds == all_labels) / len(all_labels) if len(all_labels) > 0 else 0.0,
+            "f1": f1_score(all_labels, all_preds, average='macro'),
+            "brier": compute_brier_score(all_probs, all_labels),
+            "ece": compute_ece(all_probs, all_labels),
+            "pr_auc": compute_pr_auc(all_probs, all_labels),
+            "roc_auc": compute_roc_auc(all_probs, all_labels),
+            "sharp": float(np.mean(all_probs[(all_preds == all_labels)]))
+        }
 
 
     def _handle_loss_computation(self, outputs, labels):
@@ -228,6 +251,25 @@ class ClassifyTrainer(AtomicTrainer):
         self.class_labels = class_labels
         self.criterion = self._loss_function(weight=class_weights)
 
+
+
+    def _compute_metrics(self, total_loss: float, all_labels: np.ndarray, all_probs: np.ndarray, 
+                            all_preds: np.ndarray, dataset_length: int) -> dict:
+        """
+        Compute and validate metrics for predictions.
+        """
+        # Compute existing metrics
+        return {
+            "loss": total_loss / dataset_length if dataset_length > 0 else float('inf'),
+            "a*": np.sum(all_preds == all_labels) / len(all_labels) if len(all_labels) > 0 else 0.0,
+            "f1": f1_score(all_labels, all_preds, average='macro'),
+            "brier": compute_brier_score(all_probs, all_labels),
+            "ece": compute_ece(all_probs, all_labels),
+            "pr_auc": compute_multiclass_pr_auc(all_probs, all_labels),
+            "roc_auc": compute_multiclass_roc_auc(all_probs, all_labels),
+            "sharp": float(np.mean(all_probs[(all_preds == all_labels)]))
+        }
+        
 
     def _handle_loss_computation(self, outputs, labels):
         loss =  self.criterion(outputs, labels)
