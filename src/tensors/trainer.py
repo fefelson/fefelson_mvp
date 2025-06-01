@@ -142,7 +142,7 @@ class AtomicTrainer:
                 best_val_loss = val_loss
                 patience_counter = 0
 
-                # print_confusion_matrix(self.class_labels, val_labels, val_preds, epoch)
+                print_confusion_matrix(self.class_labels, val_labels, val_preds, epoch)
                 model._save(val_metrics)
             else:
                 patience_counter += 1

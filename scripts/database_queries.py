@@ -1,30 +1,33 @@
 import pandas as pd 
 from pprint import pprint 
 
-from ..src.database.models.database import get_db_session
+from src.database.models.database import get_db_session
 
 pitch_query = """
                 SELECT COUNT(at_bat_id) FROM at_bats
                 """
 
 ab_query = """
-            WITH hr_counts AS (
-    SELECT 
-        SUM(CASE WHEN contact_type_id = 7 THEN 1 ELSE 0 END) AS hr_count,
-        SUM(CASE WHEN contact_type_id != 7 THEN 1 ELSE 0 END) AS non_hr_count,
-        COUNT(*) AS total_count
-    FROM at_bats AS ab
-    INNER JOIN contact_types AS ct 
-        ON ab.at_bat_type_id = ct.at_bat_type_id
+           WITH total AS (
+    SELECT COUNT(*) AS total_count FROM pitches
 )
-SELECT 
-    hr_count,
-    non_hr_count,
-    total_count,
-    (non_hr_count * 1.0 / hr_count) AS pos_weight,  -- For BCE pos_weight
-    (total_count * 1.0 / hr_count) AS hr_class_weight,  -- For balanced class weighting
-    (total_count * 1.0 / non_hr_count) AS non_hr_class_weight  -- For balanced class weighting
-FROM hr_counts;
+SELECT
+    pt.pitch_type_name,
+    pt.pitch_type_id,
+    COUNT(*) AS pitch_count,
+    ROUND(COUNT(*) * 1.0 / t.total_count, 6) AS frequency,
+    ROUND(1.0 / (COUNT(*) * 1.0 / t.total_count), 6) AS inverse_frequency_weight
+FROM
+    pitches p
+    JOIN pitch_types pt ON p.pitch_type_name = pt.pitch_type_name
+    CROSS JOIN total t
+GROUP BY
+    pt.pitch_type_name, pt.pitch_type_id, t.total_count
+ORDER BY
+    pt.pitch_type_id;
+
+
+
             """
 
 def run_query(query):
@@ -37,5 +40,5 @@ def run_query(query):
 
 
 if __name__ == "__main__":
-    pprint(run_query(pitch_query))
+    pprint(run_query(ab_query))
     

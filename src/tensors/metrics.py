@@ -420,11 +420,11 @@ def print_confusion_matrix(class_labels: list, all_labels: np.ndarray, all_preds
         """
         Print confusion matrix.
         """
-        cm = confusion_matrix(all_labels, all_preds)
+        cm = confusion_matrix(all_labels, all_preds, labels=list(range(len(class_labels))))
         if cm.shape != (len(class_labels), len(class_labels)):
             print(f"Error: Confusion matrix shape {cm.shape} does not match num_classes {len(class_labels)}")
             return
-        cm_df = pd.DataFrame(cm, index=class_labels, columns=class_labels)
+        cm_df = pd.DataFrame(cm, index=list(range(len(class_labels))), columns=list(range(len(class_labels))))
         prefix = f"Epoch {epoch+1}" if epoch is not None else "Test"
         print(f"Confusion Matrix ({prefix}):\n{cm_df}")
         print()
@@ -433,5 +433,8 @@ def print_confusion_matrix(class_labels: list, all_labels: np.ndarray, all_preds
         recall = recall_score(all_labels, all_preds, average=None)
         f1 = f1_score(all_labels, all_preds, average=None)
         for i, name in enumerate(class_labels):
-            print(f"{name}: Precision={precision[i]:.3f}, Recall={recall[i]:.3f}, F1={f1[i]:.3f}")
+            try:
+                print(f"{name}: Precision={precision[i]:.3f}, Recall={recall[i]:.3f}, F1={f1[i]:.3f}\n")
+            except IndexError:
+                pass
 

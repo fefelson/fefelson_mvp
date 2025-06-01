@@ -120,7 +120,7 @@ class PitchTypeSelect(BaseModel):
     _modelName = "pitch_type_select"
     _PITCHER_EM_DIM = 6
     _COUNT_EM_DIM = 6
-    _HIDDEN_DIM = 12
+    _HIDDEN_DIM = 36
     _OUTPUT_DIM = PITCH_TYPES
 
 
